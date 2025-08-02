@@ -1,0 +1,30 @@
+# Clauder specific
+.claude/custom/project.yaml
+.claude/.generated/
+CLAUDE.md
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependencies
+node_modules/
+vendor/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Personal configurations
+.claude/custom/personal/

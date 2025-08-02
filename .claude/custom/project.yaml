@@ -2,60 +2,60 @@
 # 이 파일의 값들이 템플릿의 {{변수}}를 대체합니다
 
 project:
-  PROJECT_NAME: "Contextus"
-  PROJECT_PURPOSE: "컨텍스트 관리 시스템"
-  PROJECT_VALUE: "효율적인 정보 구조화와 접근"
+  PROJECT_NAME: "Clauder"
+  PROJECT_PURPOSE: "Claude Code를 위한 범용 문서 템플릿 시스템"
+  PROJECT_VALUE: "모든 프로젝트에서 재사용 가능한 문서화 프레임워크"
 
 architecture:
-  ARCHITECTURE_PATTERN: "Monolithic"
+  ARCHITECTURE_PATTERN: "Template System"
   MAIN_COMPONENTS: |
-    - Core Engine
-    - API Layer
-    - Storage Module
+    - Template Engine (변수 치환)
+    - Override System (커스터마이징)
+    - Command Interpreter (@명령어)
 
 tech_stack:
-  LANGUAGES: "JavaScript, TypeScript"
-  FRAMEWORKS: "React, Node.js"
-  DATABASES: "PostgreSQL"
-  INFRASTRUCTURE: "AWS"
+  LANGUAGES: "Markdown, YAML"
+  FRAMEWORKS: "Claude Code"
+  DATABASES: "파일 시스템"
+  INFRASTRUCTURE: "Git"
 
 development:
   REQUIRED_TOOLS: |
-    - Node.js v18+
-    - npm or yarn
+    - Claude Code
     - Git
-    - VS Code (권장)
+    - 텍스트 에디터
   
-  INSTALL_COMMAND: "npm install"
-  RUN_COMMAND: "npm run dev"
-  TEST_COMMAND: "npm test"
-  BUILD_COMMAND: "npm run build"
+  INSTALL_COMMAND: "cp -r .claude/ /your-project/"
+  RUN_COMMAND: "@initialize project"
+  TEST_COMMAND: "@check documentation"
+  BUILD_COMMAND: "@generate claude.md"
 
 structure:
   PROJECT_STRUCTURE: |
-    contextus/
-    ├── src/
-    │   ├── components/
-    │   ├── services/
-    │   └── utils/
-    ├── tests/
-    └── docs/
+    clauder/
+    ├── .claude/
+    │   ├── templates/     # 범용 템플릿
+    │   ├── custom/        # 프로젝트별 설정
+    │   └── *.md          # 가이드 문서
+    └── CLAUDE.md         # 메인 문서
 
 constraints:
   CONSTRAINTS: |
-    - Node.js 18 이상 필요
-    - 메모리 최소 4GB
-    - PostgreSQL 14+
+    - Claude Code 설치 필요
+    - Markdown 지원 에디터 권장
+    - Git 기본 지식 필요
 
 links:
   REFERENCE_LINKS: |
-    - 저장소: https://github.com/user/contextus
-    - 문서: https://docs.contextus.io
-    - 이슈: https://github.com/user/contextus/issues
+    - 저장소: https://github.com/[username]/clauder
+    - 문서: https://github.com/[username]/clauder/wiki
+    - 이슈: https://github.com/[username]/clauder/issues
 
 # 커스텀 섹션 (선택사항)
 custom:
   CUSTOM_ESSENTIALS: |
     ## 🚀 특별 기능
-    - 실시간 동기화
-    - 다중 사용자 지원
+    - 범용 템플릿 시스템
+    - 프로젝트별 커스터마이징
+    - 문서 기반 초기화
+    - @명령어 인터페이스
