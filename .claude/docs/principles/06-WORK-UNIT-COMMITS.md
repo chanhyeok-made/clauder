@@ -2,7 +2,7 @@
 version:
   created: "2025-08-02"
   updated: "2025-08-02"
-  commit: "11d1061"
+  commit: "306fde2"
   
 dependencies:
   - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
@@ -17,12 +17,13 @@ references:
     commit: "11d1061"
 ---
 
-# 원칙 6: 작업 단위 커밋
+# 원칙 6: 작업 단위 커밋 및 푸시
 
 ## 핵심 규칙
 
-### 모든 작업은 작업 단위로 GitHub에 커밋
-- 완성된 작업 단위마다 반드시 GitHub에 push
+### 모든 작업은 작업 단위로 GitHub에 커밋 및 푸시
+- 완성된 작업 단위마다 반드시 커밋 후 즉시 GitHub에 push
+- **커밋만 하고 푸시하지 않는 것은 원칙 위반**
 - 미완성 상태로 세션을 종료하지 않음
 - 각 커밋은 독립적으로 의미 있는 변경사항 포함
 
@@ -52,12 +53,14 @@ references:
    - 현재 문서를 참조하는 모든 문서 확인
    - 해당 문서들의 status를 "current"로 업데이트
 
-3. **커밋 및 푸시**
+3. **커밋 및 푸시 (필수!)**
    ```bash
    git add .
    git commit -m "작업 단위 설명"
-   git push origin main
+   git push origin main  # 반드시 푸시까지 완료!
    ```
+   
+   ⚠️ **주의**: 커밋 후 푸시를 잊으면 작업이 로컬에만 남아 의미가 없습니다!
 
 ## 자동화 지원
 

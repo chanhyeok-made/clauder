@@ -5,15 +5,17 @@
 > 이 파일은 .gitignore에 포함되어 있으며, 
 > Clauder 자체 개발을 위한 가이드입니다.
 
-## 🆘 작업 완료 시 즉시 커밋!
+## 🆘 작업 완료 시 즉시 커밋 및 푸시!
 
-> **경고**: 모든 작업은 완료 즉시 GitHub에 커밋해야 합니다!
+> **경고**: 모든 작업은 완료 즉시 GitHub에 커밋하고 반드시 푸시해야 합니다!
 > 
 > ```bash
 > git add .
 > git commit -m "작업 설명"
-> git push
+> git push origin main  # 푸시 필수! 커밋만 하면 의미 없음!
 > ```
+> 
+> ⚠️ **커밋 후 푸시를 잊지 마세요!** 로컬에만 있으면 백업이 안 됩니다.
 > 
 > 원칙: @.claude/docs/principles/06-WORK-UNIT-COMMITS.md
 
@@ -26,7 +28,7 @@
 3. **문서 모듈화**: @.claude/docs/principles/03-DOCUMENT-MODULARITY.md
 4. **즉시 인지 가능**: @.claude/docs/principles/04-IMMEDIATE-RECOGNITION.md
 5. **필수 역참조**: @.claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md
-6. **작업 단위 커밋**: @.claude/docs/principles/06-WORK-UNIT-COMMITS.md
+6. **작업 단위 커밋 및 푸시**: @.claude/docs/principles/06-WORK-UNIT-COMMITS.md
 
 전체 원칙 목록: @.claude/docs/principles/README.md
 
