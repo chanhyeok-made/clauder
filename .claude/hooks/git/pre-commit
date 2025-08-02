@@ -4,6 +4,12 @@
 
 echo "🪝 Clauder pre-commit 훅 실행 중..."
 
+# Python 확인
+if ! command -v python3 &> /dev/null; then
+    echo "⚠️  Python3가 설치되지 않아 참조 업데이트를 건너뜁니다."
+    SKIP_REF_UPDATE=1
+fi
+
 # 현재 commit 해시 가져오기 (staged 상태 기준)
 COMMIT_HASH=$(git rev-parse --short HEAD 2>/dev/null || echo "initial")
 TODAY=$(date -u +"%Y-%m-%d")
@@ -33,6 +39,21 @@ if [ -n "$MD_FILES" ]; then
             else
                 echo "  ⚠️  $file - 버전 메타데이터 없음"
                 echo "      다음 명령으로 추가할 수 있습니다: /clauder track add $file"
+            fi
+        fi
+    done
+fi
+
+# 참조 업데이트 (선택적)
+if [ -z "$SKIP_REF_UPDATE" ] && [ -f ".claude/scripts/reference-parser.py" ]; then
+    echo "🔄 문서 참조 업데이트 중..."
+    
+    # 변경된 .md 파일에 대해 참조 업데이트
+    for file in $MD_FILES; do
+        if [ -f "$file" ]; then
+            python3 .claude/scripts/reference-parser.py update "$file" > /dev/null 2>&1
+            if [ $? -eq 0 ]; then
+                git add "$file"
             fi
         fi
     done
