@@ -32,12 +32,12 @@ tech_stack:
   LANGUAGES: "Markdown, YAML"
   FRAMEWORKS: "Claude Code"
   DATABASES: "파일 시스템"
-  INFRASTRUCTURE: "Git"
+  INFRASTRUCTURE: "Git (필수)"
 
 development:
   REQUIRED_TOOLS: |
+    - Git (필수 - 버전 추적 시스템을 위해)
     - Claude Code
-    - Git
     - 텍스트 에디터
   
   INSTALL_COMMAND: "cp -r .claude/ /your-project/"
@@ -56,9 +56,10 @@ structure:
 
 constraints:
   CONSTRAINTS: |
+    - Git 설치 필수 (버전 추적 시스템)
     - Claude Code 설치 필요
     - Markdown 지원 에디터 권장
-    - Git 기본 지식 필요
+    - Git 커밋 해시로 문서 버전 관리
 
 links:
   REFERENCE_LINKS: |

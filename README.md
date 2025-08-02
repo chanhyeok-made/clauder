@@ -2,6 +2,11 @@
 
 Claude Code를 위한 범용 문서 템플릿 시스템입니다. 모든 프로젝트에서 재사용 가능한 구조화된 문서화 프레임워크를 제공합니다.
 
+## 📋 필수 요구사항
+
+- **Git**: 버전 추적 시스템이 Git 커밋 해시를 기반으로 작동하므로 Git이 필수입니다.
+- **Claude Code**: AI 어시스턴트와의 상호작용을 위해 필요합니다.
+
 ## 🚀 Quick Start
 
 ### Case 1: 새 프로젝트와 함께 시작
@@ -15,13 +20,15 @@ git clone https://github.com/chanhyeok-made/clauder.git temp
 cp -r temp/.claude .
 rm -rf temp
 
-# 3. Git 초기화 (선택사항)
+# 3. Git 초기화 (필수!)
 git init
+git add .
+git commit -m "Initial commit with Clauder"
 echo ".claude/custom/" >> .gitignore  # 커스텀 설정은 별도 관리
 
 # 4. Claude에서 초기화
 # Claude Code를 열고 다음 명령 실행:
-@initialize project
+/clauder initialize
 ```
 
 ### Case 2: 기존 프로젝트에 적용
@@ -39,9 +46,12 @@ unzip clauder.zip "clauder-main/.claude/*" -d .
 mv clauder-main/.claude .
 rm -rf clauder-main clauder.zip
 
-# 4. 기존 설정 마이그레이션
-# Claude Code에서:
-@initialize project --migrate
+# 4. Git 설정 확인 (필수!)
+git add .
+git commit -m "Add Clauder documentation system"
+
+# 5. Claude Code에서 마이그레이션:
+/clauder initialize --migrate
 ```
 
 ## 📋 상세 가이드
@@ -87,10 +97,11 @@ rm -rf clauder-main clauder.zip
 
 ### 기본 명령어
 ```
-@initialize project       # 프로젝트 초기화
-@generate claude.md      # CLAUDE.md 재생성
-@check documentation     # 문서 상태 확인
-@add context [name]      # 새 가이드 추가
+/clauder initialize       # 프로젝트 초기화
+/clauder generate        # CLAUDE.md 재생성
+/clauder check          # 문서 상태 확인
+/clauder add context [name]  # 새 가이드 추가
+/clauder track          # 버전 추적 관리
 ```
 
 ### 커스터마이징

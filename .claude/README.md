@@ -22,6 +22,11 @@ references: []
 
 이 문서 시스템은 모든 프로젝트에서 사용 가능한 범용 템플릿입니다.
 
+## 🚨 중요 요구사항
+
+**Git이 필수입니다!** 이 시스템은 Git 커밋 해시를 사용하여 문서 버전을 추적합니다.
+프로젝트는 반드시 Git 저장소로 초기화되어야 합니다.
+
 ## 🚀 빠른 시작
 
 Claude Code에서 다음 명령을 입력하세요:
@@ -30,11 +35,12 @@ Claude Code에서 다음 명령을 입력하세요:
 ```
 
 ### 사용 가능한 명령어
-- `/clauder initialize` - 프로젝트 초기화
+- `/clauder initialize` - 프로젝트 초기화 (Git 필수)
 - `/clauder generate` - CLAUDE.md 생성
 - `/clauder check` - 상태 확인
 - `/clauder add` - 요소 추가
 - `/clauder update` - 설정 업데이트
+- `/clauder track` - 문서 버전 관리 (Git 커밋 해시 기반)
 
 자세한 사용법:
 - 명령어 상세: `.claude/commands/` 디렉토리 참조
@@ -60,11 +66,16 @@ Claude Code에서 다음 명령을 입력하세요:
 
 ### 1. 초기 설정
 ```bash
-# 템플릿 복사
-cp -r .claude/templates/* .claude/custom/
+# Git 저장소 확인 (필수!)
+git status
 
-# 프로젝트 정보 입력
-edit .claude/custom/project.md
+# Git이 없다면 초기화
+git init
+git add .
+git commit -m "Initial commit"
+
+# Claude Code에서 초기화
+/clauder initialize
 ```
 
 ### 2. 커스터마이징
