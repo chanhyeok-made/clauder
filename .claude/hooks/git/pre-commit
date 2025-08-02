@@ -59,4 +59,19 @@ if [ -z "$SKIP_REF_UPDATE" ] && [ -f ".claude/scripts/reference-parser.py" ]; th
     done
 fi
 
+# 버전 트리 동기화 (새로 추가)
+if [ -f ".claude/scripts/tree-sync.py" ]; then
+    echo "🌳 버전 트리 동기화 중..."
+    if command -v python3 &> /dev/null; then
+        # 조용히 실행, 에러 시에도 커밋은 계속
+        python3 .claude/scripts/tree-sync.py > /dev/null 2>&1 || true
+        
+        # 트리 파일이 변경되었으면 스테이징
+        if [ -f ".claude/version-tree.yaml" ] && git diff --name-only | grep -q "version-tree.yaml"; then
+            git add .claude/version-tree.yaml
+            echo "  ✓ 버전 트리 업데이트됨"
+        fi
+    fi
+fi
+
 echo "✅ Pre-commit 훅 완료"
