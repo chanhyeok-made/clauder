@@ -2,9 +2,11 @@
 version:
   created: "2025-08-02"
   updated: "2025-08-02"
-  commit: "4b2ca7b"
+  commit: "3eee0eb"
   
 dependencies:
+  - file: ".claude/docs/principles/00-PRINCIPLE-GUIDELINES.md"
+    commit: "3eee0eb"
   - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
     commit: "11d1061"
   - file: ".claude/docs/principles/02-PROJECT-INDEPENDENCE.md"
@@ -28,6 +30,13 @@ references:
 ---
 
 # 📋 Clauder 핵심 원칙
+
+## 0️⃣ 원칙 작성 가이드
+@.claude/docs/principles/00-PRINCIPLE-GUIDELINES.md
+
+원칙을 작성할 때 따라야 할 메타 원칙입니다. 명확하고 간결하며 전문적인 톤을 유지합니다.
+
+---
 
 모든 Clauder 문서와 시스템은 다음 6가지 핵심 원칙을 따릅니다:
 
