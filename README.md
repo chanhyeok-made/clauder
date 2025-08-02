@@ -9,6 +9,15 @@ Claude Code를 위한 범용 문서 템플릿 시스템입니다. 모든 프로�
 
 ## 🚀 Quick Start
 
+### 가장 빠른 방법: 한 줄 명령
+
+```bash
+# Claude Code에서:
+/clauder start
+```
+
+이 명령 하나로 Git 확인, 프로젝트 분석, 필수 파일 생성이 모두 자동화됩니다.
+
 ### Case 1: 새 프로젝트와 함께 시작
 
 ```bash
@@ -26,9 +35,9 @@ git add .
 git commit -m "Initial commit with Clauder"
 echo ".claude/custom/" >> .gitignore  # 커스텀 설정은 별도 관리
 
-# 4. Claude에서 초기화
-# Claude Code를 열고 다음 명령 실행:
-/clauder initialize
+# 4. Claude에서 자동 초기화
+# Claude Code를 열고:
+/clauder start  # 모든 것을 자동으로!
 ```
 
 ### Case 2: 기존 프로젝트에 적용
@@ -60,8 +69,8 @@ git commit -m "Add Clauder documentation system"
 
 1. **템플릿 복사 후 Claude에서 초기화**
    ```
-   User: @initialize project
-   Claude: 프로젝트 초기화를 시작합니다...
+   User: /clauder start
+   Claude: 🚀 Clauder 초기화를 시작합니다...
    ```
 
 2. **질문에 답변**
@@ -77,7 +86,7 @@ git commit -m "Add Clauder documentation system"
 
 1. **기존 CLAUDE.md가 있는 경우**
    ```
-   @initialize project --migrate
+   /clauder start --from-existing
    ```
    Claude가 기존 문서를 분석하여 정보 추출
 
@@ -88,9 +97,9 @@ git commit -m "Add Clauder documentation system"
 3. **점진적 적용**
    ```
    # 단계별로 적용
-   @update project info      # 기본 정보만
-   @update project tech      # 기술 스택
-   @add context debugging    # 필요한 가이드 추가
+   /clauder update project info      # 기본 정보만
+   /clauder update project tech      # 기술 스택
+   /clauder add context debugging    # 필요한 가이드 추가
    ```
 
 ## 🛠 사용 방법
