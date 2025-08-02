@@ -7,13 +7,10 @@ version:
 dependencies:
   - file: ".claude/commands/clauder-initialize.md"
     commit: "78b8a7b"
-    status: "current"
   - file: ".claude/commands/clauder-generate.md"
     commit: "78b8a7b"
-    status: "current"
   - file: ".claude/commands/clauder-track.md"
     commit: "78b8a7b"
-    status: "current"
 ---
 
 # /clauder start

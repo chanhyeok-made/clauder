@@ -7,10 +7,8 @@ version:
 dependencies:
   - file: ".claude/templates/version-metadata.yaml"
     commit: "78b8a7b"
-    status: "current"
   - file: ".claude/commands/clauder-track.md"
     commit: "78b8a7b"
-    status: "current"
 ---
 
 # 문서 버전 추적 시스템

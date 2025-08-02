@@ -7,10 +7,8 @@ version:
 dependencies:
   - file: ".claude/custom/project.yaml"
     commit: "f7db06e"
-    status: "current"
   - file: ".claude/templates/"
     commit: "f7db06e"
-    status: "current"
     
 references:
   - file: ".claude/custom/project.yaml"

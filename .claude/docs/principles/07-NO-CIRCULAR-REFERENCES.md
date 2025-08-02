@@ -7,18 +7,14 @@ version:
 dependencies:
   - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md"
     commit: "11d1061"
-    status: "current"
     
 references:
   - file: ".claude/docs/principles/README.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/instructions.md"
     commit: "11d1061"
-    status: "current"
 ---
 
 # 원칙 7: 순환 참조 금지

@@ -7,10 +7,8 @@ version:
 dependencies:
   - file: ".claude/templates/contexts/"
     commit: "f7db06e"
-    status: "current"
   - file: ".claude/custom/"
     commit: "f7db06e"
-    status: "current"
 ---
 
 # /clauder add

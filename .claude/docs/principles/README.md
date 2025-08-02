@@ -7,41 +7,33 @@ version:
 dependencies:
   - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/02-PROJECT-INDEPENDENCE.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/03-DOCUMENT-MODULARITY.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/04-IMMEDIATE-RECOGNITION.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/06-WORK-UNIT-COMMITS.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/07-NO-CIRCULAR-REFERENCES.md"
     commit: "11d1061"
-    status: "current"
+  - file: ".claude/docs/principles/08-NO-STATUS-FIELD.md"
+    commit: "27af051"
     
 references:
   - file: "CLAUDE.md"
     commit: "11d1061"
-    status: "current"
   - file: "CLAUDE.base.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/instructions.md"
     commit: "11d1061"
-    status: "current"
 ---
 
 # 📋 Clauder 핵심 원칙
 
-모든 Clauder 문서와 시스템은 다음 7가지 핵심 원칙을 따릅니다:
+모든 Clauder 문서와 시스템은 다음 8가지 핵심 원칙을 따릅니다:
 
 ## 1️⃣ 완벽한 참조 구조
 @.claude/docs/principles/01-REFERENCE-STRUCTURE.md
@@ -77,6 +69,11 @@ Claude Code 실행 시 모든 원칙을 즉시 인지할 수 있도록 구성합
 @.claude/docs/principles/07-NO-CIRCULAR-REFERENCES.md
 
 모든 참조와 역참조에서 순환 참조는 절대 금지되며, 계층적 구조를 유지해야 합니다.
+
+## 8️⃣ Status 필드 제거
+@.claude/docs/principles/08-NO-STATUS-FIELD.md
+
+YAML front matter에서 status 필드는 불필요하며, commit hash만으로 버전 관리가 가능합니다.
 
 ---
 

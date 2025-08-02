@@ -7,10 +7,8 @@ version:
 dependencies:
   - file: ".claude/core/02-work-principles.md"
     commit: "f7db06e"
-    status: "current"
   - file: ".claude/core/01-essentials.md"
     commit: "f7db06e"
-    status: "current"
     
 references:
   - file: "CLAUDE.md"

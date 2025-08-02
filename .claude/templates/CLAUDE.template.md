@@ -7,16 +7,12 @@ version:
 dependencies:
   - file: ".claude/templates/core/01-essentials.template.md"
     commit: "f7db06e"
-    status: "current"
   - file: ".claude/templates/core/02-work-principles.template.md"
     commit: "f7db06e"
-    status: "current"
   - file: ".claude/templates/core/03-dev-principles.template.md"
     commit: "f7db06e"
-    status: "current"
   - file: ".claude/templates/contexts/README.md"
     commit: "f7db06e"
-    status: "current"
 ---
 
 # {{PROJECT_NAME}} - Claude Code 가이드

@@ -7,16 +7,14 @@ version:
 dependencies:
   - file: ".claude/docs/principles/README.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/06-WORK-UNIT-COMMITS.md"
     commit: "11d1061"
-    status: "current"
+  - file: ".claude/docs/principles/08-NO-STATUS-FIELD.md"
+    commit: "27af051"
     
 references: []  # 아직 역참조 없음
 ---
@@ -33,6 +31,8 @@ references: []  # 아직 역참조 없음
 4. **즉시 인지 가능**: @.claude/docs/principles/04-IMMEDIATE-RECOGNITION.md
 5. **필수 역참조**: @.claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md
 6. **작업 단위 커밋**: @.claude/docs/principles/06-WORK-UNIT-COMMITS.md
+7. **순환 참조 금지**: @.claude/docs/principles/07-NO-CIRCULAR-REFERENCES.md
+8. **Status 필드 제거**: @.claude/docs/principles/08-NO-STATUS-FIELD.md
 
 전체 원칙: @.claude/docs/principles/README.md
 

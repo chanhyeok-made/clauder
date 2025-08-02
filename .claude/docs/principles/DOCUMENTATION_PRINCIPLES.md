@@ -7,10 +7,8 @@ version:
 dependencies:
   - file: ".claude/docs/design/REFERENCE_STRATEGY.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/aliases.yaml"
     commit: "11d1061"
-    status: "current"
 ---
 
 # 📋 Clauder 문서화 원칙

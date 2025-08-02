@@ -7,13 +7,10 @@ version:
 dependencies:
   - file: "CLAUDE.md"
     commit: "f7db06e"
-    status: "current"
   - file: ".claude/commands/clauder-initialize.md"
     commit: "f7db06e"
-    status: "current"
   - file: ".claude/templates/"
     commit: "f7db06e"
-    status: "current"
     
 references: []
 ---

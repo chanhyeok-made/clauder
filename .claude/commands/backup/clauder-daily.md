@@ -7,10 +7,8 @@ version:
 dependencies:
   - file: ".claude/commands/clauder-check.md"
     commit: "78b8a7b"
-    status: "current"
   - file: ".claude/commands/clauder-track.md"
     commit: "78b8a7b"
-    status: "current"
 ---
 
 # /clauder daily

@@ -7,10 +7,8 @@ version:
 dependencies:
   - file: ".claude/docs/design/HOOKS.md"
     commit: "58772aa"
-    status: "current"
   - file: ".claude/instructions.md"
     commit: "58772aa"
-    status: "current"
 ---
 
 # /clauder hooks

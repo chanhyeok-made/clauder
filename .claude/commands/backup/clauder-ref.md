@@ -7,13 +7,10 @@ version:
 dependencies:
   - file: ".claude/aliases.yaml"
     commit: "8b8a539"
-    status: "current"
   - file: ".claude/references.yaml"
     commit: "8b8a539"
-    status: "current"
   - file: ".claude/scripts/reference-parser.py"
     commit: "8b8a539"
-    status: "current"
 ---
 
 # /clauder ref

@@ -7,18 +7,14 @@ version:
 dependencies:
   - file: "CLAUDE.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/instructions.md"
     commit: "11d1061"
-    status: "current"
     
 references:
   - file: ".claude/docs/principles/README.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/instructions.md"
     commit: "11d1061"
-    status: "current"
 ---
 
 # 원칙 4: 즉시 인지 가능

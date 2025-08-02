@@ -7,30 +7,22 @@ version:
 dependencies:
   - file: ".claude/aliases.yaml"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/references.yaml"
     commit: "11d1061"
-    status: "current"
     
 references:
   - file: ".claude/docs/principles/README.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/03-DOCUMENT-MODULARITY.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/06-WORK-UNIT-COMMITS.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/07-NO-CIRCULAR-REFERENCES.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/instructions.md"
     commit: "11d1061"
-    status: "current"
 ---
 
 # 원칙 1: 완벽한 참조 구조
@@ -48,12 +40,10 @@ version:
 dependencies:
   - file: "path/to/file.md"
     commit: "hash"
-    status: "current"
     
 references:
   - file: "path/to/related/file.md"
     commit: "hash"
-    status: "current"
 ---
 ```
 

@@ -7,24 +7,18 @@ version:
 dependencies:
   - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/references.yaml"
     commit: "11d1061"
-    status: "current"
     
 references:
   - file: ".claude/docs/principles/README.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/06-WORK-UNIT-COMMITS.md"
     commit: "11d1061"
-    status: "current"
   - file: ".claude/docs/principles/07-NO-CIRCULAR-REFERENCES.md"
     commit: "11d1061"
-    status: "current"
 ---
 
 # 원칙 5: 필수 역참조

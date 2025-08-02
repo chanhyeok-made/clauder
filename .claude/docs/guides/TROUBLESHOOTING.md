@@ -7,10 +7,8 @@ version:
 dependencies:
   - file: ".claude/docs/design/HOOKS.md"
     commit: "87f8148"
-    status: "current"
   - file: ".claude/commands/clauder-hooks.md"
     commit: "87f8148"
-    status: "current"
 ---
 
 # Clauder 문제 해결 가이드

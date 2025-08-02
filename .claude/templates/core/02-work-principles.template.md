@@ -7,7 +7,6 @@ version:
 dependencies:
   - file: ".claude/contexts/README.md"
     commit: "f7db06e"
-    status: "current"
     
 references:
   - file: "CLAUDE.md"
