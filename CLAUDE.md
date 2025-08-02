@@ -121,6 +121,7 @@ clauder/
 - 아키텍처: @ARCHITECTURE.md
 - 사용 예시: @EXAMPLES.md
 - 기능 지도: @FEATURE_MAP.md
+- 명령어 인덱스: @.claude/docs/COMMAND_INDEX.md
 
 ### 설계 문서
 - 버전 추적: @.claude/docs/design/VERSION_TRACKING.md
