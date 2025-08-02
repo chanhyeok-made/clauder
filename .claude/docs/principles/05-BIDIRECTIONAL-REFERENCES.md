@@ -2,7 +2,7 @@
 version:
   created: "2025-08-02"
   updated: "2025-08-02"
-  commit: "11d1061"
+  commit: "4b2ca7b"
   
 dependencies:
   - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
@@ -16,8 +16,6 @@ references:
   - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
     commit: "11d1061"
   - file: ".claude/docs/principles/06-WORK-UNIT-COMMITS.md"
-    commit: "11d1061"
-  - file: ".claude/docs/principles/07-NO-CIRCULAR-REFERENCES.md"
     commit: "11d1061"
 ---
 
