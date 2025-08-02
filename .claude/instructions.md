@@ -1,0 +1,111 @@
+---
+version:
+  created: "2025-08-02"
+  updated: "2025-08-02"
+  commit: "58772aa"
+---
+
+# Claude 작업 지시사항 (필수 준수)
+
+이 문서는 Claude가 Clauder 프로젝트에서 작업할 때 **반드시** 따라야 하는 지시사항입니다.
+
+## 🚨 핵심 규칙
+
+### 1. 문서 편집 시
+```
+BEFORE Edit 도구 사용:
+- IF 파일이 .md 확장자 THEN
+  - 버전 메타데이터 확인
+  - 없으면 추가 제안
+
+AFTER Edit 도구 사용:
+- IF 편집한 파일이 .md THEN
+  - updated 날짜 변경
+  - commit 해시 업데이트 (git log -1 --format="%h")
+  - 참조 확인
+```
+
+### 2. 새 파일 생성 시
+```
+WHEN Write 도구로 .md 파일 생성:
+- MUST 버전 메타데이터 포함
+- MUST 현재 commit 해시 기록
+- SHOULD 관련 문서 참조 확인
+```
+
+### 3. Git 작업 시
+```
+BEFORE git commit:
+- RUN: git status
+- CHECK: 변경된 .md 파일 목록
+- UPDATE: 각 파일의 버전 메타데이터
+
+AFTER git commit:
+- LOG: 새로운 commit 해시
+- SUGGEST: 관련 문서 업데이트 필요 여부
+```
+
+### 4. 프로젝트 시작 시
+```
+WHEN 사용자가 처음 질문:
+- CHECK: .claude/ 디렉토리 존재
+- IF Git 저장소 THEN
+  - 현재 commit 해시 확인
+  - 문서 버전 상태 간단히 확인
+```
+
+## 📋 체크리스트
+
+### 문서 작업 체크리스트
+- [ ] 편집 전: 파일 타입 확인
+- [ ] 편집 전: 버전 메타데이터 존재 확인
+- [ ] 편집 후: 메타데이터 업데이트
+- [ ] 편집 후: 참조 일관성 확인
+
+### Git 작업 체크리스트
+- [ ] commit 전: 문서 버전 동기화
+- [ ] commit 후: 새 해시 기록
+- [ ] push 후: 성공 확인
+
+## 🔄 자동 실행 패턴
+
+### 패턴 1: 문서 편집
+```python
+if tool == "Edit" and file.endswith(".md"):
+    before_edit_hook(file)
+    # 실제 편집
+    after_edit_hook(file)
+```
+
+### 패턴 2: 참조 추가
+```python
+if "@" in content and ".md" in content:
+    validate_reference(referenced_file)
+    add_bidirectional_reference()
+```
+
+### 패턴 3: 버전 확인
+```python
+if "version:" not in file_content:
+    suggest_add_version_metadata()
+```
+
+## ⚡ 빠른 명령어
+
+자주 사용하는 훅 관련 명령:
+- `git log -1 --format="%h"` - 현재 커밋 해시
+- `date -u +"%Y-%m-%d"` - 현재 날짜 (ISO 형식)
+- `/clauder track check` - 버전 상태 확인
+
+## 🚫 하지 말아야 할 것
+
+1. 버전 메타데이터 없이 .md 파일 수정
+2. 참조 확인 없이 문서 링크 추가
+3. Git 커밋 전 버전 동기화 생략
+4. 오래된 commit 해시 그대로 두기
+
+## 💡 기억할 것
+
+> "모든 문서는 버전이 있고, 모든 버전은 추적된다"
+
+이 지시사항은 Claude의 모든 작업 세션에 적용됩니다.

@@ -145,6 +145,23 @@ your-project/
 └── CLAUDE.md           # 자동 생성됨
 ```
 
+## 🪝 훅 기반 자동화
+
+### 훅 설치
+```bash
+# Git hooks 자동 설치
+/clauder hooks install
+```
+
+### 자동화되는 작업
+1. **문서 편집 시**: 버전 자동 업데이트
+2. **Git 커밋 시**: 메타데이터 동기화
+3. **Claude 작업 시**: 지시사항 자동 적용
+
+자세한 내용:
+- 훅 설계: `.claude/HOOKS.md`
+- Claude 지시사항: `.claude/instructions.md`
+
 ## 💡 팁
 
 ### Git 관리

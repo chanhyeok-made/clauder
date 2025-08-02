@@ -39,6 +39,7 @@ Claude Code에서 다음 명령 하나로 모든 것을 자동화:
 ### 통합 명령어 (추천)
 - `/clauder start` - 프로젝트 자동 설정 🊕
 - `/clauder daily` - 매일 상태 체크 및 동기화
+- `/clauder hooks install` - 자동화 훅 설치
 
 ### 개별 명령어 (고급)
 - `/clauder initialize` - 프로젝트 초기화
@@ -67,6 +68,27 @@ Claude Code에서 다음 명령 하나로 모든 것을 자동화:
 │   └── contexts/          # 추가 컨텍스트
 └── CLAUDE.md             # 자동 생성됨 (수정 금지)
 ```
+
+## 🪝 자동화 훅 시스템
+
+Clauder는 명시적인 훅을 통해 자동화됩니다:
+
+### 핵심 훅 동작
+1. **문서 편집 시**: 버전 메타데이터 자동 업데이트
+2. **Git 커밋 시**: 모든 문서 버전 동기화
+3. **프로젝트 시작 시**: 상태 자동 확인
+
+### 훅 설치
+```bash
+# Git hooks 설치
+/clauder hooks install
+
+# 또는 수동 설치
+.claude/hooks/install.sh
+```
+
+### Claude 지시사항
+`.claude/instructions.md`에 명시된 규칙을 Claude가 자동 따릅니다.
 
 ## 🚀 사용 방법
 

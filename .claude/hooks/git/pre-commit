@@ -1,0 +1,41 @@
+#!/bin/bash
+# Clauder pre-commit hook
+# 자동으로 문서 버전을 업데이트합니다
+
+echo "🪝 Clauder pre-commit 훅 실행 중..."
+
+# 현재 commit 해시 가져오기 (staged 상태 기준)
+COMMIT_HASH=$(git rev-parse --short HEAD 2>/dev/null || echo "initial")
+TODAY=$(date -u +"%Y-%m-%d")
+
+# 변경된 .md 파일 찾기
+MD_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep '\.md$')
+
+if [ -n "$MD_FILES" ]; then
+    echo "📝 마크다운 파일 감지됨. 버전 메타데이터 업데이트 중..."
+    
+    for file in $MD_FILES; do
+        if [ -f "$file" ]; then
+            # 파일에 version: 섹션이 있는지 확인
+            if grep -q "^version:" "$file"; then
+                echo "  ✓ $file - 메타데이터 업데이트"
+                # macOS와 Linux 모두 지원
+                if [[ "$OSTYPE" == "darwin"* ]]; then
+                    # macOS
+                    sed -i '' "s/updated: \".*\"/updated: \"$TODAY\"/" "$file"
+                    sed -i '' "s/commit: \".*\"/commit: \"$COMMIT_HASH\"/" "$file"
+                else
+                    # Linux
+                    sed -i "s/updated: \".*\"/updated: \"$TODAY\"/" "$file"
+                    sed -i "s/commit: \".*\"/commit: \"$COMMIT_HASH\"/" "$file"
+                fi
+                git add "$file"
+            else
+                echo "  ⚠️  $file - 버전 메타데이터 없음"
+                echo "      다음 명령으로 추가할 수 있습니다: /clauder track add $file"
+            fi
+        fi
+    done
+fi
+
+echo "✅ Pre-commit 훅 완료"
