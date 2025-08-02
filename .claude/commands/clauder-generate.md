@@ -1,4 +1,23 @@
-# /clauder # /generate
+---
+version:
+  created: "2025-08-02"
+  updated: "2025-08-02"
+  commit: "f7db06e"
+  
+dependencies:
+  - file: ".claude/custom/project.yaml"
+    commit: "f7db06e"
+    status: "current"
+  - file: ".claude/templates/"
+    commit: "f7db06e"
+    status: "current"
+    
+references:
+  - file: ".claude/custom/project.yaml"
+    commit: "f7db06e"
+---
+
+# /clauder generate
 
 템플릿과 설정을 기반으로 문서를 생성합니다.
 

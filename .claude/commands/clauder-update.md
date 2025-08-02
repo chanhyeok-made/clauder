@@ -1,4 +1,19 @@
-# /clauder # /update
+---
+version:
+  created: "2025-08-02"
+  updated: "2025-08-02"
+  commit: "f7db06e"
+  
+dependencies:
+  - file: ".claude/custom/project.yaml"
+    commit: "f7db06e"
+    status: "current"
+  - file: "CLAUDE.md"
+    commit: "f7db06e"
+    status: "current"
+---
+
+# /clauder update
 
 프로젝트 설정의 특정 부분을 업데이트합니다.
 

@@ -1,3 +1,15 @@
+---
+version:
+  created: "2025-08-02"
+  updated: "2025-08-02"
+  commit: "f7db06e"
+  
+dependencies:
+  - file: ".claude/README.md"
+    commit: "f7db06e"
+    status: "current"
+---
+
 # Claude Code 프로젝트 가이드
 
 > 💡 이 프로젝트는 아직 초기화되지 않았습니다.

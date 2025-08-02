@@ -1,3 +1,18 @@
+---
+version:
+  created: "2025-08-02"
+  updated: "2025-08-02"
+  commit: "f7db06e"
+  
+references:
+  - file: ".claude/commands/clauder-initialize.md"
+    commit: "f7db06e"
+  - file: ".claude/commands/clauder-generate.md"
+    commit: "f7db06e"
+  - file: ".claude/templates/core/01-essentials.template.md"
+    commit: "f7db06e"
+---
+
 # 프로젝트별 설정 파일
 # 이 파일의 값들이 템플릿의 {{변수}}를 대체합니다
 

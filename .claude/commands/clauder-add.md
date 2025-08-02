@@ -1,4 +1,19 @@
-# /clauder # /add
+---
+version:
+  created: "2025-08-02"
+  updated: "2025-08-02"
+  commit: "f7db06e"
+  
+dependencies:
+  - file: ".claude/templates/contexts/"
+    commit: "f7db06e"
+    status: "current"
+  - file: ".claude/custom/"
+    commit: "f7db06e"
+    status: "current"
+---
+
+# /clauder add
 
 프로젝트에 새로운 요소를 추가합니다.
 

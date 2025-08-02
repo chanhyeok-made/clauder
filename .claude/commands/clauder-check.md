@@ -1,4 +1,19 @@
-# /clauder # /check
+---
+version:
+  created: "2025-08-02"
+  updated: "2025-08-02"
+  commit: "f7db06e"
+  
+dependencies:
+  - file: ".claude/custom/project.yaml"
+    commit: "f7db06e"
+    status: "current"
+  - file: "CLAUDE.md"
+    commit: "f7db06e"
+    status: "current"
+---
+
+# /clauder check
 
 문서 시스템의 상태를 확인합니다.
 

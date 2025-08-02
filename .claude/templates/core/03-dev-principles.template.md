@@ -1,3 +1,22 @@
+---
+version:
+  created: "2025-08-02"
+  updated: "2025-08-02"
+  commit: "f7db06e"
+  
+dependencies:
+  - file: ".claude/core/02-work-principles.md"
+    commit: "f7db06e"
+    status: "current"
+  - file: ".claude/core/01-essentials.md"
+    commit: "f7db06e"
+    status: "current"
+    
+references:
+  - file: "CLAUDE.md"
+    commit: "f7db06e"
+---
+
 # 개발 원칙 & 규칙
 
 > 이 문서는 작업 원칙(@.claude/core/02-work-principles.md)의 하위 개념으로,

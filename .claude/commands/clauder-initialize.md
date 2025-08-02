@@ -1,3 +1,24 @@
+---
+version:
+  created: "2025-08-02"
+  updated: "2025-08-02"
+  commit: "f7db06e"
+  
+dependencies:
+  - file: ".claude/custom/project.yaml"
+    commit: "f7db06e"
+    status: "current"
+  - file: "CLAUDE.md"
+    commit: "f7db06e"
+    status: "current"
+    
+references:
+  - file: ".claude/README.md"
+    commit: "f7db06e"
+  - file: ".claude/custom/project.yaml"
+    commit: "f7db06e"
+---
+
 # /clauder initialize
 
 프로젝트 문서 시스템을 초기화합니다.

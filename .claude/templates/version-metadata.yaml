@@ -1,0 +1,24 @@
+---
+# 문서 버전 추적 메타데이터 템플릿
+# 이 내용을 문서 최상단에 추가하세요
+
+version:
+  created: "{{CREATED_DATE}}"      # 문서 생성일
+  updated: "{{UPDATED_DATE}}"      # 최종 수정일
+  commit: "{{COMMIT_HASH}}"        # 현재 Git 커밋 해시 (7자리)
+  
+dependencies:                      # 이 문서가 참조하는 다른 문서들
+  - file: "{{DEPENDENCY_PATH}}"
+    commit: "{{DEPENDENCY_COMMIT}}"
+    status: "{{STATUS}}"           # current/outdated/missing
+    
+references:                        # 이 문서를 참조하는 다른 문서들 (자동 생성)
+  - file: "{{REFERENCE_PATH}}"
+    commit: "{{REFERENCE_COMMIT}}"
+    
+# 선택적 필드
+metadata:
+  author: "{{AUTHOR}}"             # 작성자
+  tags: ["{{TAG1}}", "{{TAG2}}"]   # 분류 태그
+  stability: "{{STABILITY}}"       # draft/stable/deprecated
+---

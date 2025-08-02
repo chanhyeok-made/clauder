@@ -1,3 +1,22 @@
+---
+version:
+  created: "2025-08-02"
+  updated: "2025-08-02"
+  commit: "f7db06e"
+  
+dependencies:
+  - file: ".claude/core/03-dev-principles.md"
+    commit: "f7db06e"
+    status: "current"
+  - file: ".claude/contexts/README.md"
+    commit: "f7db06e"
+    status: "current"
+    
+references:
+  - file: "CLAUDE.md"
+    commit: "f7db06e"
+---
+
 # 작업 원칙
 
 이 문서는 모든 작업의 기본이 되는 최상위 원칙들을 정의합니다.
