@@ -1,0 +1,61 @@
+# 프로젝트별 설정 파일
+# 이 파일의 값들이 템플릿의 {{변수}}를 대체합니다
+
+project:
+  PROJECT_NAME: "Contextus"
+  PROJECT_PURPOSE: "컨텍스트 관리 시스템"
+  PROJECT_VALUE: "효율적인 정보 구조화와 접근"
+
+architecture:
+  ARCHITECTURE_PATTERN: "Monolithic"
+  MAIN_COMPONENTS: |
+    - Core Engine
+    - API Layer
+    - Storage Module
+
+tech_stack:
+  LANGUAGES: "JavaScript, TypeScript"
+  FRAMEWORKS: "React, Node.js"
+  DATABASES: "PostgreSQL"
+  INFRASTRUCTURE: "AWS"
+
+development:
+  REQUIRED_TOOLS: |
+    - Node.js v18+
+    - npm or yarn
+    - Git
+    - VS Code (권장)
+  
+  INSTALL_COMMAND: "npm install"
+  RUN_COMMAND: "npm run dev"
+  TEST_COMMAND: "npm test"
+  BUILD_COMMAND: "npm run build"
+
+structure:
+  PROJECT_STRUCTURE: |
+    contextus/
+    ├── src/
+    │   ├── components/
+    │   ├── services/
+    │   └── utils/
+    ├── tests/
+    └── docs/
+
+constraints:
+  CONSTRAINTS: |
+    - Node.js 18 이상 필요
+    - 메모리 최소 4GB
+    - PostgreSQL 14+
+
+links:
+  REFERENCE_LINKS: |
+    - 저장소: https://github.com/user/contextus
+    - 문서: https://docs.contextus.io
+    - 이슈: https://github.com/user/contextus/issues
+
+# 커스텀 섹션 (선택사항)
+custom:
+  CUSTOM_ESSENTIALS: |
+    ## 🚀 특별 기능
+    - 실시간 동기화
+    - 다중 사용자 지원
