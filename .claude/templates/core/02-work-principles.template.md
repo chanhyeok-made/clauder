@@ -5,9 +5,6 @@ version:
   commit: "f7db06e"
   
 dependencies:
-  - file: ".claude/core/03-dev-principles.md"
-    commit: "f7db06e"
-    status: "current"
   - file: ".claude/contexts/README.md"
     commit: "f7db06e"
     status: "current"
@@ -103,8 +100,9 @@ references:
 - **학습 중심**: 실패를 학습 기회로 활용
 
 ## 🔗 관련 문서
-- 개발 원칙: @.claude/core/03-dev-principles.md (작업 원칙의 하위 개념)
 - 상황별 가이드: @.claude/contexts/README.md (작업 원칙의 구체적 실행)
+
+*참고: 개발 원칙은 이 작업 원칙을 기반으로 하는 하위 개념입니다.*
 
 ---
 "좋은 작업은 명확한 목적에서 시작되고,

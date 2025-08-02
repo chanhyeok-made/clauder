@@ -15,12 +15,15 @@ dependencies:
 references:
   - file: "CLAUDE.md"
     commit: "f7db06e"
+  - file: ".claude/templates/core/02-work-principles.template.md"
+    commit: "f7db06e"
+    note: "references this as child concept"
 ---
 
 # 개발 원칙 & 규칙
 
-> 이 문서는 작업 원칙(@.claude/core/02-work-principles.md)의 하위 개념으로,
-> 구체적인 개발 활동에 적용되는 원칙들을 다룹니다.
+> 이 문서는 작업 원칙의 하위 개념으로, 구체적인 개발 활동에 적용되는 원칙들을 다룹니다.
+> 상위 문서: @.claude/core/02-work-principles.md
 
 ## 🎯 핵심 철학
 **"증거 > 가정 | 코드 > 문서 | 효율성 > 장황함"**
