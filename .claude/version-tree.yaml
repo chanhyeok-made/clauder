@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-02"
-  last_commit: "5093ed7"
-  total_documents: 0
+  last_commit: "67e1355"
+  total_documents: 20
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -87,8 +87,8 @@ documents:
     path: "/.claude/docs/principles/README.md"
     created: "2025-08-02"
     updated: "2025-08-02"
-    commit: "5093ed7"
-    depends_on: [1, 2, 3, 4, 5, 6]
+    commit: "67e1355"
+    depends_on: [7, 1, 2, 3, 4, 5, 6]
     referenced_by: [1000, 500]
     
   # 기타 시스템 파일들
@@ -115,18 +115,73 @@ documents:
     commit: "5093ed7"
     depends_on: []
     referenced_by: [1, 5]
+    
+  # 새로 추가된 파일들
+  7:
+    path: "/.claude/docs/principles/00-PRINCIPLE-GUIDELINES.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "67e1355"
+    depends_on: []
+    referenced_by: [0]
+    
+  503:
+    path: "/.claude/version-tree.yaml"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "67e1355"
+    depends_on: []
+    referenced_by: [1]
+    
+  203:
+    path: "/.claude/docs/design/VERSION-TREE.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "91c068e"
+    depends_on: []
+    referenced_by: []
+    
+  301:
+    path: "/.claude/docs/guides/VERSION-TREE-MIGRATION.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "306fde2"
+    depends_on: []
+    referenced_by: []
+    
+  504:
+    path: "/.claude/scripts/version-tree-manager.py"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "91c068e"
+    depends_on: []
+    referenced_by: []
+    
+  505:
+    path: "/.claude/scripts/tree-sync.py"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "306fde2"
+    depends_on: []
+    referenced_by: []
 
 # 빠른 검색을 위한 인덱스
 path_to_id:
   "/CLAUDE.md": 1000
   "/README.md": 1001
+  "/.claude/docs/principles/README.md": 0
   "/.claude/docs/principles/01-REFERENCE-STRUCTURE.md": 1
   "/.claude/docs/principles/02-PROJECT-INDEPENDENCE.md": 2
   "/.claude/docs/principles/03-DOCUMENT-MODULARITY.md": 3
   "/.claude/docs/principles/04-IMMEDIATE-RECOGNITION.md": 4
   "/.claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md": 5
   "/.claude/docs/principles/06-WORK-UNIT-COMMITS.md": 6
-  "/.claude/docs/principles/README.md": 0
+  "/.claude/docs/principles/00-PRINCIPLE-GUIDELINES.md": 7
+  "/.claude/docs/design/VERSION-TREE.md": 203
+  "/.claude/docs/guides/VERSION-TREE-MIGRATION.md": 301
   "/.claude/instructions.md": 500
   "/.claude/aliases.yaml": 501
   "/.claude/references.yaml": 502
+  "/.claude/version-tree.yaml": 503
+  "/.claude/scripts/version-tree-manager.py": 504
+  "/.claude/scripts/tree-sync.py": 505

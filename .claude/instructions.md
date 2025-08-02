@@ -2,7 +2,7 @@
 version:
   created: "2025-08-02"
   updated: "2025-08-02"
-  commit: "4b2ca7b"
+  commit: "67e1355"
   
 dependencies:
   - file: ".claude/docs/principles/README.md"
@@ -81,6 +81,17 @@ WHEN Write 도구로 .md 파일 생성:
 - MUST 실제 commit 해시 기록 (git log -1 --format="%h")
 - MUST "current" 대신 실제 해시 사용
 - SHOULD 관련 문서 참조 확인
+- MUST 버전 트리에 추가 (.claude/version-tree.yaml)
+```
+
+### 2.1 버전 트리 업데이트 (필수!)
+```
+AFTER 새 파일 생성 OR 파일 삭제:
+- UPDATE: .claude/version-tree.yaml
+- ADD: 새 파일 ID 할당 및 경로 추가
+- UPDATE: metadata의 last_update와 commit
+- UPDATE: path_to_id 인덱스
+- WARN: 트리 업데이트 없이 종료 금지
 ```
 
 ### 3. Git 작업 시
@@ -111,6 +122,8 @@ WHEN 사용자가 처음 질문:
 - [ ] 편집 전: 버전 메타데이터 존재 확인
 - [ ] 편집 후: 메타데이터 업데이트
 - [ ] 편집 후: 참조 일관성 확인
+- [ ] 새 파일 생성 시: 버전 트리에 추가
+- [ ] 파일 삭제 시: 버전 트리에서 제거
 
 ### Git 작업 체크리스트
 - [ ] commit 전: 문서 버전 동기화
@@ -183,6 +196,7 @@ AFTER 각 세션:
 5. **템플릿 파일(.base)과 실제 파일 혼동**
 6. **다른 프로젝트에 영향 주는 설정 변경**
 7. **작업 완료 후 커밋 없이 종료**
+8. **새 파일 생성 후 버전 트리 업데이트 누락**
 
 ## 💡 기억할 것
 
