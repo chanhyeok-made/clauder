@@ -148,9 +148,10 @@ your-project/
 ## 📚 문서
 
 - **실제 사용 예제**: [EXAMPLES.md](EXAMPLES.md)
-- **문제 해결 가이드**: [.claude/TROUBLESHOOTING.md](.claude/TROUBLESHOOTING.md)
-- **훅 시스템**: [.claude/HOOKS.md](.claude/HOOKS.md)
-- **워크플로우**: [.claude/WORKFLOWS.md](.claude/WORKFLOWS.md)
+- **문제 해결 가이드**: [.claude/docs/guides/TROUBLESHOOTING.md](.claude/docs/guides/TROUBLESHOOTING.md)
+- **훅 시스템**: [.claude/docs/design/HOOKS.md](.claude/docs/design/HOOKS.md)
+- **워크플로우**: [.claude/docs/guides/WORKFLOWS.md](.claude/docs/guides/WORKFLOWS.md)
+- **전체 문서**: [.claude/docs/](.claude/docs/)
 
 ## 🪝 훅 기반 자동화
 
@@ -166,7 +167,7 @@ your-project/
 3. **Claude 작업 시**: 지시사항 자동 적용
 
 자세한 내용:
-- 훅 설계: `.claude/HOOKS.md`
+- 훅 설계: `.claude/docs/design/HOOKS.md`
 - Claude 지시사항: `.claude/instructions.md`
 
 ## 💡 팁

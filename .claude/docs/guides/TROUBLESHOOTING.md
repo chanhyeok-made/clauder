@@ -5,7 +5,7 @@ version:
   commit: "87f8148"
   
 dependencies:
-  - file: ".claude/HOOKS.md"
+  - file: ".claude/docs/design/HOOKS.md"
     commit: "87f8148"
     status: "current"
   - file: ".claude/commands/clauder-hooks.md"

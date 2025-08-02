@@ -5,7 +5,7 @@ version:
   commit: "58772aa"
   
 dependencies:
-  - file: ".claude/HOOKS.md"
+  - file: ".claude/docs/design/HOOKS.md"
     commit: "58772aa"
     status: "current"
   - file: ".claude/instructions.md"
@@ -134,6 +134,6 @@ git commit --no-verify
 ```
 
 ## 관련 문서
-- 훅 시스템 설계: @.claude/HOOKS.md
+- 훅 시스템 설계: @.claude/docs/design/HOOKS.md
 - Claude 지시사항: @.claude/instructions.md
 - 설치 스크립트: @.claude/hooks/install.sh

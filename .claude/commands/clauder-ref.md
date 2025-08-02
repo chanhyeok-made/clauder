@@ -210,6 +210,6 @@ chmod +x .claude/scripts/reference-parser.py
 ```
 
 ## 관련 문서
-- 참조 전략: @[.claude/REFERENCE_STRATEGY.md]#8b8a539
+- 참조 전략: @[.claude/docs/design/REFERENCE_STRATEGY.md]#8b8a539
 - 별칭 정의: @[.claude/aliases.yaml]#8b8a539
 - 레지스트리: @[.claude/references.yaml]#8b8a539
