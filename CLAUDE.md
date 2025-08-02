@@ -4,13 +4,15 @@
 > 
 > 초기화하려면 다음 명령을 실행하세요:
 > ```
-> @initialize project
+> /clauder initialize
 > ```
 > 
-> 자세한 정보:
-> - @.claude/INITIALIZE.md - 초기화 가이드
-> - @.claude/COMMANDS.md - 사용 가능한 명령어
-> - @.claude/README.md - 시스템 설명
+> 사용 가능한 명령어:
+> - `/clauder initialize` - 프로젝트 초기화
+> - `/clauder check` - 설치 상태 확인
+> - `/clauder generate` - 문서 생성
+> 
+> 자세한 정보: @.claude/README.md
 
 ---
 
@@ -20,7 +22,7 @@
 - [ ] 문서 생성 필요
 
 ## 🔧 빠른 설정
-1. `@initialize project quick`로 시작
+1. `/clauder initialize`로 시작
 2. 몇 가지 질문에 답변
 3. 자동으로 문서 생성됨
 

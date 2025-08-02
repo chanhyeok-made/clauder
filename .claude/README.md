@@ -4,14 +4,20 @@
 
 ## 🚀 빠른 시작
 
-Claude에게 다음 명령을 입력하세요:
+Claude Code에서 다음 명령을 입력하세요:
 ```
-@initialize project
+/clauder initialize
 ```
 
+### 사용 가능한 명령어
+- `/clauder initialize` - 프로젝트 초기화
+- `/clauder generate` - CLAUDE.md 생성
+- `/clauder check` - 상태 확인
+- `/clauder add` - 요소 추가
+- `/clauder update` - 설정 업데이트
+
 자세한 사용법:
-- 초기화 가이드: @.claude/INITIALIZE.md
-- 명령어 목록: @.claude/COMMANDS.md
+- 명령어 상세: `.claude/commands/` 디렉토리 참조
 
 ## 📁 디렉토리 구조
 ```
