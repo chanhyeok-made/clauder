@@ -100,7 +100,39 @@ dependencies:
 3. **참조 추가 시**: dependencies에 명시하고 순환 확인
 4. **검증**: 참조 체인이 자기 자신으로 돌아오지 않는지 확인
 
+## 중앙 버전 트리 시스템 (토큰 최적화)
+
+### 기존 방식의 문제점
+- 각 문서마다 전체 참조 정보 중복
+- 문서 수정 시 모든 관련 문서 업데이트 필요
+- 토큰 사용량 과다
+
+### 새로운 방식: 중앙 버전 트리
+```yaml
+# .claude/version-tree.yaml
+documents:
+  1:  # 문서 ID
+    path: "/.claude/docs/principles/01-REFERENCE-STRUCTURE.md"
+    commit: "5093ed7"
+    depends_on: [501, 502]  # ID 참조만
+    referenced_by: [0, 3, 5, 6]
+```
+
+### 장점
+1. **토큰 절약**: 문서에는 최소 정보만 유지
+2. **빠른 업데이트**: 트리만 수정하면 모든 참조 자동 반영
+3. **순환 참조 방지**: 트리에서 쉽게 탐지
+4. **일괄 관리**: 한 곳에서 모든 버전 추적
+
+### 문서 작성 시
+```yaml
+---
+doc_id: 1  # 버전 트리의 ID만 참조
+---
+```
+
 ## 관련 문서
+- 중앙 버전 트리: @.claude/version-tree.yaml
 - 별칭 정의: @.claude/aliases.yaml
 - 참조 레지스트리: @.claude/references.yaml
 - 설계 문서: @.claude/docs/design/REFERENCE_STRATEGY.md
