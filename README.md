@@ -145,6 +145,13 @@ your-project/
 └── CLAUDE.md           # 자동 생성됨
 ```
 
+## 📚 문서
+
+- **실제 사용 예제**: [EXAMPLES.md](EXAMPLES.md)
+- **문제 해결 가이드**: [.claude/TROUBLESHOOTING.md](.claude/TROUBLESHOOTING.md)
+- **훅 시스템**: [.claude/HOOKS.md](.claude/HOOKS.md)
+- **워크플로우**: [.claude/WORKFLOWS.md](.claude/WORKFLOWS.md)
+
 ## 🪝 훅 기반 자동화
 
 ### 훅 설치
