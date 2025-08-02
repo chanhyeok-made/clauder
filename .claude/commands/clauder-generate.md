@@ -1,61 +1,19 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "f7db06e"
-  
-dependencies:
-  - file: ".claude/custom/project.yaml"
-    commit: "f7db06e"
-    status: "current"
-  - file: ".claude/templates/"
-    commit: "f7db06e"
-    status: "current"
-    
-references:
-  - file: ".claude/custom/project.yaml"
-    commit: "f7db06e"
+v: 2025-08-02|2025-08-02|initial
 ---
 
 # /clauder generate
 
-템플릿과 설정을 기반으로 문서를 생성합니다.
+CLAUDE.md 생성/재생성
 
-## 사용법
+## 고유 기능
+- 템플릿 + 프로젝트 설정 병합
+- 조건부 섹션 처리
+- 변수 치환
 
-```
-/clauder generate [target]
-```
+## 언제 사용?
+- 프로젝트 정보 변경 후
+- 템플릿 업데이트 후
+- 수동 재생성 필요시
 
-### 대상
-
-- `claude.md` (기본값): CLAUDE.md 파일 재생성
-- `all`: 모든 문서 재생성
-- `preview`: 변경사항 미리보기
-
-## 동작
-
-1. `.claude/custom/project.yaml` 읽기
-2. 템플릿 파일의 변수 치환
-3. 조건부 섹션 처리
-4. 파일 생성 또는 업데이트
-
-## 예시
-
-### CLAUDE.md 재생성
-
-```
-/clauder generate
-```
-
-### 미리보기
-
-```
-/clauder generate preview
-```
-
-## 템플릿 처리
-
-- `{{변수}}`: project.yaml의 값으로 치환
-- 조건부 포함: custom 파일이 있으면 우선 사용
-- 확장 포인트: 커스텀 내용 삽입
+@[$commands/common/usage-template.md]

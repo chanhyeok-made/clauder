@@ -1,0 +1,65 @@
+---
+version:
+  created: "2025-08-02"
+  updated: "2025-08-02"
+  commit: "initial"
+---
+
+# Clauder 설정 파일
+
+## 문서 로딩 전략
+load_strategy:
+  # 항상 로드되는 필수 문서
+  essential:
+    - ".claude/instructions.md"          # Claude 지시사항
+    - ".claude/templates/core/01-essentials.template.md"  # 프로젝트 정보
+    - "CLAUDE.md"                        # 메인 가이드 (있을 경우)
+  
+  # 명령어 사용 시에만 로드
+  on_command:
+    pattern: "commands/*.md"
+    trigger: "명령어 이름 언급 시"
+  
+  # 요청 시에만 로드 (lazy loading)
+  on_demand:
+    - pattern: "docs/guides/*.md"
+      trigger: "가이드, 도움말, 문제 해결 요청 시"
+    - pattern: "docs/design/*.md"
+      trigger: "설계, 아키텍처, 철학 질문 시"
+    - pattern: "docs/reference/*.md"
+      trigger: "예시, 참조 요청 시"
+    - pattern: "templates/**/*.md"
+      trigger: "템플릿, 생성 요청 시"
+
+## 컨텍스트 크기 제한
+context_limits:
+  max_total_tokens: 8000        # 최대 총 토큰
+  max_file_tokens: 2000         # 파일당 최대 토큰
+  summary_threshold: 1000       # 이 크기 이상이면 요약
+
+## 별칭 파일
+aliases:
+  - ".claude/aliases.yaml"
+  - ".claude/aliases-extended.yaml"
+
+## 압축 설정
+compression:
+  # 메타데이터 압축
+  metadata_format: "compact"    # compact | full
+  
+  # 내용 압축
+  content_compression:
+    remove_comments: true       # 주석 제거
+    remove_empty_lines: true    # 빈 줄 제거
+    compact_lists: true         # 목록 압축
+    
+  # 코드 블록 처리
+  code_blocks:
+    max_lines: 20              # 최대 표시 줄 수
+    show_ellipsis: true        # ... 표시
+
+## 캐싱 설정
+cache:
+  enabled: true
+  ttl: 3600                    # 1시간 (초)
+  max_size: 100                # 최대 100개 항목

@@ -97,6 +97,33 @@ if "version:" not in file_content:
 - `date -u +"%Y-%m-%d"` - 현재 날짜 (ISO 형식)
 - `/clauder track check` - 버전 상태 확인
 
+## 📊 토큰 최적화 규칙
+
+### 문서 로딩 전략
+```
+BEFORE 세션 시작:
+- LOAD: .claude/LOADING_STRATEGY.md 참조
+- LOAD: 필수 문서만 (config.yaml 참조)
+- DEFER: 나머지는 필요 시 로드
+```
+
+### 컨텍스트 압축
+```
+IF 파일 크기 > 2000 토큰:
+- USE: context-compressor.py
+- APPLY: 메타데이터 압축
+- APPLY: 별칭 변환
+- TRUNCATE: 긴 코드 블록
+```
+
+### 프로젝트 패턴 학습
+```
+AFTER 각 세션:
+- RECORD: 사용된 문서
+- UPDATE: .claude/custom/patterns.yaml
+- OPTIMIZE: 다음 세션 위해 학습
+```
+
 ## 🚫 하지 말아야 할 것
 
 1. 버전 메타데이터 없이 .md 파일 수정

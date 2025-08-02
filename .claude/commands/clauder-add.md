@@ -1,70 +1,22 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "f7db06e"
-  
-dependencies:
-  - file: ".claude/templates/contexts/"
-    commit: "f7db06e"
-    status: "current"
-  - file: ".claude/custom/"
-    commit: "f7db06e"
-    status: "current"
+v: 2025-08-02|2025-08-02|initial
 ---
 
 # /clauder add
 
-프로젝트에 새로운 요소를 추가합니다.
+프로젝트 요소 추가
 
-## 사용법
-
+## 고유 기능
 ```
-/clauder add <type> <name> [options]
+add context <name>    # 새 컨텍스트
+add override <file>   # 템플릿 오버라이드
+add alias <name>      # 경로 별칭
 ```
-
-### 타입
-
-- `context`: 새로운 상황별 가이드 추가
-- `override`: 템플릿 오버라이드 추가
-- `principle`: 프로젝트별 원칙 추가
-
-## 동작
-
-### context 추가
-
-1. 템플릿을 기반으로 새 가이드 생성
-2. `.claude/custom/contexts/` 디렉토리에 저장
-3. 번호 자동 할당 (01-, 02-, ...)
-
-### override 추가
-
-1. 기존 템플릿을 복사
-2. `.claude/custom/overrides/`에 저장
-3. 편집 가능한 상태로 준비
 
 ## 예시
-
-### 배포 가이드 추가
-
 ```
-/clauder add context deployment
+/clauder add context debugging
+→ .claude/custom/contexts/debugging.md 생성
 ```
 
-### 작업 원칙 커스터마이징
-
-```
-/clauder add override work-principles
-```
-
-### 보안 원칙 추가
-
-```
-/clauder add principle security
-```
-
-## 생성되는 파일
-
-- 컨텍스트: `.claude/custom/contexts/02-deployment.md`
-- 오버라이드: `.claude/custom/overrides/02-work-principles.md`
-- 원칙: `.claude/custom/principles/security.md`
+@[$commands/common/usage-template.md]
