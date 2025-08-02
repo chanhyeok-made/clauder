@@ -1,77 +1,97 @@
----
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "f7db06e"
-  
-references:
-  - file: ".claude/commands/clauder-initialize.md"
-    commit: "f7db06e"
-  - file: ".claude/commands/clauder-generate.md"
-    commit: "f7db06e"
-  - file: ".claude/templates/core/01-essentials.template.md"
-    commit: "f7db06e"
----
-
-# 프로젝트별 설정 파일
-# 이 파일의 값들이 템플릿의 {{변수}}를 대체합니다
-
+# Clauder 프로젝트 설정
 project:
-  PROJECT_NAME: "Clauder"
-  PROJECT_PURPOSE: "Claude Code를 위한 범용 문서 템플릿 시스템"
-  PROJECT_VALUE: "모든 프로젝트에서 재사용 가능한 문서화 프레임워크"
-
-architecture:
-  ARCHITECTURE_PATTERN: "Template System"
-  MAIN_COMPONENTS: |
-    - Template Engine (변수 치환)
-    - Override System (커스터마이징)
-    - Command Interpreter (@명령어)
+  name: "Clauder"
+  description: "Claude Code를 위한 범용 문서 템플릿 시스템"
+  version: "1.0.0"
+  type: "developer-tool"
 
 tech_stack:
-  LANGUAGES: "Markdown, YAML"
-  FRAMEWORKS: "Claude Code"
-  DATABASES: "파일 시스템"
-  INFRASTRUCTURE: "Git (필수)"
-
-development:
-  REQUIRED_TOOLS: |
-    - Git (필수 - 버전 추적 시스템을 위해)
-    - Claude Code
-    - 텍스트 에디터
+  languages:
+    - "Markdown"
+    - "YAML"
+    - "Shell Script"
+    - "Python"
+  frameworks:
+    - "None (Template System)"
+  tools:
+    - "Git"
+    - "Claude Code"
   
-  INSTALL_COMMAND: "cp -r .claude/ /your-project/"
-  RUN_COMMAND: "@initialize project"
-  TEST_COMMAND: "@check documentation"
-  BUILD_COMMAND: "@generate claude.md"
+purpose:
+  main: "모든 프로젝트에서 재사용 가능한 구조화된 문서화 프레임워크 제공"
+  features:
+    - "템플릿 기반 문서 생성"
+    - "Git 커밋 해시 기반 버전 추적"
+    - "참조 시스템으로 컨텍스트 최적화"
+    - "훅 시스템으로 자동화"
+    - "명령어 기반 워크플로우"
 
 structure:
-  PROJECT_STRUCTURE: |
-    clauder/
-    ├── .claude/
-    │   ├── templates/     # 범용 템플릿
-    │   ├── custom/        # 프로젝트별 설정
-    │   └── *.md          # 가이드 문서
-    └── CLAUDE.md         # 메인 문서
+  root_files:
+    - "README.md: 프로젝트 소개 및 사용법"
+    - "CLAUDE.base.md: 템플릿 파일"
+    - "CLAUDE.md: 실제 프로젝트 가이드 (gitignore)"
+    - "EXAMPLES.md: 사용 예시"
+    - "ARCHITECTURE.md: 기술 아키텍처"
+    - "FEATURE_MAP.md: 기능 지도"
+  
+  directories:
+    - ".claude/templates/: 범용 템플릿 (수정 금지)"
+    - ".claude/custom/: 프로젝트별 커스터마이징"
+    - ".claude/commands/: Claude Code 명령어 정의"
+    - ".claude/docs/: 상세 문서"
+    - ".claude/hooks/: 자동화 훅"
+    - ".claude/scripts/: 유틸리티 스크립트"
 
-constraints:
-  CONSTRAINTS: |
-    - Git 설치 필수 (버전 추적 시스템)
-    - Claude Code 설치 필요
-    - Markdown 지원 에디터 권장
-    - Git 커밋 해시로 문서 버전 관리
+quick_start:
+  - "Git 저장소 확인/초기화"
+  - "/clauder start 명령 실행"
+  - "프로젝트 정보 입력"
+  - "자동으로 CLAUDE.md 생성"
 
-links:
-  REFERENCE_LINKS: |
-    - 저장소: https://github.com/[username]/clauder
-    - 문서: https://github.com/[username]/clauder/wiki
-    - 이슈: https://github.com/[username]/clauder/issues
+work_principles:
+  - "템플릿 보존: templates/ 폴더는 수정하지 않음"
+  - "커스텀 우선: custom/이 templates/보다 우선"
+  - "명시적 확장: 모든 수정은 custom/에서만"
+  - "버전 관리: templates/는 업데이트 가능, custom/은 보존"
+  - "문서 기반: 스크립트 대신 문서로 설정"
 
-# 커스텀 섹션 (선택사항)
-custom:
-  CUSTOM_ESSENTIALS: |
-    ## 🚀 특별 기능
-    - 범용 템플릿 시스템
-    - 프로젝트별 커스터마이징
-    - 문서 기반 초기화
-    - @명령어 인터페이스
+coding_conventions:
+  style:
+    - "GitHub Flavored Markdown 사용"
+    - "YAML front matter로 메타데이터 관리"
+    - "참조는 @[alias] 형식 사용"
+  
+  practices:
+    - "2 space 들여쓰기 (YAML)"
+    - "명확한 키 네이밍"
+    - "주석으로 설명 추가"
+    - "Shell: POSIX 호환성 유지"
+    - "Python: 3.8+ 호환"
+    - "에러 처리 필수"
+
+test_build:
+  test:
+    - "command: .claude/hooks/test.sh"
+    - "description: 훅 시스템 테스트"
+  
+  validation:
+    - "command: /clauder check"
+    - "description: 문서 및 설정 검증"
+  
+  template_test:
+    - "command: /clauder generate --dry-run"
+    - "description: 템플릿 생성 테스트"
+
+development:
+  guidelines:
+    - "새 기능은 먼저 이슈 생성"
+    - "템플릿 수정 시 하위 호환성 유지"
+    - "명령어 추가 시 문서 업데이트"
+    - "PR 전 /clauder check 실행"
+  
+  contribution:
+    - "Fork 후 feature 브랜치 생성"
+    - "커밋 메시지는 명확하게"
+    - "테스트 통과 확인"
+    - "문서 업데이트 포함"

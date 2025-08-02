@@ -2,12 +2,65 @@
 version:
   created: "2025-08-02"
   updated: "2025-08-02"
-  commit: "58772aa"
+  commit: "11d1061"
+  
+dependencies:
+  - file: ".claude/docs/principles/README.md"
+    commit: "11d1061"
+    status: "current"
+  - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
+    commit: "11d1061"
+    status: "current"
+  - file: ".claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md"
+    commit: "11d1061"
+    status: "current"
+  - file: ".claude/docs/principles/06-WORK-UNIT-COMMITS.md"
+    commit: "11d1061"
+    status: "current"
+    
+references: []  # 아직 역참조 없음
 ---
 
 # Claude 작업 지시사항 (필수 준수)
 
 이 문서는 Claude가 Clauder 프로젝트에서 작업할 때 **반드시** 따라야 하는 지시사항입니다.
+
+## 🚨 핵심 원칙
+
+1. **완벽한 참조 구조**: @.claude/docs/principles/01-REFERENCE-STRUCTURE.md
+2. **프로젝트 독립성**: @.claude/docs/principles/02-PROJECT-INDEPENDENCE.md
+3. **문서 모듈화**: @.claude/docs/principles/03-DOCUMENT-MODULARITY.md
+4. **즉시 인지 가능**: @.claude/docs/principles/04-IMMEDIATE-RECOGNITION.md
+5. **필수 역참조**: @.claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md
+6. **작업 단위 커밋**: @.claude/docs/principles/06-WORK-UNIT-COMMITS.md
+
+전체 원칙: @.claude/docs/principles/README.md
+
+### 필수 규칙
+- **실제 commit hash 사용**: "current" 금지, `git log -1 --format="%h"` 사용
+- **모든 문서**에 YAML front matter 포함
+- **모든 참조**는 @ 형식 사용
+- **개념별 분리**: 한 문서 = 한 개념
+- **역참조 필수**: 모든 문서에 references 섹션 포함 (비어있어도 `references: []` 명시)
+- **양방향 참조**: A가 B를 참조하면, B의 references에 A 추가
+
+## 🆘 작업 단위 커밋 (긴급!)
+
+### 현재 작업 완료 시 즉시 수행
+```
+WHEN 작업 완료:
+- ALERT: "🚨 작업 단위 커밋 필요!"
+- SUGGEST: "git add . && git commit -m '[message]' && git push"
+- REMIND: @.claude/docs/principles/06-WORK-UNIT-COMMITS.md
+```
+
+### TodoWrite 완료 시
+```
+IF all todos completed:
+- MUST: Git commit 제안
+- SHOW: 커밋 메시지 예시
+- WARN: 커밋 없이 종료 금지
+```
 
 ## 🚨 핵심 규칙
 
@@ -29,7 +82,8 @@ AFTER Edit 도구 사용:
 ```
 WHEN Write 도구로 .md 파일 생성:
 - MUST 버전 메타데이터 포함
-- MUST 현재 commit 해시 기록
+- MUST 실제 commit 해시 기록 (git log -1 --format="%h")
+- MUST "current" 대신 실제 해시 사용
 - SHOULD 관련 문서 참조 확인
 ```
 
@@ -71,7 +125,7 @@ WHEN 사용자가 처음 질문:
 
 ### 패턴 1: 문서 편집
 ```python
-if tool == "Edit" and file.endswith(".md"):
+if tool == "Edit" and file.ends_with(".md"):
     before_edit_hook(file)
     # 실제 편집
     after_edit_hook(file)
@@ -130,6 +184,9 @@ AFTER 각 세션:
 2. 참조 확인 없이 문서 링크 추가
 3. Git 커밋 전 버전 동기화 생략
 4. 오래된 commit 해시 그대로 두기
+5. **템플릿 파일(.base)과 실제 파일 혼동**
+6. **다른 프로젝트에 영향 주는 설정 변경**
+7. **작업 완료 후 커밋 없이 종료**
 
 ## 💡 기억할 것
 

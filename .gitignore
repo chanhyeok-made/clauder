@@ -1,5 +1,7 @@
 # Clauder specific
 .claude/custom/project.yaml
+.claude/custom/overrides/
+.claude/custom/contexts/
 .claude/.generated/
 CLAUDE.md
 

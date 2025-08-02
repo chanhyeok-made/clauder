@@ -102,6 +102,30 @@ git commit -m "Add Clauder documentation system"
    /clauder add context debugging    # 필요한 가이드 추가
    ```
 
+## 📦 프로젝트 구조 및 CLAUDE.md 관리
+
+### CLAUDE.md 처리 방식
+
+#### 🔄 새로운 구조
+- **CLAUDE.base.md**: Git에 포함되는 템플릿 파일
+- **CLAUDE.md**: 실제 프로젝트에서 사용하는 파일 (.gitignore에 포함)
+
+#### 🎯 장점
+1. **Git 친화적**: CLAUDE.md는 .gitignore에 포함되어 프로젝트별 설정이 저장소에 노출되지 않음
+2. **자기 참조 가능**: Clauder 프로젝트 자체도 CLAUDE.md를 사용하여 개발 가능
+3. **커스터마이징 용이**: 각 프로젝트마다 CLAUDE.base.md를 기반으로 자유롭게 수정
+
+#### 🔧 설정 방법
+```bash
+# 1. CLAUDE.base.md를 CLAUDE.md로 복사
+cp CLAUDE.base.md CLAUDE.md
+
+# 2. CLAUDE.md를 프로젝트에 맞게 수정
+# (템플릿 변수들을 실제 값으로 대체)
+
+# 3. .gitignore는 이미 CLAUDE.md를 포함하고 있음
+```
+
 ## 🛠 사용 방법
 
 ### 기본 명령어
@@ -142,7 +166,8 @@ your-project/
 │   │   ├── overrides/   # 템플릿 오버라이드
 │   │   └── contexts/    # 추가 가이드
 │   └── *.md            # 시스템 문서
-└── CLAUDE.md           # 자동 생성됨
+├── CLAUDE.base.md      # 템플릿 파일 (Git에 포함)
+└── CLAUDE.md           # 실제 사용 파일 (gitignore)
 ```
 
 ## 📚 문서
