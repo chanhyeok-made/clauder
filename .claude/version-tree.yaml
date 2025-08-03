@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-03"
-  last_commit: "cf49f2e"
-  total_documents: 59
+  last_commit: "9186672"
+  total_documents: 52
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -206,13 +206,6 @@ documents:
     depends_on: []
     referenced_by: [510, 305, 512]  # COMMAND_INDEX.md, TROUBLESHOOTING.md, HOOKS.md
 
-  105:
-    path: "/.claude/commands/clauder-initialize-optimized.md"
-    created: "2025-08-02"
-    updated: "2025-08-02"
-    commit: "e7b2ee3"
-    depends_on: []
-    referenced_by: [510]  # COMMAND_INDEX.md
 
   106:
     path: "/.claude/commands/clauder-initialize.md"
@@ -222,13 +215,6 @@ documents:
     depends_on: []
     referenced_by: [510, 508]  # COMMAND_INDEX.md, .claude/README.md
 
-  107:
-    path: "/.claude/commands/clauder-optimize.md"
-    created: "2025-08-02"
-    updated: "2025-08-02"
-    commit: "e7b2ee3"
-    depends_on: []
-    referenced_by: [510]  # COMMAND_INDEX.md
 
   108:
     path: "/.claude/commands/clauder-ref.md"
@@ -344,21 +330,6 @@ documents:
     depends_on: []
     referenced_by: []
 
-  401:
-    path: "/.claude/templates/contexts/01-quick-fix.template.md"
-    created: "2025-08-02"
-    updated: "2025-08-02"
-    commit: "e7b2ee3"
-    depends_on: []
-    referenced_by: []
-
-  402:
-    path: "/.claude/templates/contexts/02-analysis-guide.template.md"
-    created: "2025-08-02"
-    updated: "2025-08-02"
-    commit: "e7b2ee3"
-    depends_on: []
-    referenced_by: []
 
   403:
     path: "/.claude/templates/contexts/README.template.md"
@@ -401,21 +372,6 @@ documents:
     referenced_by: [308, 500]  # VERSION-TREE-GUIDE.md, instructions.md
 
   # 기타 문서들
-  506:
-    path: "/.claude/COMMANDS_QUICK_REF.md"
-    created: "2025-08-02"
-    updated: "2025-08-02"
-    commit: "e7b2ee3"
-    depends_on: []
-    referenced_by: []
-
-  507:
-    path: "/.claude/LOADING_STRATEGY.md"
-    created: "2025-08-02"
-    updated: "2025-08-02"
-    commit: "e7b2ee3"
-    depends_on: []
-    referenced_by: []
 
   508:
     path: "/.claude/README.md"
@@ -438,7 +394,7 @@ documents:
     created: "2025-08-02"
     updated: "2025-08-02"
     commit: "e7b2ee3"
-    depends_on: [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111]  # 모든 명령어 문서들
+    depends_on: [100, 101, 102, 103, 104, 106, 108, 109, 110, 111, 113]  # 모든 명령어 문서들 (105, 107 제거)
     referenced_by: [1000, 508]  # CLAUDE.md, .claude/README.md
 
   511:
@@ -457,13 +413,6 @@ documents:
     depends_on: []
     referenced_by: [305]  # TROUBLESHOOTING.md
 
-  513:
-    path: "/.claude/docs/design/PHILOSOPHY.md"
-    created: "2025-08-02"
-    updated: "2025-08-02"
-    commit: "e7b2ee3"
-    depends_on: []
-    referenced_by: []
 
   514:
     path: "/.claude/docs/design/REFERENCE_STRATEGY.md"
@@ -566,9 +515,7 @@ path_to_id:
   "/.claude/commands/clauder-daily.md": 102
   "/.claude/commands/clauder-generate.md": 103
   "/.claude/commands/clauder-hooks.md": 104
-  "/.claude/commands/clauder-initialize-optimized.md": 105
   "/.claude/commands/clauder-initialize.md": 106
-  "/.claude/commands/clauder-optimize.md": 107
   "/.claude/commands/clauder-ref.md": 108
   "/.claude/commands/clauder-start.md": 109
   "/.claude/commands/clauder-track.md": 110
@@ -585,22 +532,17 @@ path_to_id:
   "/.claude/docs/guides/VERSION-TREE-GUIDE.md": 308
   # 템플릿 문서들
   "/.claude/templates/CLAUDE.template.md": 400
-  "/.claude/templates/contexts/01-quick-fix.template.md": 401
-  "/.claude/templates/contexts/02-analysis-guide.template.md": 402
   "/.claude/templates/contexts/README.template.md": 403
   "/.claude/templates/core/01-essentials.template.md": 404
   "/.claude/templates/core/02-work-principles.template.md": 405
   "/.claude/templates/core/03-dev-principles.template.md": 406
   "/.claude/templates/version-tree-entry.template.md": 407
   # 기타 문서들
-  "/.claude/COMMANDS_QUICK_REF.md": 506
-  "/.claude/LOADING_STRATEGY.md": 507
   "/.claude/README.md": 508
   "/.claude/custom/README.md": 509
   "/.claude/docs/COMMAND_INDEX.md": 510
   "/.claude/docs/TEMPLATE_GUIDE.md": 511
   "/.claude/docs/design/HOOKS.md": 512
-  "/.claude/docs/design/PHILOSOPHY.md": 513
   "/.claude/docs/design/REFERENCE_STRATEGY.md": 514
   "/.claude/docs/design/VERSION_TRACKING.md": 515
   "/.claude/docs/principles/DOCUMENTATION_PRINCIPLES.md": 516

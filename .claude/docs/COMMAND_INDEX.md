@@ -99,9 +99,8 @@ CLAUDE.md 재생성. 템플릿과 커스텀 설정을 병합하여 문서를 생
 
 ## 💡 추가 명령어
 
-### 최적화 관련
-- `/clauder optimize` - 문서 최적화 (개발 중)
-- `/clauder initialize-optimized` - 최적화된 초기화 (실험적)
+### 버전 트리 관리
+- `/clauder tree` - 버전 트리 관리 @.claude/commands/clauder-tree.md
 
 ### 빠른 참조
 - 명령어 도움말: `/clauder [command] --help`
@@ -110,4 +109,3 @@ CLAUDE.md 재생성. 템플릿과 커스텀 설정을 병합하여 문서를 생
 ## 관련 문서
 - 워크플로우: @.claude/docs/guides/WORKFLOWS.md
 - 문제 해결: @.claude/docs/guides/TROUBLESHOOTING.md
-- 빠른 참조: @.claude/COMMANDS_QUICK_REF.md
