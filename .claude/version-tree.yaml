@@ -110,14 +110,14 @@ documents:
     depends_on: []
     referenced_by: [1]  # 01-REFERENCE-STRUCTURE.md에서 참조할 예정
     
-  # 새로 추가된 파일들
-  7:
-    path: "/.clauder-dev/principles/00-PRINCIPLE-GUIDELINES.md"
+  # 원칙 8 - 문서 작성 기준 (이전 00-PRINCIPLE-GUIDELINES)
+  8:
+    path: "/.clauder-dev/principles/08-DOCUMENTATION-STANDARDS.md"
     created: "2025-08-02"
-    updated: "2025-08-02"
-    commit: "67e1355"
+    updated: "2025-08-03"
+    commit: "current"
     depends_on: []
-    referenced_by: [0]
+    referenced_by: [0, 704]
     
   503:
     path: "/.claude/version-tree.yaml"
@@ -569,7 +569,7 @@ path_to_id:
   "/.clauder-dev/principles/04-IMMEDIATE-RECOGNITION.md": 4
   "/.clauder-dev/principles/05-BIDIRECTIONAL-REFERENCES.md": 5
   "/.clauder-dev/principles/06-WORK-UNIT-COMMITS.md": 6
-  "/.clauder-dev/principles/00-PRINCIPLE-GUIDELINES.md": 7
+  "/.clauder-dev/principles/08-DOCUMENTATION-STANDARDS.md": 8
   "/.clauder-dev/design/VERSION-TREE.md": 203
   "/.clauder-dev/roadmap/VERSION-TREE-MIGRATION.md": 301
   "/.clauder-dev/roadmap/VERSION-INFO-REMOVAL-PLAN.md": 307

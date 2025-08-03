@@ -7,6 +7,8 @@ version:
 dependencies:
   - file: ".clauder-dev/principles/00-CONTINUOUS-LEARNING.md"
     commit: "current"
+  - file: ".clauder-dev/principles/08-DOCUMENTATION-STANDARDS.md"
+    commit: "current"
   - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
     commit: "11d1061"
   - file: ".claude/docs/principles/02-PROJECT-INDEPENDENCE.md"
@@ -67,6 +69,11 @@ Claude Code 실행 시 모든 원칙을 즉시 인지할 수 있도록 구성합
 @.claude/docs/principles/06-WORK-UNIT-COMMITS.md
 
 모든 작업은 작업 단위로 GitHub에 커밋하며, 커밋 전 참조 상태를 반드시 검증합니다.
+
+## 8️⃣ 문서 작성 기준
+@.clauder-dev/principles/08-DOCUMENTATION-STANDARDS.md
+
+모든 문서는 명확하고 간결하며 전문적인 톤을 유지합니다.
 
 ---
 

@@ -1,19 +1,10 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "3eee0eb"
-  
-dependencies: []
-    
-references:
-  - file: ".claude/docs/principles/README.md"
-    commit: "3eee0eb"
+doc_id: 8
 ---
 
-# 원칙 0: 원칙 작성 가이드
+# 원칙 8: 문서 작성 기준
 
-이 문서는 Clauder의 원칙을 작성할 때 따라야 할 메타 원칙입니다.
+이 문서는 Clauder의 모든 문서를 작성할 때 따라야 할 기준입니다.
 
 ## 원칙 작성 원칙
 
