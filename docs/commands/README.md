@@ -81,14 +81,19 @@ CLAUDE.md 재생성. 템플릿과 커스텀 설정을 병합하여 문서를 생
 ## ➕ 추가/수정
 
 ### `/clauder add`
-@.claude/commands/clauder-add.md
+@docs/commands/clauder-add.md
 
 요소 추가. 새로운 컨텍스트, 가이드, 템플릿을 추가합니다.
 
 ### `/clauder update`
-@.claude/commands/clauder-update.md
+@docs/commands/clauder-update.md
 
 설정 업데이트. 프로젝트 정보, 기술 스택 등을 수정합니다.
+
+### `/clauder personal`
+@docs/commands/clauder-personal.md
+
+개인 설정 관리. 사용자별 개인화된 설정과 맥락을 관리합니다.
 
 ## 🪝 자동화
 

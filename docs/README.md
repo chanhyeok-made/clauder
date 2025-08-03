@@ -24,6 +24,7 @@ Clauder를 사용하기 위한 모든 문서를 찾을 수 있습니다.
 - [워크플로우](guides/workflows.md) - 일반적인 작업 흐름
 - [모범 사례](guides/best-practices.md) - 효율적인 사용법
 - [맥락 추가하기](guides/adding-contexts.md) - 프로젝트별 가이드 추가
+- [개인 설정](guides/personal-settings.md) - 사용자별 개인화 설정
 - [문제 해결](guides/troubleshooting.md) - 일반적인 문제와 해결법
 - [기능 소개](guides/capabilities.md) - Clauder의 모든 기능
 
