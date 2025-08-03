@@ -77,11 +77,12 @@ AFTER Edit 도구 사용:
 ### 2. 새 파일 생성 시
 ```
 WHEN Write 도구로 .md 파일 생성:
-- MUST 버전 메타데이터 포함
-- MUST 실제 commit 해시 기록 (git log -1 --format="%h")
-- MUST "current" 대신 실제 해시 사용
-- SHOULD 관련 문서 참조 확인
-- MUST 버전 트리에 추가 (.claude/version-tree.yaml)
+1. FIRST: @.claude/docs/guides/VERSION-TREE-GUIDE.md 참조
+2. THEN: @.claude/templates/version-tree-entry.template.md 사용
+3. MUST: 파일에 doc_id 추가 (3줄만)
+4. MUST: 버전 트리에 완전한 엔트리 추가
+5. MUST: path_to_id 인덱스 업데이트
+6. CHECK: 참조 관계 양방향 설정
 ```
 
 ### 2.1 버전 트리 업데이트 (필수!)

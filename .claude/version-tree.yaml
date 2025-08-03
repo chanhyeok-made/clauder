@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-03"
-  last_commit: "aef76b7"
-  total_documents: 57
+  last_commit: "cf49f2e"
+  total_documents: 59
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -95,9 +95,9 @@ documents:
   500:
     path: "/.claude/instructions.md"
     created: "2025-08-02"
-    updated: "2025-08-02"
-    commit: "5093ed7"
-    depends_on: [0, 1, 5, 6]
+    updated: "2025-08-03"
+    commit: "cf49f2e"
+    depends_on: [0, 1, 5, 6, 308, 407]  # 원칙들, VERSION-TREE-GUIDE.md, version-tree-entry.template.md
     referenced_by: [1, 2, 3, 4, 5, 6]
     
   501:
@@ -274,8 +274,8 @@ documents:
     path: "/.claude/commands/clauder-tree.md"
     created: "2025-08-03"
     updated: "2025-08-03"
-    commit: "aef76b7"
-    depends_on: [503, 522]  # version-tree.yaml, version-tree-helper.md
+    commit: "cf49f2e"
+    depends_on: [503, 522, 308]  # version-tree.yaml, version-tree-helper.md, VERSION-TREE-GUIDE.md
     referenced_by: []
 
   # 가이드 문서들 추가
@@ -326,6 +326,14 @@ documents:
     commit: "e7b2ee3"
     depends_on: []
     referenced_by: []
+
+  308:
+    path: "/.claude/docs/guides/VERSION-TREE-GUIDE.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "cf49f2e"
+    depends_on: [407, 503, 203]  # version-tree-entry.template.md, version-tree.yaml, VERSION-TREE.md
+    referenced_by: [500, 113]  # instructions.md, clauder-tree.md
 
   # 템플릿 문서들
   400:
@@ -383,6 +391,14 @@ documents:
     commit: "e7b2ee3"
     depends_on: []
     referenced_by: []
+
+  407:
+    path: "/.claude/templates/version-tree-entry.template.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "cf49f2e"
+    depends_on: []
+    referenced_by: [308, 500]  # VERSION-TREE-GUIDE.md, instructions.md
 
   # 기타 문서들
   506:
@@ -565,6 +581,8 @@ path_to_id:
   "/.claude/docs/guides/TOKEN_TIPS.md": 304
   "/.claude/docs/guides/TROUBLESHOOTING.md": 305
   "/.claude/docs/guides/WORKFLOWS.md": 306
+  "/.claude/docs/guides/VERSION-INFO-REMOVAL-PLAN.md": 307
+  "/.claude/docs/guides/VERSION-TREE-GUIDE.md": 308
   # 템플릿 문서들
   "/.claude/templates/CLAUDE.template.md": 400
   "/.claude/templates/contexts/01-quick-fix.template.md": 401
@@ -573,6 +591,7 @@ path_to_id:
   "/.claude/templates/core/01-essentials.template.md": 404
   "/.claude/templates/core/02-work-principles.template.md": 405
   "/.claude/templates/core/03-dev-principles.template.md": 406
+  "/.claude/templates/version-tree-entry.template.md": 407
   # 기타 문서들
   "/.claude/COMMANDS_QUICK_REF.md": 506
   "/.claude/LOADING_STRATEGY.md": 507
