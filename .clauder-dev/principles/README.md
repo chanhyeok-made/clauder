@@ -1,37 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "3eee0eb"
-  
-dependencies:
-  - file: ".clauder-dev/principles/00-CONTINUOUS-LEARNING.md"
-    commit: "5bbcc77"
-  - file: ".clauder-dev/principles/08-DOCUMENTATION-STANDARDS.md"
-    commit: "5bbcc77"
-  - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
-    commit: "11d1061"
-  - file: ".claude/docs/principles/02-PROJECT-INDEPENDENCE.md"
-    commit: "11d1061"
-  - file: ".claude/docs/principles/03-DOCUMENT-MODULARITY.md"
-    commit: "11d1061"
-  - file: ".claude/docs/principles/04-IMMEDIATE-RECOGNITION.md"
-    commit: "11d1061"
-  - file: ".claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md"
-    commit: "11d1061"
-  - file: ".claude/docs/principles/06-WORK-UNIT-COMMITS.md"
-    commit: "11d1061"
-    
-references:
-  - file: "CLAUDE.md"
-    commit: "11d1061"
-  - file: "CLAUDE.base.md"
-    commit: "11d1061"
-  - file: ".claude/instructions.md"
-    commit: "11d1061"
+doc_id: 0
 ---
-
-# 📋 Clauder 핵심 원칙
 
 모든 Clauder 문서와 시스템은 다음 핵심 원칙을 따릅니다:
 
@@ -75,6 +44,3 @@ Claude Code 실행 시 모든 원칙을 즉시 인지할 수 있도록 구성합
 
 모든 문서는 명확하고 간결하며 전문적인 톤을 유지합니다.
 
----
-
-이 원칙들은 Clauder의 핵심이며, 모든 작업에서 반드시 준수되어야 합니다.

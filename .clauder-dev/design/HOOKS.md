@@ -1,11 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "58772aa"
+doc_id: 512
 ---
-
-# Clauder 훅 시스템
 
 ## 🎯 개요
 

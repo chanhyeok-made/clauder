@@ -1,17 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "11d1061"
-  
-dependencies:
-  - file: ".claude/docs/design/REFERENCE_STRATEGY.md"
-    commit: "11d1061"
-  - file: ".claude/aliases.yaml"
-    commit: "11d1061"
+doc_id: 516
 ---
-
-# 📋 Clauder 문서화 원칙
 
 ## 🎯 핵심 원칙
 
@@ -20,19 +9,6 @@ dependencies:
 
 #### YAML Front Matter
 ```yaml
----
-version:
-  created: "YYYY-MM-DD"
-  updated: "YYYY-MM-DD"
-  commit: "hash"
-  
-dependencies:
-  - file: "path/to/dependency.md"
-    commit: "hash"
-    status: "current|outdated"
-  
-references: []  # 역참조 (선택)
----
 ```
 
 #### 참조 방식
@@ -134,6 +110,3 @@ Git hooks와 Claude instructions로 자동화:
 - [ ] 프로젝트 독립성 유지
 - [ ] Git 커밋 해시 포함
 
----
-
-이 원칙들은 Clauder 시스템의 핵심이며, 모든 문서에서 반드시 준수되어야 합니다.

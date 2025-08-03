@@ -1,21 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "11d1061"
-  
-dependencies:
-  - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
-    commit: "11d1061"
-    
-references:
-  - file: ".claude/docs/principles/README.md"
-    commit: "11d1061"
-  - file: ".claude/instructions.md"
-    commit: "11d1061"
+doc_id: 3
 ---
-
-# 원칙 3: 문서 모듈화
 
 ## 핵심 규칙
 

@@ -1,17 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "87f8148"
-  
-dependencies:
-  - file: ".claude/docs/design/HOOKS.md"
-    commit: "87f8148"
-  - file: ".claude/commands/clauder-hooks.md"
-    commit: "87f8148"
+doc_id: 715
 ---
-
-# Clauder 문제 해결 가이드
 
 ## 🚨 일반적인 문제와 해결 방법
 
@@ -143,12 +132,6 @@ cat /tmp/clauder-hook.log
 
 #### 버전 메타데이터 수동 추가
 ```yaml
----
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "$(git log -1 --format='%h')"
----
 ```
 
 #### Hook 수동 제거
@@ -239,7 +222,3 @@ git log --oneline -5
 - GitHub Issues: https://github.com/chanhyeok-made/clauder/issues
 - 문서: `.claude/` 디렉토리 내 *.md 파일들
 
----
-
-대부분의 문제는 Git 초기화, 올바른 디렉토리 위치, 권한 설정으로 해결됩니다.
-문제가 지속되면 위의 진단 명령을 실행하여 상태를 확인하세요.

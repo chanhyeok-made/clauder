@@ -1,17 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "f7db06e"
-  
-references:
-  - file: ".claude/custom/project.yaml"
-    commit: "f7db06e"
-  - file: ".claude/commands/clauder-generate.md"
-    commit: "f7db06e"
+doc_id: 404
 ---
-
-# 프로젝트 필수 정보
 
 ## 🎯 프로젝트 개요
 - **이름**: {{PROJECT_NAME}}

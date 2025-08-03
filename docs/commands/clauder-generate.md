@@ -1,8 +1,6 @@
 ---
-v: 2025-08-02|2025-08-02|initial
+doc_id: 103
 ---
-
-# /clauder generate
 
 CLAUDE.md 생성/재생성
 

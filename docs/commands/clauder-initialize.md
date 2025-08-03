@@ -1,8 +1,6 @@
 ---
-v: 2025-08-02|2025-08-02|initial
+doc_id: 106
 ---
-
-# /clauder initialize
 
 프로젝트 초기 설정 (@[$start]의 일부)
 

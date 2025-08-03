@@ -1,4 +1,6 @@
-# Claude Code 프로젝트 가이드 - Clauder
+---
+doc_id: 1000
+---
 
 > 🛠️ **이것은 Clauder 프로젝트를 위한 실제 CLAUDE.md입니다**
 > 
@@ -166,7 +168,3 @@ clauder/
    - 자동 완성
    - 도움말 지원
 
----
-
-*이 문서는 Clauder 프로젝트 자체를 위한 것입니다. 
-다른 프로젝트에 적용하려면 CLAUDE.base.md를 사용하세요.*

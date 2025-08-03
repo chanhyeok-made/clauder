@@ -1,24 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "f7db06e"
-  
-dependencies:
-  - file: ".claude/core/02-work-principles.md"
-    commit: "f7db06e"
-  - file: ".claude/core/01-essentials.md"
-    commit: "f7db06e"
-    
-references:
-  - file: "CLAUDE.md"
-    commit: "f7db06e"
-  - file: ".claude/templates/core/02-work-principles.template.md"
-    commit: "f7db06e"
-    note: "references this as child concept"
+doc_id: 406
 ---
-
-# 개발 원칙 & 규칙
 
 > 이 문서는 작업 원칙의 하위 개념으로, 구체적인 개발 활동에 적용되는 원칙들을 다룹니다.
 > 상위 문서: @.claude/core/02-work-principles.md

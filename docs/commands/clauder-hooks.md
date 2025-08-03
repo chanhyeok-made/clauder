@@ -1,8 +1,6 @@
 ---
-v: 2025-08-02|2025-08-02|initial
+doc_id: 104
 ---
-
-# /clauder hooks
 
 Git hooks 관리
 

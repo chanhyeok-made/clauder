@@ -1,27 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "67e1355"
-  
-dependencies:
-  - file: ".clauder-dev/principles/README.md"
-    commit: "11d1061"
-  - file: ".clauder-dev/principles/01-REFERENCE-STRUCTURE.md"
-    commit: "11d1061"
-  - file: ".clauder-dev/principles/05-BIDIRECTIONAL-REFERENCES.md"
-    commit: "11d1061"
-  - file: ".clauder-dev/principles/06-WORK-UNIT-COMMITS.md"
-    commit: "11d1061"
-  - file: ".clauder-dev/tools/helpers/VERSION-TREE-GUIDE.md"
-    commit: "cf49f2e"
-  - file: ".claude/templates/version-tree-entry.template.md"
-    commit: "cf49f2e"
-    
-references: []  # 아직 역참조 없음
+doc_id: 500
 ---
-
-# Claude 작업 지시사항 (필수 준수)
 
 이 문서는 Claude가 Clauder 프로젝트에서 작업할 때 **반드시** 따라야 하는 지시사항입니다.
 

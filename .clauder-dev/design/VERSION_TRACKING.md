@@ -1,17 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "87f8148"
-  
-dependencies:
-  - file: ".claude/templates/version-metadata.yaml"
-    commit: "78b8a7b"
-  - file: ".claude/commands/clauder-track.md"
-    commit: "78b8a7b"
+doc_id: 515
 ---
-
-# 문서 버전 추적 시스템
 
 ## 개요
 모든 문서는 생성/수정 시점의 Git 커밋 해시를 기록하여 버전을 추적합니다.
@@ -21,24 +10,6 @@ dependencies:
 
 ### 문서 헤더 (YAML Front Matter)
 ```yaml
----
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "f7db06e"  # 이 문서가 작성된 시점의 커밋
-  
-dependencies:
-  - file: ".claude/core/principles.md"
-    commit: "3367e67"  # 참조 당시 principles.md의 커밋
-  - file: ".claude/templates/core/01-essentials.template.md"
-    commit: "b3c1368"
-    
-references:  # 이 문서를 참조하는 다른 문서들
-  - file: "CLAUDE.md"
-    commit: "f7db06e"
-  - file: ".claude/README.md"
-    commit: "f7db06e"
----
 ```
 
 ## 버전 추적 프로세스
@@ -89,23 +60,6 @@ references:  # 이 문서를 참조하는 다른 문서들
 
 ### project.yaml의 메타데이터
 ```yaml
----
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "f7db06e"
-  
-dependencies:
-  - file: ".claude/templates/core/01-essentials.template.md"
-    commit: "b3c1368"
-    status: "current"  # current/outdated/missing
-    
-references:
-  - file: ".claude/commands/clauder-initialize.md"
-    commit: "f7db06e"
-  - file: ".claude/commands/clauder-generate.md"
-    commit: "f7db06e"
----
 
 # 실제 project.yaml 내용...
 ```

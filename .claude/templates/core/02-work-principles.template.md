@@ -1,19 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "f7db06e"
-  
-dependencies:
-  - file: ".claude/contexts/README.md"
-    commit: "f7db06e"
-    
-references:
-  - file: "CLAUDE.md"
-    commit: "f7db06e"
+doc_id: 405
 ---
-
-# 작업 원칙
 
 이 문서는 모든 작업의 기본이 되는 최상위 원칙들을 정의합니다.
 개발은 이러한 작업 원칙 안에서 이루어집니다.
@@ -103,6 +90,3 @@ references:
 
 *참고: 개발 원칙은 이 작업 원칙을 기반으로 하는 하위 개념입니다.*
 
----
-"좋은 작업은 명확한 목적에서 시작되고,
- 지속적인 개선으로 완성된다."

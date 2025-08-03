@@ -1,31 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "b34f41a"
-  
-dependencies:
-  - file: ".claude/templates/CLAUDE.template.md"
-    commit: "b34f41a"
-  - file: ".claude/templates/core/01-essentials.template.md"
-    commit: "b34f41a"
-  - file: ".claude/templates/core/02-work-principles.template.md"
-    commit: "b34f41a"
-  - file: ".claude/templates/core/03-dev-principles.template.md"
-    commit: "b34f41a"
-  - file: ".claude/templates/contexts/README.template.md"
-    commit: "b34f41a"
-  - file: ".claude/templates/contexts/01-quick-fix.template.md"
-    commit: "b34f41a"
-    
-references:
-  - file: ".claude/README.md"
-    commit: "b34f41a"
-  - file: "CLAUDE.md"
-    commit: "b34f41a"
+doc_id: 511
 ---
-
-# 📝 템플릿 시스템 가이드
 
 Clauder의 템플릿 시스템과 사용 방법을 설명합니다.
 

@@ -1,23 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "11d1061"
-  
-dependencies:
-  - file: "CLAUDE.md"
-    commit: "11d1061"
-  - file: ".claude/instructions.md"
-    commit: "11d1061"
-    
-references:
-  - file: ".claude/docs/principles/README.md"
-    commit: "11d1061"
-  - file: ".claude/instructions.md"
-    commit: "11d1061"
+doc_id: 4
 ---
-
-# 원칙 4: 즉시 인지 가능
 
 ## 핵심 규칙
 

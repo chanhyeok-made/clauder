@@ -1,15 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "f7db06e"
-  
-references:
-  - file: ".claude/templates/CLAUDE.template.md"
-    commit: "f7db06e"
+doc_id: 403
 ---
-
-# 상황별 가이드
 
 필요한 상황에만 생성하세요. 모든 가이드가 필요한 것은 아닙니다.
 

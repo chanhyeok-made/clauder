@@ -1,23 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "306fde2"
-  
-dependencies:
-  - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
-    commit: "11d1061"
-  - file: ".claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md"
-    commit: "11d1061"
-    
-references:
-  - file: ".claude/docs/principles/README.md"
-    commit: "11d1061"
-  - file: ".claude/instructions.md"
-    commit: "11d1061"
+doc_id: 6
 ---
-
-# 원칙 6: 작업 단위 커밋 및 푸시
 
 ## 핵심 규칙
 

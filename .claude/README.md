@@ -1,21 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "f7db06e"
-  
-dependencies:
-  - file: "CLAUDE.md"
-    commit: "f7db06e"
-  - file: ".claude/commands/clauder-initialize.md"
-    commit: "f7db06e"
-  - file: ".claude/templates/"
-    commit: "f7db06e"
-    
-references: []
+doc_id: 508
 ---
-
-# Claude Code 문서 시스템 - 범용 템플릿
 
 이 문서 시스템은 모든 프로젝트에서 사용 가능한 범용 템플릿입니다.
 

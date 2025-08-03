@@ -1,8 +1,6 @@
 ---
-v: 2025-08-03|2025-08-03|initial
+doc_id: 718
 ---
-
-# /clauder personal
 
 개인 설정 관리
 

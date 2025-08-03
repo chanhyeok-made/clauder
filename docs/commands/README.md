@@ -1,39 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "b34f41a"
-  
-dependencies:
-  - file: ".claude/commands/clauder-start.md"
-    commit: "b34f41a"
-  - file: ".claude/commands/clauder-daily.md"
-    commit: "b34f41a"
-  - file: ".claude/commands/clauder-initialize.md"
-    commit: "b34f41a"
-  - file: ".claude/commands/clauder-generate.md"
-    commit: "b34f41a"
-  - file: ".claude/commands/clauder-check.md"
-    commit: "b34f41a"
-  - file: ".claude/commands/clauder-track.md"
-    commit: "b34f41a"
-  - file: ".claude/commands/clauder-hooks.md"
-    commit: "b34f41a"
-  - file: ".claude/commands/clauder-ref.md"
-    commit: "b34f41a"
-  - file: ".claude/commands/clauder-add.md"
-    commit: "b34f41a"
-  - file: ".claude/commands/clauder-update.md"
-    commit: "b34f41a"
-    
-references:
-  - file: "CLAUDE.md"
-    commit: "b34f41a"
-  - file: ".claude/README.md"
-    commit: "b34f41a"
+doc_id: 510
 ---
-
-# 📚 Clauder 명령어 인덱스
 
 모든 Clauder 명령어의 전체 목록과 설명입니다.
 

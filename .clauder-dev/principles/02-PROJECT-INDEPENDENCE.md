@@ -1,23 +1,6 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "11d1061"
-  
-dependencies:
-  - file: ".gitignore"
-    commit: "11d1061"
-  - file: ".claude/custom/README.md"
-    commit: "11d1061"
-    
-references:
-  - file: ".claude/docs/principles/README.md"
-    commit: "11d1061"
-  - file: ".claude/instructions.md"
-    commit: "11d1061"
+doc_id: 2
 ---
-
-# 원칙 2: 프로젝트 독립성
 
 ## 핵심 규칙
 

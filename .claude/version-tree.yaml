@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-03"
-  last_commit: "750441b"
-  total_documents: 64
+  last_commit: "a6f02df"
+  total_documents: 76
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -589,6 +589,103 @@ documents:
     commit: "750441b"
     depends_on: []
     referenced_by: [706]
+    
+  # 누락된 문서들 추가
+  709:
+    path: "/.claude/templates/personal/contexts/style-example.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "a6f02df"
+    depends_on: []
+    referenced_by: []
+    
+  710:
+    path: "/.claude/templates/contexts/context-template.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "a6f02df"
+    depends_on: []
+    referenced_by: []
+    
+  711:
+    path: "/.claude/custom/personal/README.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "a6f02df"
+    depends_on: []
+    referenced_by: []
+    
+  712:
+    path: "/.claude/custom/contexts/README.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "a6f02df"
+    depends_on: []
+    referenced_by: []
+    
+  713:
+    path: "/docs/guides/WORKFLOWS.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "a6f02df"
+    depends_on: []
+    referenced_by: [510]
+    
+  714:
+    path: "/docs/guides/CAPABILITIES.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "a6f02df"
+    depends_on: []
+    referenced_by: [524]
+    
+  715:
+    path: "/docs/guides/TROUBLESHOOTING.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "a6f02df"
+    depends_on: []
+    referenced_by: [510]
+    
+  716:
+    path: "/docs/guides/adding-contexts.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "a6f02df"
+    depends_on: []
+    referenced_by: [524, 104]
+    
+  717:
+    path: "/docs/guides/personal-settings.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "a6f02df"
+    depends_on: []
+    referenced_by: [524, 113]
+    
+  718:
+    path: "/docs/commands/clauder-personal.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "a6f02df"
+    depends_on: [717, 716]
+    referenced_by: [510]
+    
+  719:
+    path: "/.clauder-dev/tools/scripts/migrate-to-docid.py"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "a6f02df"
+    depends_on: []
+    referenced_by: []
+    
+  720:
+    path: "/.clauder-dev/tools/scripts/batch-migrate-docid.sh"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "a6f02df"
+    depends_on: []
+    referenced_by: []
 
 # 빠른 검색을 위한 인덱스
 path_to_id:
@@ -667,3 +764,15 @@ path_to_id:
   "/.clauder-dev/learnings/error-patterns/principle-numbering-conflict.md": 706
   "/.clauder-dev/learnings/error-patterns/missing-prevention-measures.md": 707
   "/.clauder-dev/principles/REGISTRY.yaml": 708
+  "/.claude/templates/personal/contexts/style-example.md": 709
+  "/.claude/templates/contexts/context-template.md": 710
+  "/.claude/custom/personal/README.md": 711
+  "/.claude/custom/contexts/README.md": 712
+  "/docs/guides/WORKFLOWS.md": 713
+  "/docs/guides/CAPABILITIES.md": 714
+  "/docs/guides/TROUBLESHOOTING.md": 715
+  "/docs/guides/adding-contexts.md": 716
+  "/docs/guides/personal-settings.md": 717
+  "/docs/commands/clauder-personal.md": 718
+  "/.clauder-dev/tools/scripts/migrate-to-docid.py": 719
+  "/.clauder-dev/tools/scripts/batch-migrate-docid.sh": 720

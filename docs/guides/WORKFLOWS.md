@@ -1,14 +1,5 @@
 ---
-version:
-  created: "2025-08-02"
-  updated: "2025-08-02"
-  commit: "87f8148"
-  
-dependencies:
-  - file: ".claude/commands/clauder-start.md"
-    commit: "58772aa"
-  - file: ".claude/commands/clauder-daily.md"
-    commit: "58772aa"
+doc_id: 713
 ---
 
 # Clauder 워크플로우 가이드

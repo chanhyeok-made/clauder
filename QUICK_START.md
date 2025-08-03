@@ -1,4 +1,6 @@
-# 🚀 Clauder 빠른 시작
+---
+doc_id: 523
+---
 
 5분 안에 Clauder를 시작하세요!
 
@@ -65,6 +67,3 @@ Claude Code에서:
 - [문제 해결 가이드](docs/guides/troubleshooting.md)
 - [GitHub Issues](https://github.com/chanhyeok-made/clauder/issues)
 
----
-
-준비되셨나요? `/clauder start`로 시작하세요! 🎉
