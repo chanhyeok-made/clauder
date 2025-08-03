@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-03"
-  last_commit: "current"
-  total_documents: 60
+  last_commit: "5bbcc77"
+  total_documents: 61
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -87,7 +87,7 @@ documents:
     path: "/.clauder-dev/principles/README.md"
     created: "2025-08-02"
     updated: "2025-08-03"
-    commit: "current"
+    commit: "5bbcc77"
     depends_on: [701, 1, 2, 3, 4, 5, 6]
     referenced_by: [1000, 500, 701]
     
@@ -115,7 +115,7 @@ documents:
     path: "/.clauder-dev/principles/08-DOCUMENTATION-STANDARDS.md"
     created: "2025-08-02"
     updated: "2025-08-03"
-    commit: "current"
+    commit: "5bbcc77"
     depends_on: []
     referenced_by: [0, 704]
     
@@ -529,7 +529,7 @@ documents:
     path: "/.clauder-dev/principles/00-CONTINUOUS-LEARNING.md"
     created: "2025-08-03"
     updated: "2025-08-03"
-    commit: "current"
+    commit: "5bbcc77"
     depends_on: [702, 0]
     referenced_by: [0]
     
@@ -538,7 +538,7 @@ documents:
     path: "/.clauder-dev/learnings/INDEX.md"
     created: "2025-08-03"
     updated: "2025-08-03"
-    commit: "current"
+    commit: "5bbcc77"
     depends_on: [703, 704, 701, 1]
     referenced_by: [701]
     
@@ -546,7 +546,7 @@ documents:
     path: "/.clauder-dev/learnings/optimization/token-optimization.md"
     created: "2025-08-03"
     updated: "2025-08-03"
-    commit: "current"
+    commit: "5bbcc77"
     depends_on: [308, 1]
     referenced_by: [702]
     
@@ -554,7 +554,15 @@ documents:
     path: "/.clauder-dev/learnings/user-feedback/documentation-tone.md"
     created: "2025-08-03"
     updated: "2025-08-03"
-    commit: "current"
+    commit: "5bbcc77"
+    depends_on: []
+    referenced_by: [702]
+    
+  705:
+    path: "/.clauder-dev/learnings/error-patterns/current-commit-antipattern.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "5bbcc77"
     depends_on: []
     referenced_by: [702]
 
@@ -631,3 +639,4 @@ path_to_id:
   "/.clauder-dev/learnings/INDEX.md": 702
   "/.clauder-dev/learnings/optimization/token-optimization.md": 703
   "/.clauder-dev/learnings/user-feedback/documentation-tone.md": 704
+  "/.clauder-dev/learnings/error-patterns/current-commit-antipattern.md": 705

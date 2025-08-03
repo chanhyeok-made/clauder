@@ -6,9 +6,9 @@ version:
   
 dependencies:
   - file: ".clauder-dev/principles/00-CONTINUOUS-LEARNING.md"
-    commit: "current"
+    commit: "5bbcc77"
   - file: ".clauder-dev/principles/08-DOCUMENTATION-STANDARDS.md"
-    commit: "current"
+    commit: "5bbcc77"
   - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
     commit: "11d1061"
   - file: ".claude/docs/principles/02-PROJECT-INDEPENDENCE.md"
