@@ -30,3 +30,6 @@ logs/
 
 # Personal configurations
 .claude/custom/personal/
+
+# Resonation metrics
+.resonation/
