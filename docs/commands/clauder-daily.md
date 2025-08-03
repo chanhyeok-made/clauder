@@ -29,4 +29,4 @@ doc_id: 102
 💡 제안: README 업데이트
 ```
 
-@[$commands/common/usage-template.md]
+@TODO-ALIAS

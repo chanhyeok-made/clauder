@@ -43,10 +43,10 @@ add alias <name>      # 경로 별칭
 → 핵심 설정 템플릿을 커스터마이징할 수 있도록 복사
 
 /clauder add alias $api "src/api"
-→ @[$api] 형식으로 참조 가능
+→ @TODO-ALIAS 형식으로 참조 가능
 ```
 
 ## 관련 문서
 - 맥락 추가 가이드: @docs/guides/adding-contexts.md
 
-@[$commands/common/usage-template.md]
+@TODO-ALIAS

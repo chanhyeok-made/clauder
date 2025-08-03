@@ -38,7 +38,7 @@ references:
 
 # 새로운 방식: ID만 참조
 ---
-doc_id: 1
+doc_id: 999  # 예시
 ---
 ```
 

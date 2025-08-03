@@ -212,7 +212,7 @@ sequenceDiagram
 1. 변수 정의 로드 (project.yaml)
 2. 조건부 평가 (if:exists)
 3. 변수 치환 ({{VARIABLE}})
-4. 참조 해결 (@[$alias])
+4. 참조 해결 (@TODO-ALIAS)
 5. 최종 렌더링
 ```
 
@@ -224,7 +224,7 @@ sequenceDiagram
 ```
 alias.yaml     → 경로 별칭 정의
 references.yaml → 중앙 레지스트리
-@[$alias]#hash  → 참조 형식
+@TODO-ALIAS#hash  → 참조 형식
 ```
 
 ### 훅 시스템 구성

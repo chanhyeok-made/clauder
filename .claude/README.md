@@ -32,8 +32,8 @@ Claude Code에서 다음 명령 하나로 모든 것을 자동화:
 - `/clauder track` - 문서 버전 관리
 
 자세한 사용법:
-- 명령어 인덱스: @.claude/docs/COMMAND_INDEX.md
-- 템플릿 가이드: @.claude/docs/TEMPLATE_GUIDE.md
+- 명령어 인덱스: @/docs/commands/README.md
+- 템플릿 가이드: @/docs/templates/README.md
 - 문서: `.claude/docs/` 디렉토리 참조
 
 ## 📁 디렉토리 구조
@@ -120,7 +120,7 @@ git commit -m "Initial commit"
 ### 조건부 포함
 ```markdown
 <!-- if:exists custom/overrides/work-principles.md -->
-@.claude/custom/overrides/work-principles.md
+# 커스텀 work-principles 파일 (선택적)
 <!-- else -->
 @.claude/templates/core/02-work-principles.template.md
 <!-- endif -->

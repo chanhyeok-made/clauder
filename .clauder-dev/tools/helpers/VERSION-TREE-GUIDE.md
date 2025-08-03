@@ -107,4 +107,4 @@ doc_id: 309
 ## 관련 문서
 - 템플릿: @.claude/templates/version-tree-entry.template.md
 - 버전 트리: @.claude/version-tree.yaml
-- 설계 문서: @.claude/docs/design/VERSION-TREE.md
+- 설계 문서: @/.clauder-dev/design/VERSION-TREE.md

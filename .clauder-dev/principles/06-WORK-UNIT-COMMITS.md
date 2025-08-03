@@ -75,5 +75,5 @@ doc_id: 6
 - 병합 시에도 모든 검증 과정 적용
 
 ## 관련 문서
-- 참조 구조: @.claude/docs/principles/01-REFERENCE-STRUCTURE.md
-- 역참조 시스템: @.claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md
+- 참조 구조: @/.clauder-dev/principles/01-REFERENCE-STRUCTURE.md
+- 역참조 시스템: @/.clauder-dev/principles/05-BIDIRECTIONAL-REFERENCES.md

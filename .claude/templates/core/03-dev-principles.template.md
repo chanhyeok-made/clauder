@@ -3,7 +3,7 @@ doc_id: 406
 ---
 
 > 이 문서는 작업 원칙의 하위 개념으로, 구체적인 개발 활동에 적용되는 원칙들을 다룹니다.
-> 상위 문서: @.claude/core/02-work-principles.md
+> 상위 문서: @.claude/templates/core/02-work-principles.template.md
 
 ## 🎯 핵심 철학
 **"증거 > 가정 | 코드 > 문서 | 효율성 > 장황함"**
@@ -153,6 +153,6 @@ doc_id: 406
 - 자동 경보 시스템
 
 ## 🔗 관련 문서
-- 작업 원칙: @.claude/core/02-work-principles.md (상위 개념)
-- 프로젝트 정보: @.claude/core/01-essentials.md
+- 작업 원칙: @.claude/templates/core/02-work-principles.template.md (상위 개념)
+- 프로젝트 정보: @.claude/templates/core/01-essentials.template.md
 - 코딩 표준 상세: [언어별 가이드 참조]

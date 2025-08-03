@@ -27,4 +27,4 @@ track sync            # 전체 동기화
 → 모든 버전 동기화 완료
 ```
 
-@[$commands/common/usage-template.md]
+@TODO-ALIAS

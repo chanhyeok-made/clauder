@@ -31,4 +31,4 @@ graph LR
 - `/clauder generate`
 - `/clauder hooks install`
 
-@[$commands/common/usage-template.md]
+@TODO-ALIAS

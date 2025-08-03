@@ -33,17 +33,17 @@ aliases:
 
 사용 예:
 ```markdown
-@[$core/work-principles.template.md]
-@[$custom/overrides/work-principles.md|$core/work-principles.template.md]
+@TODO-ALIAS
+@TODO-ALIAS
 ```
 
 ### 3. 자동 버전 추적
 ```markdown
 <!-- 작성 시 -->
-@[.claude/core/principles.md]
+@[.clauder-dev/principles/01-REFERENCE-STRUCTURE.md]
 
 <!-- 자동 변환 후 -->
-@[.claude/core/principles.md]#abc123d
+@[.clauder-dev/principles/01-REFERENCE-STRUCTURE.md]#abc123d
 ```
 
 ### 4. 중앙 참조 레지스트리

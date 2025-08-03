@@ -65,7 +65,7 @@ graph TB
 graph LR
     subgraph "참조 형식"
         A1[기존: @.claude/path/file.md]
-        A2[새: @[$alias]#commit]
+        A2[새: @TODO-ALIAS#commit]
         A1 -.마이그레이션.-> A2
     end
     

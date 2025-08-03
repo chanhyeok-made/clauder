@@ -12,9 +12,9 @@ doc_id: 516
 ```
 
 #### 참조 방식
-- **직접 참조**: `@path/to/file.md`
-- **별칭 참조**: `@[$alias]`
-- **버전 포함**: `@path/to/file.md#commit`
+- **직접 참조**: `@.claude/version-tree.yaml`
+- **별칭 참조**: `@TODO-ALIAS`
+- **버전 포함**: `@.claude/version-tree.yaml#commit`
 
 ### 2. 프로젝트 독립성
 모든 설정은 다른 프로젝트에 영향을 주지 않도록:
@@ -94,9 +94,9 @@ Git hooks와 Claude instructions로 자동화:
 
 ## 📚 관련 문서
 
-- 참조 전략: @.claude/docs/design/REFERENCE_STRATEGY.md
-- 버전 추적: @.claude/docs/design/VERSION_TRACKING.md
-- 훅 시스템: @.claude/docs/design/HOOKS.md
+- 참조 전략: @/.clauder-dev/design/REFERENCE_STRATEGY.md
+- 버전 추적: @/.clauder-dev/design/VERSION_TRACKING.md
+- 훅 시스템: @/.clauder-dev/design/HOOKS.md
 - 별칭 정의: @.claude/aliases.yaml
 
 ## ✅ 체크리스트

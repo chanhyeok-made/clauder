@@ -44,5 +44,5 @@ status: "outdated"  # → 해당 문서 업데이트 필요!
 - 양방향 관계 유지
 
 ## 관련 문서
-- 참조 구조: @.claude/docs/principles/01-REFERENCE-STRUCTURE.md
+- 참조 구조: @/.clauder-dev/principles/01-REFERENCE-STRUCTURE.md
 - 중앙 레지스트리: @.claude/references.yaml

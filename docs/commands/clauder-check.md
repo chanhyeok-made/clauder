@@ -18,4 +18,4 @@ doc_id: 101
 ❌ 참조: 2개 깨짐
 ```
 
-@[$commands/common/usage-template.md]
+@TODO-ALIAS

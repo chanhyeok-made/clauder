@@ -13,11 +13,11 @@ ref migrate          # 구형식 → 신형식
 ```
 
 ## 참조 형식
-- 구: `@.claude/long/path/file.md`
-- 신: `@[$alias]#commit`
+- 구: `@.claude/version-tree.yaml`
+- 신: `@TODO-ALIAS#commit`
 
 ## 관련 문서
-- 전략: @[$ref-strategy]
-- 별칭: @[$aliases]
+- 전략: @TODO-ALIAS
+- 별칭: @TODO-ALIAS
 
-@[$commands/common/usage-template.md]
+@TODO-ALIAS

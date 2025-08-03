@@ -7,7 +7,7 @@ doc_id: 522
 Claude Code가 문서 작업 시 참조해야 하는 버전 트리 작업 가이드입니다.
 
 **중요**: 이 문서는 스크립트가 아닌 참조 가이드입니다. 
-더 상세한 가이드는 @.claude/docs/guides/VERSION-TREE-GUIDE.md를 참조하세요.
+더 상세한 가이드는 @/.clauder-dev/tools/helpers/VERSION-TREE-GUIDE.md를 참조하세요.
 
 ## ID 할당 규칙
 - 1-99: 핵심 원칙 문서

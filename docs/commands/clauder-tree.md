@@ -49,7 +49,7 @@ doc_id: 113
 이 명령어를 실행할 때 Claude는 문서를 참조하여 작업합니다:
 
 1. **add**: 
-   - @.claude/docs/guides/VERSION-TREE-GUIDE.md의 "새 문서 생성 시" 섹션 따르기
+   - @/.clauder-dev/tools/helpers/VERSION-TREE-GUIDE.md의 "새 문서 생성 시" 섹션 따르기
    - @.claude/templates/version-tree-entry.template.md 템플릿 사용
    - 수동으로 버전 트리 편집
 
@@ -71,5 +71,5 @@ doc_id: 113
 
 ## 관련 파일
 - 버전 트리: @.claude/version-tree.yaml
-- 헬퍼 가이드: @.claude/scripts/version-tree-helper.md
-- 관리 스크립트: @.claude/scripts/version-tree-manager.py
+- 헬퍼 가이드: @/.clauder-dev/tools/helpers/version-tree-helper.md
+- 관리 스크립트: @.clauder-dev/tools/scripts/version-tree-manager.py

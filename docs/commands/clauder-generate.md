@@ -14,4 +14,4 @@ CLAUDE.md 생성/재생성
 - 템플릿 업데이트 후
 - 수동 재생성 필요시
 
-@[$commands/common/usage-template.md]
+@TODO-ALIAS

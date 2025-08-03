@@ -36,4 +36,4 @@ principles/
 ```
 
 ## 관련 문서
-- 참조 구조: @.claude/docs/principles/01-REFERENCE-STRUCTURE.md
+- 참조 구조: @/.clauder-dev/principles/01-REFERENCE-STRUCTURE.md

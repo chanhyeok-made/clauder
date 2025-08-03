@@ -36,7 +36,7 @@ Clauder의 템플릿 시스템과 사용 방법을 설명합니다.
 컨텍스트별 가이드의 기본 구조입니다.
 
 #### 빠른 수정 가이드
-@.claude/templates/contexts/01-quick-fix.template.md
+@/.claude/templates/contexts/context-template.md
 
 긴급 수정이나 핫픽스를 위한 가이드 템플릿입니다.
 
@@ -53,7 +53,7 @@ Clauder의 템플릿 시스템과 사용 방법을 설명합니다.
 ### 2. 조건부 포함
 ```markdown
 <!-- if:exists custom/overrides/work-principles.md -->
-@.claude/custom/overrides/work-principles.md
+# 커스텀 work-principles 파일 (선택적)
 <!-- else -->
 @.claude/templates/core/02-work-principles.template.md
 <!-- endif -->
@@ -101,4 +101,4 @@ Clauder의 템플릿 시스템과 사용 방법을 설명합니다.
 
 ## 관련 문서
 - 시스템 개요: @.claude/README.md
-- 프로젝트 독립성: @.claude/docs/principles/02-PROJECT-INDEPENDENCE.md
+- 프로젝트 독립성: @/.clauder-dev/principles/02-PROJECT-INDEPENDENCE.md

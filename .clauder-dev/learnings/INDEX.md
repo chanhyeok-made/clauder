@@ -13,10 +13,13 @@ Clauder 프로젝트를 개발하면서 배운 교훈과 개선사항을 기록�
 - [원칙 번호 중복](error-patterns/principle-numbering-conflict.md)
 - [재발 방지 대책 누락](error-patterns/missing-prevention-measures.md)
 - [순환 참조 방지](error-patterns/circular-references.md)
+- [검증 스크립트 문제](error-patterns/validation-script-issues.md)
+- [파일 타입 혼동](error-patterns/file-type-confusion.md)
 
 ### 최적화 (Optimizations)
 - [중앙 버전 트리 시스템](optimization/central-version-tree.md)
 - [doc_id 기반 참조](optimization/doc-id-references.md)
+- [대량 수정 자동화](optimization/bulk-fix-automation.md)
 
 ### 사용자 피드백 (User Feedback)
 - [문서 톤 개선](user-feedback/documentation-tone.md)
@@ -50,6 +53,12 @@ Clauder 프로젝트를 개발하면서 배운 교훈과 개선사항을 기록�
 - **해결**: 원칙 레지스트리 생성, 학습 템플릿 강화
 - **교훈**: 문제 해결과 재발 방지는 별개, 둘 다 필수
 - **상세**: [원칙 번호 중복](error-patterns/principle-numbering-conflict.md), [재발 방지 누락](error-patterns/missing-prevention-measures.md)
+
+### 2025-08-03: 검증 스크립트 개선 필요성
+- **문제**: 가짜 양성 오류 대량 발생 (예시 코드를 실제로 인식)
+- **해결**: 실제/예시 구분, 대량 수정 자동화
+- **교훈**: 도구의 한계 이해, 반복 작업 즉시 자동화
+- **상세**: [검증 스크립트 문제](error-patterns/validation-script-issues.md), [대량 수정 자동화](optimization/bulk-fix-automation.md)
 
 ## 📈 개선 추이
 

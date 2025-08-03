@@ -64,4 +64,4 @@ personal clear        # 개인 설정 초기화
 - 개인 설정 가이드: @docs/guides/personal-settings.md
 - 맥락 추가: @docs/guides/adding-contexts.md
 
-@[$commands/common/usage-template.md]
+@TODO-ALIAS

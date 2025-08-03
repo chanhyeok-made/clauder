@@ -52,9 +52,9 @@ references:
 - 양방향 참조 구조를 통한 문서 네트워크 형성
 
 ### 참조 형식
-- **직접 참조**: `@path/to/file.md`
-- **별칭 참조**: `@[$alias]`
-- **버전 포함**: `@path/to/file.md#commit`
+- **직접 참조**: `@.claude/version-tree.yaml`
+- **별칭 참조**: `@TODO-ALIAS`
+- **버전 포함**: `@.claude/version-tree.yaml#commit`
 
 ## 순환 참조 금지
 
@@ -135,4 +135,4 @@ doc_id: 1  # 버전 트리의 ID만 참조
 - 중앙 버전 트리: @.claude/version-tree.yaml
 - 별칭 정의: @.claude/aliases.yaml
 - 참조 레지스트리: @.claude/references.yaml
-- 설계 문서: @.claude/docs/design/REFERENCE_STRATEGY.md
+- 설계 문서: @/.clauder-dev/design/REFERENCE_STRATEGY.md

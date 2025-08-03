@@ -61,7 +61,7 @@ AFTER Edit 도구 사용:
 ### 2. 새 파일 생성 시
 ```
 WHEN Write 도구로 .md 파일 생성:
-1. FIRST: @.claude/docs/guides/VERSION-TREE-GUIDE.md 참조
+1. FIRST: @/.clauder-dev/tools/helpers/VERSION-TREE-GUIDE.md 참조
 2. THEN: @.claude/templates/version-tree-entry.template.md 사용
 3. MUST: 파일에 doc_id 추가 (3줄만)
 4. MUST: 버전 트리에 완전한 엔트리 추가

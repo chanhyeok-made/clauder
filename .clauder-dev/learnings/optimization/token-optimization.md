@@ -36,7 +36,7 @@ references:
 ```yaml
 # 각 파일에는
 ---
-doc_id: 301
+doc_id: 997  # 예시
 ---
 
 # 중앙 트리에서 관리

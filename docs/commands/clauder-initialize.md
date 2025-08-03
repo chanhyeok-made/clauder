@@ -2,7 +2,7 @@
 doc_id: 106
 ---
 
-프로젝트 초기 설정 (@[$start]의 일부)
+프로젝트 초기 설정 (@TODO-ALIAS의 일부)
 
 ## 고유 기능
 - 프로젝트 분석
@@ -16,4 +16,4 @@ doc_id: 106
 - `/clauder start` 사용 권장
 - 개별 실행은 특수한 경우만
 
-@[$commands/common/usage-template.md]
+@TODO-ALIAS

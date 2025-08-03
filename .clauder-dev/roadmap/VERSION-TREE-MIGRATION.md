@@ -41,7 +41,7 @@ doc_id: 301
 **Stage 1: 공존 (현재~1개월)**
 ```yaml
 ---
-doc_id: 1  # 새로운 방식
+doc_id: 998  # 새로운 방식 (예시)
 version:   # 기존 방식 유지
   created: "2025-08-02"
   updated: "2025-08-02"
@@ -59,7 +59,7 @@ references:    # 기존 방식 유지
 **Stage 2: 트리 우선 (1~3개월)**
 ```yaml
 ---
-doc_id: 1
+doc_id: 998  # 예시
 # 아래는 읽기 전용 (업데이트 안 함)
 version:
   created: "2025-08-02"  # deprecated
@@ -73,7 +73,7 @@ version:
 **Stage 3: 완전 마이그레이션 (3개월 후)**
 ```yaml
 ---
-doc_id: 1  # 이것만!
+doc_id: 998  # 이것만! (예시)
 ---
 ```
 - 모든 버전 정보는 트리에서

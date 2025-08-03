@@ -16,4 +16,4 @@ update templates     # 템플릿 동기화
 2. 변경사항 입력
 3. CLAUDE.md 재생성
 
-@[$commands/common/usage-template.md]
+@TODO-ALIAS

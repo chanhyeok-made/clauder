@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-03"
-  last_commit: "65403e7"
-  total_documents: 79
+  last_commit: "ec814c8"
+  total_documents: 75
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -242,14 +242,6 @@ documents:
     depends_on: []
     referenced_by: [510]  # COMMAND_INDEX.md
 
-  112:
-    path: "/docs/commands/common/usage-template.md"
-    created: "2025-08-02"
-    updated: "2025-08-02"
-    commit: "e7b2ee3"
-    depends_on: []
-    referenced_by: []
-
   113:
     path: "/docs/commands/clauder-tree.md"
     created: "2025-08-03"
@@ -260,7 +252,7 @@ documents:
 
   # 가이드 문서들 추가
   302:
-    path: "/docs/guides/capabilities.md"
+    path: "/docs/guides/CAPABILITIES.md"
     created: "2025-08-02"
     updated: "2025-08-02"
     commit: "e7b2ee3"
@@ -270,7 +262,7 @@ documents:
   # 303, 304는 best-practices.md로 통합되어 삭제됨
 
   305:
-    path: "/docs/guides/troubleshooting.md"
+    path: "/docs/guides/TROUBLESHOOTING.md"
     created: "2025-08-02"
     updated: "2025-08-02"
     commit: "e7b2ee3"
@@ -278,18 +270,18 @@ documents:
     referenced_by: [510]  # COMMAND_INDEX.md
 
   306:
-    path: "/docs/guides/workflows.md"
+    path: "/docs/guides/WORKFLOWS.md"
     created: "2025-08-02"
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: [109, 102]  # clauder-start.md, clauder-daily.md
     referenced_by: [510]  # COMMAND_INDEX.md
 
-  307:
+  303:
     path: "/.clauder-dev/roadmap/VERSION-INFO-REMOVAL-PLAN.md"
     created: "2025-08-02"
     updated: "2025-08-02"
-    commit: "e7b2ee3"
+    commit: "ec814c8"
     depends_on: []
     referenced_by: []
 
@@ -725,7 +717,7 @@ path_to_id:
   "/.clauder-dev/principles/08-DOCUMENTATION-STANDARDS.md": 8
   "/.clauder-dev/design/VERSION-TREE.md": 203
   "/.clauder-dev/roadmap/VERSION-TREE-MIGRATION.md": 301
-  "/.clauder-dev/roadmap/VERSION-INFO-REMOVAL-PLAN.md": 307
+  "/.clauder-dev/roadmap/VERSION-INFO-REMOVAL-PLAN.md": 303
   "/.claude/instructions.md": 500
   "/.claude/config.yaml": 501
   "/.claude/version-tree.yaml": 503
@@ -743,13 +735,12 @@ path_to_id:
   "/docs/commands/clauder-start.md": 109
   "/docs/commands/clauder-track.md": 110
   "/docs/commands/clauder-update.md": 111
-  "/docs/commands/common/usage-template.md": 112
   "/docs/commands/clauder-tree.md": 113
   # 가이드 문서들
-  "/docs/guides/capabilities.md": 302
-  "/docs/guides/troubleshooting.md": 305
-  "/docs/guides/workflows.md": 306
-  "/.clauder-dev/roadmap/VERSION-INFO-REMOVAL-PLAN.md": 307
+  "/docs/guides/CAPABILITIES.md": 302
+  "/docs/guides/TROUBLESHOOTING.md": 305
+  "/docs/guides/WORKFLOWS.md": 306
+  "/.clauder-dev/roadmap/VERSION-INFO-REMOVAL-PLAN.md": 303
   "/.clauder-dev/tools/helpers/VERSION-TREE-GUIDE.md": 308
   # 템플릿 문서들
   "/.claude/templates/CLAUDE.template.md": 400

@@ -22,7 +22,7 @@ doc_id: 303
 ### Stage 1: 준비 단계 (현재~1주)
 ```yaml
 ---
-doc_id: 123  # 새로 추가
+doc_id: 999  # 새로 추가 (예시)
 version:     # 기존 유지
   created: "2025-08-02"
   updated: "2025-08-02"
@@ -36,7 +36,7 @@ version:     # 기존 유지
 ### Stage 2: 전환 단계 (1주~1개월)
 ```yaml
 ---
-doc_id: 123
+doc_id: 999  # 예시
 # version: deprecated - see .claude/version-tree.yaml
 ---
 ```
@@ -47,7 +47,7 @@ doc_id: 123
 ### Stage 3: 완료 단계 (1개월 후)
 ```yaml
 ---
-doc_id: 123
+doc_id: 999  # 예시
 ---
 ```
 - 모든 버전 정보 제거

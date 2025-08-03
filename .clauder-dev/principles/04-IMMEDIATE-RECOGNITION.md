@@ -19,10 +19,10 @@ doc_id: 4
 1. **CLAUDE.md 최상단**
    ```markdown
    ## 🚨 핵심 원칙
-   1. @.claude/docs/principles/01-REFERENCE-STRUCTURE.md
-   2. @.claude/docs/principles/02-PROJECT-INDEPENDENCE.md
-   3. @.claude/docs/principles/03-DOCUMENT-MODULARITY.md
-   4. @.claude/docs/principles/04-IMMEDIATE-RECOGNITION.md
+   1. @/.clauder-dev/principles/01-REFERENCE-STRUCTURE.md
+   2. @/.clauder-dev/principles/02-PROJECT-INDEPENDENCE.md
+   3. @/.clauder-dev/principles/03-DOCUMENT-MODULARITY.md
+   4. @/.clauder-dev/principles/04-IMMEDIATE-RECOGNITION.md
    ```
 
 2. **즉시 접근 가능**

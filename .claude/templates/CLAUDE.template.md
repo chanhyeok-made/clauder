@@ -6,28 +6,28 @@ doc_id: 400
 
 ## 🎯 프로젝트 정보
 <!-- if:exists custom/overrides/01-essentials.md -->
-@.claude/custom/overrides/01-essentials.md
+# 커스텀 오버라이드 파일 (선택적)
 <!-- else -->
 @.claude/templates/core/01-essentials.template.md
 <!-- endif -->
 
 ## 🌟 작업 원칙
 <!-- if:exists custom/overrides/02-work-principles.md -->
-@.claude/custom/overrides/02-work-principles.md
+# 커스텀 오버라이드 파일 (선택적)
 <!-- else -->
 @.claude/templates/core/02-work-principles.template.md
 <!-- endif -->
 
 ## 📐 개발 원칙
 <!-- if:exists custom/overrides/03-dev-principles.md -->
-@.claude/custom/overrides/03-dev-principles.md
+# 커스텀 오버라이드 파일 (선택적)
 <!-- else -->
 @.claude/templates/core/03-dev-principles.template.md
 <!-- endif -->
 
 ## 🔧 상황별 가이드
 ### 기본 가이드
-@.claude/templates/contexts/README.md
+@/.claude/templates/contexts/README.template.md
 
 ### 프로젝트별 가이드
 <!-- for:file in custom/contexts/*.md -->
