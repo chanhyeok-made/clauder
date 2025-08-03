@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-02"
-  last_commit: "67e1355"
-  total_documents: 20
+  last_commit: "e7b2ee3"
+  total_documents: 55
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -165,6 +165,347 @@ documents:
     depends_on: []
     referenced_by: []
 
+  # 명령어 문서들
+  100:
+    path: "/.claude/commands/clauder-add.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  101:
+    path: "/.claude/commands/clauder-check.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  102:
+    path: "/.claude/commands/clauder-daily.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  103:
+    path: "/.claude/commands/clauder-generate.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  104:
+    path: "/.claude/commands/clauder-hooks.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  105:
+    path: "/.claude/commands/clauder-initialize-optimized.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  106:
+    path: "/.claude/commands/clauder-initialize.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  107:
+    path: "/.claude/commands/clauder-optimize.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  108:
+    path: "/.claude/commands/clauder-ref.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  109:
+    path: "/.claude/commands/clauder-start.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  110:
+    path: "/.claude/commands/clauder-track.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  111:
+    path: "/.claude/commands/clauder-update.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  112:
+    path: "/.claude/commands/common/usage-template.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  # 가이드 문서들 추가
+  302:
+    path: "/.claude/docs/guides/CAPABILITIES.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  303:
+    path: "/.claude/docs/guides/OPTIMIZATION.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  304:
+    path: "/.claude/docs/guides/TOKEN_TIPS.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  305:
+    path: "/.claude/docs/guides/TROUBLESHOOTING.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  306:
+    path: "/.claude/docs/guides/WORKFLOWS.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  307:
+    path: "/.claude/docs/guides/VERSION-INFO-REMOVAL-PLAN.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  # 템플릿 문서들
+  400:
+    path: "/.claude/templates/CLAUDE.template.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  401:
+    path: "/.claude/templates/contexts/01-quick-fix.template.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  402:
+    path: "/.claude/templates/contexts/02-analysis-guide.template.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  403:
+    path: "/.claude/templates/contexts/README.template.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  404:
+    path: "/.claude/templates/core/01-essentials.template.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  405:
+    path: "/.claude/templates/core/02-work-principles.template.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  406:
+    path: "/.claude/templates/core/03-dev-principles.template.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  # 기타 문서들
+  506:
+    path: "/.claude/COMMANDS_QUICK_REF.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  507:
+    path: "/.claude/LOADING_STRATEGY.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  508:
+    path: "/.claude/README.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  509:
+    path: "/.claude/custom/README.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  510:
+    path: "/.claude/docs/COMMAND_INDEX.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  511:
+    path: "/.claude/docs/TEMPLATE_GUIDE.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  512:
+    path: "/.claude/docs/design/HOOKS.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  513:
+    path: "/.claude/docs/design/PHILOSOPHY.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  514:
+    path: "/.claude/docs/design/REFERENCE_STRATEGY.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  515:
+    path: "/.claude/docs/design/VERSION_TRACKING.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  516:
+    path: "/.claude/docs/principles/DOCUMENTATION_PRINCIPLES.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  # 프로젝트 루트 문서들
+  517:
+    path: "/ARCHITECTURE.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  518:
+    path: "/CLAUDE.base.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  519:
+    path: "/EXAMPLES.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  520:
+    path: "/FEATURE_MAP.md"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
+  521:
+    path: "/.claude/scripts/generate-tree-entries.sh"
+    created: "2025-08-02"
+    updated: "2025-08-02"
+    commit: "e7b2ee3"
+    depends_on: []
+    referenced_by: []
+
 # 빠른 검색을 위한 인덱스
 path_to_id:
   "/CLAUDE.md": 1000
@@ -179,9 +520,56 @@ path_to_id:
   "/.claude/docs/principles/00-PRINCIPLE-GUIDELINES.md": 7
   "/.claude/docs/design/VERSION-TREE.md": 203
   "/.claude/docs/guides/VERSION-TREE-MIGRATION.md": 301
+  "/.claude/docs/guides/VERSION-INFO-REMOVAL-PLAN.md": 307
   "/.claude/instructions.md": 500
   "/.claude/aliases.yaml": 501
   "/.claude/references.yaml": 502
   "/.claude/version-tree.yaml": 503
   "/.claude/scripts/version-tree-manager.py": 504
   "/.claude/scripts/tree-sync.py": 505
+  "/.claude/scripts/generate-tree-entries.sh": 521
+  # 명령어 문서들
+  "/.claude/commands/clauder-add.md": 100
+  "/.claude/commands/clauder-check.md": 101
+  "/.claude/commands/clauder-daily.md": 102
+  "/.claude/commands/clauder-generate.md": 103
+  "/.claude/commands/clauder-hooks.md": 104
+  "/.claude/commands/clauder-initialize-optimized.md": 105
+  "/.claude/commands/clauder-initialize.md": 106
+  "/.claude/commands/clauder-optimize.md": 107
+  "/.claude/commands/clauder-ref.md": 108
+  "/.claude/commands/clauder-start.md": 109
+  "/.claude/commands/clauder-track.md": 110
+  "/.claude/commands/clauder-update.md": 111
+  "/.claude/commands/common/usage-template.md": 112
+  # 가이드 문서들
+  "/.claude/docs/guides/CAPABILITIES.md": 302
+  "/.claude/docs/guides/OPTIMIZATION.md": 303
+  "/.claude/docs/guides/TOKEN_TIPS.md": 304
+  "/.claude/docs/guides/TROUBLESHOOTING.md": 305
+  "/.claude/docs/guides/WORKFLOWS.md": 306
+  # 템플릿 문서들
+  "/.claude/templates/CLAUDE.template.md": 400
+  "/.claude/templates/contexts/01-quick-fix.template.md": 401
+  "/.claude/templates/contexts/02-analysis-guide.template.md": 402
+  "/.claude/templates/contexts/README.template.md": 403
+  "/.claude/templates/core/01-essentials.template.md": 404
+  "/.claude/templates/core/02-work-principles.template.md": 405
+  "/.claude/templates/core/03-dev-principles.template.md": 406
+  # 기타 문서들
+  "/.claude/COMMANDS_QUICK_REF.md": 506
+  "/.claude/LOADING_STRATEGY.md": 507
+  "/.claude/README.md": 508
+  "/.claude/custom/README.md": 509
+  "/.claude/docs/COMMAND_INDEX.md": 510
+  "/.claude/docs/TEMPLATE_GUIDE.md": 511
+  "/.claude/docs/design/HOOKS.md": 512
+  "/.claude/docs/design/PHILOSOPHY.md": 513
+  "/.claude/docs/design/REFERENCE_STRATEGY.md": 514
+  "/.claude/docs/design/VERSION_TRACKING.md": 515
+  "/.claude/docs/principles/DOCUMENTATION_PRINCIPLES.md": 516
+  # 프로젝트 루트 문서들
+  "/ARCHITECTURE.md": 517
+  "/CLAUDE.base.md": 518
+  "/EXAMPLES.md": 519
+  "/FEATURE_MAP.md": 520
