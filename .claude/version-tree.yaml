@@ -3,9 +3,9 @@
 # 문서에는 이 트리의 ID만 참조하여 토큰 절약
 
 metadata:
-  last_update: "2025-08-02"
-  last_commit: "d0d8d60"
-  total_documents: 55
+  last_update: "2025-08-03"
+  last_commit: "aef76b7"
+  total_documents: 57
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -270,6 +270,14 @@ documents:
     depends_on: []
     referenced_by: []
 
+  113:
+    path: "/.claude/commands/clauder-tree.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "aef76b7"
+    depends_on: [503, 522]  # version-tree.yaml, version-tree-helper.md
+    referenced_by: []
+
   # 가이드 문서들 추가
   302:
     path: "/.claude/docs/guides/CAPABILITIES.md"
@@ -506,6 +514,14 @@ documents:
     depends_on: []
     referenced_by: []
 
+  522:
+    path: "/.claude/scripts/version-tree-helper.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "aef76b7"
+    depends_on: []
+    referenced_by: [113]  # clauder-tree.md
+
 # 빠른 검색을 위한 인덱스
 path_to_id:
   "/CLAUDE.md": 1000
@@ -542,6 +558,7 @@ path_to_id:
   "/.claude/commands/clauder-track.md": 110
   "/.claude/commands/clauder-update.md": 111
   "/.claude/commands/common/usage-template.md": 112
+  "/.claude/commands/clauder-tree.md": 113
   # 가이드 문서들
   "/.claude/docs/guides/CAPABILITIES.md": 302
   "/.claude/docs/guides/OPTIMIZATION.md": 303
@@ -573,3 +590,4 @@ path_to_id:
   "/CLAUDE.base.md": 518
   "/EXAMPLES.md": 519
   "/FEATURE_MAP.md": 520
+  "/.claude/scripts/version-tree-helper.md": 522

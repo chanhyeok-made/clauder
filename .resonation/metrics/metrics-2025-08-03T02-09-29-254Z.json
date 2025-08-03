@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-08-03T02:09:29.254Z",
+  "duration": 37500131,
+  "metrics": {
+    "counters": {},
+    "gauges": {},
+    "histograms": {},
+    "timers": {}
+  }
+}
