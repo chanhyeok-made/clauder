@@ -23,12 +23,14 @@ git push origin main
 
 모든 작업은 다음 원칙을 따라야 합니다:
 
+0. **지속적 학습과 개선**: @.clauder-dev/principles/00-CONTINUOUS-LEARNING.md
 1. **완벽한 참조 구조**: @.clauder-dev/principles/01-REFERENCE-STRUCTURE.md
 2. **프로젝트 독립성**: @.clauder-dev/principles/02-PROJECT-INDEPENDENCE.md
 3. **문서 모듈화**: @.clauder-dev/principles/03-DOCUMENT-MODULARITY.md
 4. **즉시 인지 가능**: @.clauder-dev/principles/04-IMMEDIATE-RECOGNITION.md
 5. **필수 역참조**: @.clauder-dev/principles/05-BIDIRECTIONAL-REFERENCES.md
 6. **작업 단위 커밋 및 푸시**: @.clauder-dev/principles/06-WORK-UNIT-COMMITS.md
+8. **문서 작성 기준**: @.clauder-dev/principles/08-DOCUMENTATION-STANDARDS.md
 
 전체 원칙 목록: @.clauder-dev/principles/README.md
 
@@ -61,13 +63,17 @@ clauder/
 ├── .claude/                # 시스템 핵심
 │   ├── templates/          # 시스템 템플릿
 │   ├── custom/             # 프로젝트 커스텀
+│   │   └── personal/       # 개인 설정
 │   ├── hooks/              # 자동화 훅
 │   ├── config.yaml         # 통합 설정
-│   └── version-tree.yaml   # 버전 관리
+│   └── version-tree.yaml   # 중앙 버전 관리
 └── .clauder-dev/           # 개발자 전용
     ├── principles/         # 개발 원칙
     ├── design/             # 설계 문서
-    ├── roadmap/            # 개발 계획
+    ├── learnings/          # 학습 기록
+    ├── temp/               # 임시 파일 (gitignore)
+    ├── logs/               # 로그 파일 (gitignore)
+    ├── FILE-MANAGEMENT-POLICY.md  # 파일 관리 정책
     └── tools/              # 개발 도구
 ```
 
@@ -77,8 +83,10 @@ clauder/
 - 템플릿 보존: templates/ 폴더는 수정하지 않음
 - 커스텀 우선: custom/이 templates/보다 우선
 - 명시적 확장: 모든 수정은 custom/에서만
-- 버전 관리: templates/는 업데이트 가능, custom/은 보존
+- 버전 관리: 중앙 version-tree.yaml로 통합 관리
 - 문서 기반: 스크립트 대신 문서로 설정
+- 학습 지향: 실수와 개선사항을 learnings/에 기록
+- 파일 수명 주기: FILE-MANAGEMENT-POLICY.md 준수
 
 ### 코딩 컨벤션
 **Markdown:**
@@ -147,16 +155,19 @@ clauder/
    - 변수 치환 지원
    - 조건부 포함
    - 오버라이드 메커니즘
+   - 개인 설정 지원
 
-2. **버전 추적**
-   - Git 커밋 해시 기반
-   - 의존성 추적
+2. **중앙 버전 추적**
+   - doc_id 기반 참조 (90% 토큰 절약)
+   - Git 커밋 해시 추적
    - 자동 동기화
+   - 의존성 관리
 
 3. **참조 시스템**
    - 경로 별칭
    - 중앙 레지스트리
-   - 컨텍스트 최적화
+   - 양방향 참조 추적
+   - 순환 참조 방지
 
 4. **훅 시스템**
    - Git hooks
@@ -165,6 +176,13 @@ clauder/
 
 5. **명령어 인터페이스**
    - `/clauder` 네임스페이스
+   - 15+ 명령어 지원
    - 자동 완성
    - 도움말 지원
+
+6. **학습 시스템**
+   - 실수 패턴 기록
+   - 개선사항 추적
+   - 재발 방지책 수립
+   - 지식 전파
 

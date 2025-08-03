@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-03"
-  last_commit: "a6f02df"
-  total_documents: 75
+  last_commit: "65403e7"
+  total_documents: 79
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -679,6 +679,37 @@ documents:
     depends_on: [722]
     referenced_by: [510]
     
+  723:
+    path: "/.clauder-dev/analysis/PROJECT_STATUS_20250803.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "65403e7"
+    depends_on: []
+    referenced_by: []
+    
+  724:
+    path: "/.clauder-dev/tools/helpers/VERSION-TREE-AUTOMATION.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "65403e7"
+    depends_on: []
+    referenced_by: []
+    
+  725:
+    path: "/INTERACTIVE_SETUP.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "65403e7"
+    depends_on: []
+    referenced_by: []
+    
+  726:
+    path: "/docs/guides/visual-tutorial.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "65403e7"
+    depends_on: []
+    referenced_by: []
 
 # 빠른 검색을 위한 인덱스
 path_to_id:
@@ -768,3 +799,9 @@ path_to_id:
   "/docs/guides/personal-settings.md": 717
   "/docs/commands/clauder-personal.md": 718
   "/docs/commands/clauder-cleanup.md": 114
+  "/.clauder-dev/analysis/PROJECT_STATUS_20250803.md": 723
+  "/.clauder-dev/FILE-MANAGEMENT-POLICY.md": 722
+  "/.clauder-dev/learnings/project-management/file-organization.md": 721
+  "/.clauder-dev/tools/helpers/VERSION-TREE-AUTOMATION.md": 724
+  "/INTERACTIVE_SETUP.md": 725
+  "/docs/guides/visual-tutorial.md": 726
