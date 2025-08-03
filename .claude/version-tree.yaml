@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-03"
-  last_commit: "b5833c8"
-  total_documents: 56
+  last_commit: "current"
+  total_documents: 60
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -86,10 +86,10 @@ documents:
   0:
     path: "/.clauder-dev/principles/README.md"
     created: "2025-08-02"
-    updated: "2025-08-02"
-    commit: "67e1355"
-    depends_on: [7, 1, 2, 3, 4, 5, 6]
-    referenced_by: [1000, 500]
+    updated: "2025-08-03"
+    commit: "current"
+    depends_on: [701, 1, 2, 3, 4, 5, 6]
+    referenced_by: [1000, 500, 701]
     
   # 기타 시스템 파일들
   500:
@@ -523,6 +523,40 @@ documents:
     commit: "b5833c8"
     depends_on: []
     referenced_by: []
+    
+  # 원칙 0 추가
+  701:
+    path: "/.clauder-dev/principles/00-CONTINUOUS-LEARNING.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "current"
+    depends_on: [702, 0]
+    referenced_by: [0]
+    
+  # 학습 기록 문서들
+  702:
+    path: "/.clauder-dev/learnings/INDEX.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "current"
+    depends_on: [703, 704, 701, 1]
+    referenced_by: [701]
+    
+  703:
+    path: "/.clauder-dev/learnings/optimization/token-optimization.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "current"
+    depends_on: [308, 1]
+    referenced_by: [702]
+    
+  704:
+    path: "/.clauder-dev/learnings/user-feedback/documentation-tone.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "current"
+    depends_on: []
+    referenced_by: [702]
 
 # 빠른 검색을 위한 인덱스
 path_to_id:
@@ -593,3 +627,7 @@ path_to_id:
   "/.clauder-dev/roadmap/RESTRUCTURE-PLAN.md": 527
   "/.clauder-dev/tools/helpers/update-tree-paths.md": 528
   "/.clauder-dev/tools/scripts/update-version-tree.sh": 529
+  "/.clauder-dev/principles/00-CONTINUOUS-LEARNING.md": 701
+  "/.clauder-dev/learnings/INDEX.md": 702
+  "/.clauder-dev/learnings/optimization/token-optimization.md": 703
+  "/.clauder-dev/learnings/user-feedback/documentation-tone.md": 704

@@ -5,8 +5,8 @@ version:
   commit: "3eee0eb"
   
 dependencies:
-  - file: ".claude/docs/principles/00-PRINCIPLE-GUIDELINES.md"
-    commit: "3eee0eb"
+  - file: ".clauder-dev/principles/00-CONTINUOUS-LEARNING.md"
+    commit: "current"
   - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
     commit: "11d1061"
   - file: ".claude/docs/principles/02-PROJECT-INDEPENDENCE.md"
@@ -31,14 +31,12 @@ references:
 
 # 📋 Clauder 핵심 원칙
 
-## 0️⃣ 원칙 작성 가이드
-@.claude/docs/principles/00-PRINCIPLE-GUIDELINES.md
+모든 Clauder 문서와 시스템은 다음 핵심 원칙을 따릅니다:
 
-원칙을 작성할 때 따라야 할 메타 원칙입니다. 명확하고 간결하며 전문적인 톤을 유지합니다.
+## 0️⃣ 지속적 학습과 개선
+@.clauder-dev/principles/00-CONTINUOUS-LEARNING.md
 
----
-
-모든 Clauder 문서와 시스템은 다음 6가지 핵심 원칙을 따릅니다:
+작업 중 발생한 실수나 개선점을 체계적으로 기록하고 학습하여 지속적으로 발전합니다.
 
 ## 1️⃣ 완벽한 참조 구조
 @.claude/docs/principles/01-REFERENCE-STRUCTURE.md
