@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-03"
-  last_commit: "5bbcc77"
-  total_documents: 61
+  last_commit: "750441b"
+  total_documents: 64
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -565,6 +565,30 @@ documents:
     commit: "5bbcc77"
     depends_on: []
     referenced_by: [702]
+    
+  706:
+    path: "/.clauder-dev/learnings/error-patterns/principle-numbering-conflict.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "750441b"
+    depends_on: [708]
+    referenced_by: [702]
+    
+  707:
+    path: "/.clauder-dev/learnings/error-patterns/missing-prevention-measures.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "750441b"
+    depends_on: []
+    referenced_by: [702]
+    
+  708:
+    path: "/.clauder-dev/principles/REGISTRY.yaml"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "750441b"
+    depends_on: []
+    referenced_by: [706]
 
 # 빠른 검색을 위한 인덱스
 path_to_id:
@@ -640,3 +664,6 @@ path_to_id:
   "/.clauder-dev/learnings/optimization/token-optimization.md": 703
   "/.clauder-dev/learnings/user-feedback/documentation-tone.md": 704
   "/.clauder-dev/learnings/error-patterns/current-commit-antipattern.md": 705
+  "/.clauder-dev/learnings/error-patterns/principle-numbering-conflict.md": 706
+  "/.clauder-dev/learnings/error-patterns/missing-prevention-measures.md": 707
+  "/.clauder-dev/principles/REGISTRY.yaml": 708

@@ -10,6 +10,8 @@ Clauder 프로젝트를 개발하면서 배운 교훈과 개선사항을 기록�
 
 ### 오류 패턴 (Error Patterns)
 - [current 커밋 안티패턴](error-patterns/current-commit-antipattern.md)
+- [원칙 번호 중복](error-patterns/principle-numbering-conflict.md)
+- [재발 방지 대책 누락](error-patterns/missing-prevention-measures.md)
 - [순환 참조 방지](error-patterns/circular-references.md)
 
 ### 최적화 (Optimizations)
@@ -42,6 +44,12 @@ Clauder 프로젝트를 개발하면서 배운 교훈과 개선사항을 기록�
 - **해결**: 항상 실제 커밋 해시 사용
 - **교훈**: 명확성과 추적 가능성이 편의보다 중요
 - **상세**: [current 커밋 안티패턴](error-patterns/current-commit-antipattern.md)
+
+### 2025-08-03: 원칙 번호 중복 및 재발 방지
+- **문제**: 0번 원칙 2개 생성, 재발 방지책 미수립
+- **해결**: 원칙 레지스트리 생성, 학습 템플릿 강화
+- **교훈**: 문제 해결과 재발 방지는 별개, 둘 다 필수
+- **상세**: [원칙 번호 중복](error-patterns/principle-numbering-conflict.md), [재발 방지 누락](error-patterns/missing-prevention-measures.md)
 
 ## 📈 개선 추이
 

@@ -18,8 +18,13 @@ learning_entry:
   initial_approach: "초기 접근 방법"
   better_solution: "개선된 해결책"
   root_cause: "초기 접근의 한계점"
-  prevention: "재발 방지 방법"
+  prevention: "재발 방지 방법"  # 필수!
 ```
+
+### 재발 방지책 필수
+- 모든 학습 기록에는 구체적인 재발 방지책 포함
+- 프로세스, 도구, 체크리스트 등 실질적 대책 수립
+- 재발 방지책 없는 학습은 불완전한 학습
 
 ## 실천 방법
 
