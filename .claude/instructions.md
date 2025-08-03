@@ -5,14 +5,18 @@ version:
   commit: "67e1355"
   
 dependencies:
-  - file: ".claude/docs/principles/README.md"
+  - file: ".clauder-dev/principles/README.md"
     commit: "11d1061"
-  - file: ".claude/docs/principles/01-REFERENCE-STRUCTURE.md"
+  - file: ".clauder-dev/principles/01-REFERENCE-STRUCTURE.md"
     commit: "11d1061"
-  - file: ".claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md"
+  - file: ".clauder-dev/principles/05-BIDIRECTIONAL-REFERENCES.md"
     commit: "11d1061"
-  - file: ".claude/docs/principles/06-WORK-UNIT-COMMITS.md"
+  - file: ".clauder-dev/principles/06-WORK-UNIT-COMMITS.md"
     commit: "11d1061"
+  - file: ".clauder-dev/tools/helpers/VERSION-TREE-GUIDE.md"
+    commit: "cf49f2e"
+  - file: ".claude/templates/version-tree-entry.template.md"
+    commit: "cf49f2e"
     
 references: []  # 아직 역참조 없음
 ---
@@ -23,14 +27,14 @@ references: []  # 아직 역참조 없음
 
 ## 🚨 핵심 원칙
 
-1. **완벽한 참조 구조**: @.claude/docs/principles/01-REFERENCE-STRUCTURE.md
-2. **프로젝트 독립성**: @.claude/docs/principles/02-PROJECT-INDEPENDENCE.md
-3. **문서 모듈화**: @.claude/docs/principles/03-DOCUMENT-MODULARITY.md
-4. **즉시 인지 가능**: @.claude/docs/principles/04-IMMEDIATE-RECOGNITION.md
-5. **필수 역참조**: @.claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md
-6. **작업 단위 커밋**: @.claude/docs/principles/06-WORK-UNIT-COMMITS.md
+1. **완벽한 참조 구조**: @.clauder-dev/principles/01-REFERENCE-STRUCTURE.md
+2. **프로젝트 독립성**: @.clauder-dev/principles/02-PROJECT-INDEPENDENCE.md
+3. **문서 모듈화**: @.clauder-dev/principles/03-DOCUMENT-MODULARITY.md
+4. **즉시 인지 가능**: @.clauder-dev/principles/04-IMMEDIATE-RECOGNITION.md
+5. **필수 역참조**: @.clauder-dev/principles/05-BIDIRECTIONAL-REFERENCES.md
+6. **작업 단위 커밋**: @.clauder-dev/principles/06-WORK-UNIT-COMMITS.md
 
-전체 원칙: @.claude/docs/principles/README.md
+전체 원칙: @.clauder-dev/principles/README.md
 
 ### 필수 규칙
 - **실제 commit hash 사용**: "current" 금지, `git log -1 --format="%h"` 사용
@@ -47,7 +51,7 @@ references: []  # 아직 역참조 없음
 WHEN 작업 완료:
 - ALERT: "🚨 작업 단위 커밋 필요!"
 - SUGGEST: "git add . && git commit -m '[message]' && git push"
-- REMIND: @.claude/docs/principles/06-WORK-UNIT-COMMITS.md
+- REMIND: @.clauder-dev/principles/06-WORK-UNIT-COMMITS.md
 ```
 
 ### TodoWrite 완료 시
@@ -181,8 +185,8 @@ if "version:" not in file_content:
 ### 문서 로딩 전략
 ```
 BEFORE 세션 시작:
-- LOAD: .claude/LOADING_STRATEGY.md 참조
-- LOAD: 필수 문서만 (config.yaml 참조)
+- LOAD: .claude/config.yaml 참조
+- LOAD: 필수 문서만 (설정 파일 참조)
 - DEFER: 나머지는 필요 시 로드
 ```
 

@@ -15,20 +15,20 @@ git commit -m "작업 설명"
 git push origin main
 ```
 
-원칙: @.claude/docs/principles/06-WORK-UNIT-COMMITS.md
+원칙: @.clauder-dev/principles/06-WORK-UNIT-COMMITS.md
 
 ## 🚨 핵심 원칙 (필수 준수)
 
 모든 작업은 다음 원칙을 따라야 합니다:
 
-1. **완벽한 참조 구조**: @.claude/docs/principles/01-REFERENCE-STRUCTURE.md
-2. **프로젝트 독립성**: @.claude/docs/principles/02-PROJECT-INDEPENDENCE.md
-3. **문서 모듈화**: @.claude/docs/principles/03-DOCUMENT-MODULARITY.md
-4. **즉시 인지 가능**: @.claude/docs/principles/04-IMMEDIATE-RECOGNITION.md
-5. **필수 역참조**: @.claude/docs/principles/05-BIDIRECTIONAL-REFERENCES.md
-6. **작업 단위 커밋 및 푸시**: @.claude/docs/principles/06-WORK-UNIT-COMMITS.md
+1. **완벽한 참조 구조**: @.clauder-dev/principles/01-REFERENCE-STRUCTURE.md
+2. **프로젝트 독립성**: @.clauder-dev/principles/02-PROJECT-INDEPENDENCE.md
+3. **문서 모듈화**: @.clauder-dev/principles/03-DOCUMENT-MODULARITY.md
+4. **즉시 인지 가능**: @.clauder-dev/principles/04-IMMEDIATE-RECOGNITION.md
+5. **필수 역참조**: @.clauder-dev/principles/05-BIDIRECTIONAL-REFERENCES.md
+6. **작업 단위 커밋 및 푸시**: @.clauder-dev/principles/06-WORK-UNIT-COMMITS.md
 
-전체 원칙 목록: @.claude/docs/principles/README.md
+전체 원칙 목록: @.clauder-dev/principles/README.md
 
 ## 📋 프로젝트 정보
 
@@ -47,19 +47,26 @@ git push origin main
 ### 프로젝트 구조
 ```
 clauder/
-├── README.md                # 프로젝트 소개 및 사용법
-├── CLAUDE.base.md          # 템플릿 파일
-├── CLAUDE.md               # 실제 프로젝트 가이드 (gitignore)
+├── README.md                # 프로젝트 소개
+├── QUICK_START.md          # 빠른 시작 가이드
 ├── EXAMPLES.md             # 사용 예시
-├── ARCHITECTURE.md         # 기술 아키텍처
-├── FEATURE_MAP.md          # 기능 지도
-└── .claude/
-    ├── templates/          # 범용 템플릿 (수정 금지)
-    ├── custom/             # 프로젝트별 커스터마이징
-    ├── commands/           # Claude Code 명령어 정의
-    ├── docs/               # 상세 문서
-    ├── hooks/              # 자동화 훅
-    └── scripts/            # 유틸리티 스크립트
+├── CLAUDE.md               # 실제 프로젝트 가이드 (gitignore)
+├── CLAUDE.base.md          # 템플릿 파일
+├── docs/                   # 사용자 문서
+│   ├── commands/           # 명령어 레퍼런스
+│   ├── guides/             # 사용 가이드
+│   └── templates/          # 템플릿 가이드
+├── .claude/                # 시스템 핵심
+│   ├── templates/          # 시스템 템플릿
+│   ├── custom/             # 프로젝트 커스텀
+│   ├── hooks/              # 자동화 훅
+│   ├── config.yaml         # 통합 설정
+│   └── version-tree.yaml   # 버전 관리
+└── .clauder-dev/           # 개발자 전용
+    ├── principles/         # 개발 원칙
+    ├── design/             # 설계 문서
+    ├── roadmap/            # 개발 계획
+    └── tools/              # 개발 도구
 ```
 
 ## 🔧 개발 가이드
@@ -116,21 +123,21 @@ clauder/
 
 ## 📚 핵심 참조
 
-### 문서
-- 시스템 설명: @.claude/README.md
-- 아키텍처: @ARCHITECTURE.md
+### 사용자 문서
+- 빠른 시작: @QUICK_START.md
 - 사용 예시: @EXAMPLES.md
-- 기능 지도: @FEATURE_MAP.md
-- 명령어 인덱스: @.claude/docs/COMMAND_INDEX.md
+- 명령어 인덱스: @docs/commands/README.md
+- 워크플로우: @docs/guides/workflows.md
+- 문제 해결: @docs/guides/troubleshooting.md
+- 모범 사례: @docs/guides/best-practices.md
 
-### 설계 문서
-- 버전 추적: @.claude/docs/design/VERSION_TRACKING.md
-- 훅 시스템: @.claude/docs/design/HOOKS.md
-- 참조 전략: @.claude/docs/design/REFERENCE_STRATEGY.md
-
-### 가이드
-- 워크플로우: @.claude/docs/guides/WORKFLOWS.md
-- 문제 해결: @.claude/docs/guides/TROUBLESHOOTING.md
+### 개발자 문서
+- 개발자 가이드: @.clauder-dev/README.md
+- 아키텍처: @.clauder-dev/design/architecture.md
+- 기능 지도: @.clauder-dev/design/feature-map.md
+- 버전 추적: @.clauder-dev/design/VERSION_TRACKING.md
+- 훅 시스템: @.clauder-dev/design/HOOKS.md
+- 참조 전략: @.clauder-dev/design/REFERENCE_STRATEGY.md
 
 ## 💡 주요 기능
 
