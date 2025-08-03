@@ -4,7 +4,7 @@
 
 metadata:
   last_update: "2025-08-02"
-  last_commit: "e7b2ee3"
+  last_commit: "d0d8d60"
   total_documents: 55
   
 # ID 할당 규칙:
@@ -23,8 +23,8 @@ documents:
     created: "2025-08-02"
     updated: "2025-08-02" 
     commit: "5093ed7"
-    depends_on: [1, 2, 3, 4, 5, 6]
-    referenced_by: []
+    depends_on: [0, 1, 2, 3, 4, 5, 6, 508, 517, 518, 519, 520]  # 원칙들, README, ARCHITECTURE, EXAMPLES 등
+    referenced_by: [4, 510]  # IMMEDIATE-RECOGNITION.md, COMMAND_INDEX.md
     
   1001:
     path: "/README.md"
@@ -131,7 +131,7 @@ documents:
     updated: "2025-08-02"
     commit: "67e1355"
     depends_on: []
-    referenced_by: [1]
+    referenced_by: [1, 301]  # 01-REFERENCE-STRUCTURE.md, VERSION-TREE-MIGRATION.md
     
   203:
     path: "/.claude/docs/design/VERSION-TREE.md"
@@ -139,14 +139,14 @@ documents:
     updated: "2025-08-02"
     commit: "91c068e"
     depends_on: []
-    referenced_by: []
+    referenced_by: [301]  # VERSION-TREE-MIGRATION.md
     
   301:
     path: "/.claude/docs/guides/VERSION-TREE-MIGRATION.md"
     created: "2025-08-02"
     updated: "2025-08-02"
     commit: "306fde2"
-    depends_on: []
+    depends_on: [203, 503, 504, 505]  # VERSION-TREE.md, version-tree.yaml, version-tree-manager.py, tree-sync.py
     referenced_by: []
     
   504:
@@ -155,7 +155,7 @@ documents:
     updated: "2025-08-02"
     commit: "91c068e"
     depends_on: []
-    referenced_by: []
+    referenced_by: [301]  # VERSION-TREE-MIGRATION.md
     
   505:
     path: "/.claude/scripts/tree-sync.py"
@@ -163,7 +163,7 @@ documents:
     updated: "2025-08-02"
     commit: "306fde2"
     depends_on: []
-    referenced_by: []
+    referenced_by: [301]  # VERSION-TREE-MIGRATION.md
 
   # 명령어 문서들
   100:
@@ -172,7 +172,7 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [510]  # COMMAND_INDEX.md
 
   101:
     path: "/.claude/commands/clauder-check.md"
@@ -180,7 +180,7 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [510]  # COMMAND_INDEX.md
 
   102:
     path: "/.claude/commands/clauder-daily.md"
@@ -188,7 +188,7 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [510, 306]  # COMMAND_INDEX.md, WORKFLOWS.md
 
   103:
     path: "/.claude/commands/clauder-generate.md"
@@ -196,7 +196,7 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [510]  # COMMAND_INDEX.md
 
   104:
     path: "/.claude/commands/clauder-hooks.md"
@@ -204,7 +204,7 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [510, 305, 512]  # COMMAND_INDEX.md, TROUBLESHOOTING.md, HOOKS.md
 
   105:
     path: "/.claude/commands/clauder-initialize-optimized.md"
@@ -212,7 +212,7 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [510]  # COMMAND_INDEX.md
 
   106:
     path: "/.claude/commands/clauder-initialize.md"
@@ -220,7 +220,7 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [510, 508]  # COMMAND_INDEX.md, .claude/README.md
 
   107:
     path: "/.claude/commands/clauder-optimize.md"
@@ -228,7 +228,7 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [510]  # COMMAND_INDEX.md
 
   108:
     path: "/.claude/commands/clauder-ref.md"
@@ -236,7 +236,7 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [510]  # COMMAND_INDEX.md
 
   109:
     path: "/.claude/commands/clauder-start.md"
@@ -244,7 +244,7 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [510, 306]  # COMMAND_INDEX.md, WORKFLOWS.md
 
   110:
     path: "/.claude/commands/clauder-track.md"
@@ -252,7 +252,7 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [510, 515]  # COMMAND_INDEX.md, VERSION_TRACKING.md
 
   111:
     path: "/.claude/commands/clauder-update.md"
@@ -260,7 +260,7 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [510]  # COMMAND_INDEX.md
 
   112:
     path: "/.claude/commands/common/usage-template.md"
@@ -300,16 +300,16 @@ documents:
     created: "2025-08-02"
     updated: "2025-08-02"
     commit: "e7b2ee3"
-    depends_on: []
-    referenced_by: []
+    depends_on: [104, 512]  # clauder-hooks.md, HOOKS.md
+    referenced_by: [510]  # COMMAND_INDEX.md
 
   306:
     path: "/.claude/docs/guides/WORKFLOWS.md"
     created: "2025-08-02"
     updated: "2025-08-02"
     commit: "e7b2ee3"
-    depends_on: []
-    referenced_by: []
+    depends_on: [109, 102]  # clauder-start.md, clauder-daily.md
+    referenced_by: [510]  # COMMAND_INDEX.md
 
   307:
     path: "/.claude/docs/guides/VERSION-INFO-REMOVAL-PLAN.md"
@@ -398,8 +398,8 @@ documents:
     created: "2025-08-02"
     updated: "2025-08-02"
     commit: "e7b2ee3"
-    depends_on: []
-    referenced_by: []
+    depends_on: [1000, 106, 510, 511]  # CLAUDE.md, clauder-initialize.md, COMMAND_INDEX.md, TEMPLATE_GUIDE.md
+    referenced_by: [1000]  # CLAUDE.md
 
   509:
     path: "/.claude/custom/README.md"
@@ -414,8 +414,8 @@ documents:
     created: "2025-08-02"
     updated: "2025-08-02"
     commit: "e7b2ee3"
-    depends_on: []
-    referenced_by: []
+    depends_on: [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111]  # 모든 명령어 문서들
+    referenced_by: [1000, 508]  # CLAUDE.md, .claude/README.md
 
   511:
     path: "/.claude/docs/TEMPLATE_GUIDE.md"
@@ -431,7 +431,7 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [305]  # TROUBLESHOOTING.md
 
   513:
     path: "/.claude/docs/design/PHILOSOPHY.md"
@@ -447,14 +447,14 @@ documents:
     updated: "2025-08-02"
     commit: "e7b2ee3"
     depends_on: []
-    referenced_by: []
+    referenced_by: [1]  # 01-REFERENCE-STRUCTURE.md
 
   515:
     path: "/.claude/docs/design/VERSION_TRACKING.md"
     created: "2025-08-02"
     updated: "2025-08-02"
     commit: "e7b2ee3"
-    depends_on: []
+    depends_on: [110]  # clauder-track.md
     referenced_by: []
 
   516:
