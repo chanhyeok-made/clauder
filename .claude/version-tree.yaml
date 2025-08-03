@@ -5,7 +5,7 @@
 metadata:
   last_update: "2025-08-03"
   last_commit: "a6f02df"
-  total_documents: 76
+  total_documents: 75
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -374,7 +374,7 @@ documents:
     created: "2025-08-02"
     updated: "2025-08-02"
     commit: "e7b2ee3"
-    depends_on: [100, 101, 102, 103, 104, 106, 108, 109, 110, 111, 113]  # 모든 명령어 문서들 (105, 107 제거)
+    depends_on: [100, 101, 102, 103, 104, 106, 108, 109, 110, 111, 113, 114, 718]  # 모든 명령어 문서들
     referenced_by: [1000, 508]  # CLAUDE.md, .claude/README.md
 
   511:
@@ -671,21 +671,14 @@ documents:
     depends_on: [717, 716]
     referenced_by: [510]
     
-  719:
-    path: "/.clauder-dev/tools/scripts/migrate-to-docid.py"
+  114:
+    path: "/docs/commands/clauder-cleanup.md"
     created: "2025-08-03"
     updated: "2025-08-03"
     commit: "a6f02df"
-    depends_on: []
-    referenced_by: []
+    depends_on: [722]
+    referenced_by: [510]
     
-  720:
-    path: "/.clauder-dev/tools/scripts/batch-migrate-docid.sh"
-    created: "2025-08-03"
-    updated: "2025-08-03"
-    commit: "a6f02df"
-    depends_on: []
-    referenced_by: []
 
 # 빠른 검색을 위한 인덱스
 path_to_id:
@@ -774,5 +767,4 @@ path_to_id:
   "/docs/guides/adding-contexts.md": 716
   "/docs/guides/personal-settings.md": 717
   "/docs/commands/clauder-personal.md": 718
-  "/.clauder-dev/tools/scripts/migrate-to-docid.py": 719
-  "/.clauder-dev/tools/scripts/batch-migrate-docid.sh": 720
+  "/docs/commands/clauder-cleanup.md": 114

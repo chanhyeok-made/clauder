@@ -27,6 +27,13 @@ logs/
 *.tmp
 *.temp
 .cache/
+.clauder-dev/temp/
+temp-*
+draft-*
+
+# Log files
+.clauder-dev/logs/
+!.clauder-dev/logs/example.log
 
 # Personal configurations
 .claude/custom/personal/
