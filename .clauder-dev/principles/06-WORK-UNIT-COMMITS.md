@@ -2,7 +2,14 @@
 doc_id: 6
 ---
 
-## 핵심 규칙
+# Clauder 작업 단위 커밋 원칙
+
+## 베이스 원칙
+@.base-principles/workflow/work-unit-commits.md
+
+위 베이스 원칙에 더해, Clauder 개발에서는 다음을 추가로 적용합니다.
+
+## Clauder 특화 규칙
 
 ### 모든 작업은 작업 단위로 GitHub에 커밋 및 푸시
 - 완성된 작업 단위마다 커밋과 푸시를 함께 수행

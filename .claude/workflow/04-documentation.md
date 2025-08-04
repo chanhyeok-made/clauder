@@ -17,7 +17,7 @@ doc_id: 760
 - 같은 디렉토리: `@filename.md` (상대 참조)
 - 다른 디렉토리: `@.path/to/file.md` (절대 참조)
 - 디렉토리 참조: `@.path/to/directory/` (자동으로 README.md)
-- 상세: @.claude/principles/10-DIRECTORY-STRUCTURE.md
+- 상세: @.base-principles/structure/directory-organization.md
 
 ### 3. 모듈화
 - 한 문서 = 한 주제
