@@ -4,7 +4,7 @@
 
 metadata:
   last_update: "2025-08-04"
-  last_commit: "current"
+  last_commit: "2aa05c6"
   total_documents: 114
   
 # ID 할당 규칙:
@@ -628,7 +628,7 @@ documents:
     path: "/.claude/instructions/workflow-automation.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "current"
+    commit: "2aa05c6"
     depends_on: [749]  # workflow/README.md
     referenced_by: [500]  # instructions.md
     
