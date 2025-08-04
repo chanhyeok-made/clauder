@@ -80,8 +80,8 @@ clauder/
     │   │   ├── HOOKS.md
     │   │   └── REFERENCE_STRATEGY.md
     │   ├── 📁 guides/             # 사용 가이드
-    │   │   ├── WORKFLOWS.md
-    │   │   └── TROUBLESHOOTING.md
+    │   │   ├── workflows.md
+    │   │   └── troubleshooting.md
     │   └── 📁 reference/          # 참조 문서
     │       └── REFERENCE_EXAMPLES.md
     │

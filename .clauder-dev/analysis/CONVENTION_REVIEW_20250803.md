@@ -16,7 +16,7 @@ doc_id: 731
    - `.claude/templates/version-tree-entry.template.md` - 템플릿이라 불필요할 수 있음
 
 2. **대소문자 불일치**
-   - guides 디렉토리: `WORKFLOWS.md`, `TROUBLESHOOTING.md`, `CAPABILITIES.md` (대문자)
+   - guides 디렉토리: `workflows.md`, `troubleshooting.md`, `capabilities.md` (대문자)
    - 나머지: `adding-contexts.md`, `best-practices.md` (소문자)
    - 권장: 모두 소문자로 통일
 

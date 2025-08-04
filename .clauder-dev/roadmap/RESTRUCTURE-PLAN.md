@@ -14,7 +14,7 @@ doc_id: 527
 ```
 clauder/
 ├── README.md                    # 프로젝트 소개 (사용자 진입점)
-├── QUICK_START.md              # 빠른 시작 가이드 (신규)
+├── quick-start.md              # 빠른 시작 가이드 (신규)
 ├── EXAMPLES.md                 # 실제 사용 예시
 │
 ├── docs/                       # 사용자 문서 (공개)
@@ -110,7 +110,7 @@ clauder/
 ### 사용자 관점
 - ✅ 필요한 문서를 쉽게 찾을 수 있음
 - ✅ 개발 문서에 혼란스러워하지 않음
-- ✅ 명확한 시작점 (QUICK_START.md)
+- ✅ 명확한 시작점 (quick-start.md)
 
 ### 개발자 관점
 - ✅ 체계적인 개발 문서 관리

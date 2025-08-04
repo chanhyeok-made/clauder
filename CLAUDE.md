@@ -52,7 +52,7 @@ git push origin main
 ```
 clauder/
 ├── README.md                # 프로젝트 소개
-├── QUICK_START.md          # 빠른 시작 가이드
+├── quick-start.md          # 빠른 시작 가이드
 ├── EXAMPLES.md             # 사용 예시
 ├── CLAUDE.md               # 실제 프로젝트 가이드 (gitignore)
 ├── CLAUDE.base.md          # 템플릿 파일
@@ -134,7 +134,7 @@ clauder/
 ## 📚 핵심 참조
 
 ### 사용자 문서
-- 빠른 시작: @QUICK_START.md
+- 빠른 시작: @quick-start.md
 - 사용 예시: @EXAMPLES.md
 - 명령어 인덱스: @docs/commands/README.md
 - 워크플로우: @docs/guides/workflows.md

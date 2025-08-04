@@ -79,5 +79,5 @@ CLAUDE.md 재생성. 템플릿과 커스텀 설정을 병합하여 문서를 생
 - 전체 명령어 목록: `/clauder --list`
 
 ## 관련 문서
-- 워크플로우: @docs/guides/WORKFLOWS.md
-- 문제 해결: @docs/guides/TROUBLESHOOTING.md
+- 워크플로우: @docs/guides/workflows.md
+- 문제 해결: @docs/guides/troubleshooting.md

@@ -19,9 +19,9 @@ doc_id: 528
 - `/.claude/docs/COMMAND_INDEX.md` → `/docs/commands/README.md`
 
 ### 가이드 문서
-- `/.claude/docs/guides/WORKFLOWS.md` → `/docs/guides/workflows.md`
-- `/.claude/docs/guides/TROUBLESHOOTING.md` → `/docs/guides/troubleshooting.md`
-- `/.claude/docs/guides/CAPABILITIES.md` → `/docs/guides/capabilities.md`
+- `/.claude/docs/guides/workflows.md` → `/docs/guides/workflows.md`
+- `/.claude/docs/guides/troubleshooting.md` → `/docs/guides/troubleshooting.md`
+- `/.claude/docs/guides/capabilities.md` → `/docs/guides/capabilities.md`
 - `/.claude/docs/guides/TOKEN_TIPS.md` → 삭제 (best-practices.md에 통합)
 - `/.claude/docs/guides/OPTIMIZATION.md` → 삭제 (best-practices.md에 통합)
 - `/.claude/docs/guides/VERSION-TREE-MIGRATION.md` → `/.clauder-dev/roadmap/VERSION-TREE-MIGRATION.md`
@@ -37,7 +37,7 @@ doc_id: 528
 - `/.claude/scripts/version-tree-helper.md` → `/.clauder-dev/tools/helpers/version-tree-helper.md`
 
 ### 새로운 문서
-- `/QUICK_START.md` (신규)
+- `/quick-start.md` (신규)
 - `/docs/README.md` (신규)
 - `/docs/guides/best-practices.md` (신규)
 - `/.clauder-dev/README.md` (신규)

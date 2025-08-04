@@ -109,7 +109,7 @@ git commit -m "Initial commit"
 
 ## 💬 도움이 필요하신가요?
 
-- 문제 해결: @docs/guides/TROUBLESHOOTING.md
+- 문제 해결: @docs/guides/troubleshooting.md
 - 상세 가이드: @docs/guides/workflows.md
 - GitHub 이슈: https://github.com/chanhyeok-made/clauder/issues
 

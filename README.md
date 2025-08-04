@@ -177,9 +177,9 @@ your-project/
 ## 📚 문서
 
 - **실제 사용 예제**: [EXAMPLES.md](EXAMPLES.md)
-- **문제 해결 가이드**: [.claude/docs/guides/TROUBLESHOOTING.md](.claude/docs/guides/TROUBLESHOOTING.md)
+- **문제 해결 가이드**: [.claude/docs/guides/troubleshooting.md](.claude/docs/guides/troubleshooting.md)
 - **훅 시스템**: [.claude/docs/design/HOOKS.md](.claude/docs/design/HOOKS.md)
-- **워크플로우**: [.claude/docs/guides/WORKFLOWS.md](.claude/docs/guides/WORKFLOWS.md)
+- **워크플로우**: [.claude/docs/guides/workflows.md](.claude/docs/guides/workflows.md)
 - **전체 문서**: [.claude/docs/](.claude/docs/)
 
 ## 🪝 훅 기반 자동화

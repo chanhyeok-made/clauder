@@ -8,7 +8,7 @@ Clauder를 사용하기 위한 모든 문서를 찾을 수 있습니다.
 
 ## 시작하기
 
-- 🚀 [빠른 시작](../QUICK_START.md)
+- 🚀 [빠른 시작](../quick-start.md)
 - 📖 [전체 가이드](../README.md)
 - 💡 [예제](../EXAMPLES.md)
 
