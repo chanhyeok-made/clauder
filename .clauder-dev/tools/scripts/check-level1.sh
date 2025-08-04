@@ -12,15 +12,18 @@ NEW_FILES=$(git status --porcelain | grep "^A.*\.md$" | awk '{print $2}')
 if [ -z "$NEW_FILES" ]; then
     echo "✅ (새 문서 없음)"
 else
-    DOC_ID_MISSING=0
-    echo "$NEW_FILES" | while read file; do
-        if ! grep -q "^doc_id:" "$file" 2>/dev/null; then
-            echo ""
+    DOC_ID_MISSING=false
+    while IFS= read -r file; do
+        if [ -n "$file" ] && ! grep -q "^doc_id:" "$file" 2>/dev/null; then
+            if [ "$DOC_ID_MISSING" = "false" ]; then
+                echo ""
+            fi
             echo "   ⚠️  $file 에 doc_id 없음!"
-            DOC_ID_MISSING=1
+            DOC_ID_MISSING=true
         fi
-    done
-    if [ $DOC_ID_MISSING -eq 0 ]; then
+    done <<< "$NEW_FILES"
+    
+    if [ "$DOC_ID_MISSING" = "false" ]; then
         echo "✅"
     else
         ERRORS=$((ERRORS + 1))

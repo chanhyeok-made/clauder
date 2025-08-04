@@ -1326,6 +1326,54 @@ path_to_id:
     commit: "b0f6b8a"
     depends_on: []
     referenced_by: [742]
+    
+  856:
+    path: "/.claude/guides/validation/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6b3b14d"
+    depends_on: [10]
+    referenced_by: [824]
+    
+  857:
+    path: "/.claude/guides/validation/level1-checklist.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6b3b14d"
+    depends_on: []
+    referenced_by: [856]
+    
+  858:
+    path: "/.clauder-dev/tools/scripts/check-level2.sh"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6b3b14d"
+    depends_on: []
+    referenced_by: [856]
+    
+  859:
+    path: "/.clauder-dev/tools/scripts/check-level1.sh"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6b3b14d"
+    depends_on: []
+    referenced_by: [856]
+    
+  860:
+    path: "/.clauder-dev/learnings/2025/01/validation-level-system.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6b3b14d"
+    depends_on: []
+    referenced_by: []
+    
+  861:
+    path: "/.claude/guides/validation/using-levels.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6b3b14d"
+    depends_on: []
+    referenced_by: [856]
   "/.clauder-dev/analysis/PROJECT_STATUS_20250803.md": 723
   "/.clauder-dev/analysis/CONVENTION_REVIEW_20250803.md": 731
   "/.clauder-dev/temp/temp-cleanup-summary-20250803.md": 732
@@ -1418,3 +1466,9 @@ path_to_id:
   "/.claude/guides/documentation/README.md": 853
   "/.claude/guides/git/README.md": 854
   "/.claude/guides/system/README.md": 855
+  "/.claude/guides/validation/README.md": 856
+  "/.claude/guides/validation/level1-checklist.md": 857
+  "/.clauder-dev/tools/scripts/check-level2.sh": 858
+  "/.clauder-dev/tools/scripts/check-level1.sh": 859
+  "/.clauder-dev/learnings/2025/01/validation-level-system.md": 860
+  "/.claude/guides/validation/using-levels.md": 861
