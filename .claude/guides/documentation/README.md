@@ -8,9 +8,9 @@ doc_id: 853
 
 ## 📁 구조
 
-- **creating.md**: 새 문서 생성 프로토콜
-- **editing.md**: 기존 문서 수정 프로토콜
-- **optimization.md**: 토큰 최적화 및 Lazy Loading
+- **@creating.md**: 새 문서 생성 프로토콜
+- **@editing.md**: 기존 문서 수정 프로토콜
+- **@optimization.md**: 토큰 최적화 및 Lazy Loading
 
 ## 🔍 주요 내용
 
@@ -18,9 +18,9 @@ Claude Code가 문서 작업을 할 때 따라야 할 모든 규칙과 절차를
 
 ## 📌 사용 시점
 
-- 새 파일 생성 시 → creating.md
-- 기존 파일 수정 시 → editing.md
-- 성능 최적화 필요 시 → optimization.md
+- 새 파일 생성 시 → @creating.md
+- 기존 파일 수정 시 → @editing.md
+- 성능 최적화 필요 시 → @optimization.md
 
 ## 🔗 관련 문서
 
