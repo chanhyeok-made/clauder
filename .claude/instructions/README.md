@@ -9,7 +9,7 @@ doc_id: 756
 ## 🚨 필수 자동 행동
 
 ### 1. 워크플로우 TODO 생성
-작업 요청 시 → @workflow-automation.md
+작업 요청 시 → @.claude/workflow/automation/
 
 ### 2. 상태 표시
 ```
@@ -17,10 +17,10 @@ doc_id: 756
 ```
 
 ## 📋 작업별 지침
-- **문서 생성**: @creating-documents.md
-- **문서 수정**: @editing-documents.md
-- **Git 작업**: @git-operations.md
-- **체크리스트**: @checklists.md
+- **문서 작업**: @.claude/guides/documentation/
+- **Git 작업**: @.claude/guides/git/
+- **시스템 훅**: @.claude/guides/system/
+- **체크리스트**: @.claude/workflow/automation/checklists.md
 
 ## ⚠️ 핵심 원칙
 - **긴급 규칙**: @.claude/alerts/urgent.md

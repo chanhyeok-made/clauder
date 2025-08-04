@@ -8,8 +8,8 @@
 
 metadata:
   last_update: "2025-08-04"
-  last_commit: "6ac24fe"
-  total_documents: 147
+  last_commit: "252e3f6"
+  total_documents: 150
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -100,8 +100,8 @@ documents:
     path: "/.claude/instructions/README.md"
     created: "2025-08-02"
     updated: "2025-08-04"
-    commit: "63d3256"
-    depends_on: [749, 758, 742, 759, 801, 802, 803, 804, 805, 806, 807]  # 워크플로우, 긴급사항, 기반원칙, 하위 문서들
+    commit: "252e3f6"
+    depends_on: [755, 742, 759, 853, 854, 855, 806]  # 긴급사항, 기반원칙, workflow/automation/, guides 디렉토리들, checklists.md
     referenced_by: [1000]  # CLAUDE.md에서 참조
     
   # 501, 502는 config.yaml로 통합되어 삭제됨
@@ -629,12 +629,12 @@ documents:
     referenced_by: [500]  # instructions.md
     
   759:
-    path: "/.claude/instructions/workflow-automation.md"
+    path: "/.claude/workflow/automation/README.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "2aa05c6"
+    commit: "252e3f6"
     depends_on: [749]  # workflow/README.md
-    referenced_by: [500]  # instructions.md
+    referenced_by: [500, 756]  # instructions.md, instructions/README.md
     
   # 누락된 문서들 추가
   709:
@@ -759,60 +759,60 @@ documents:
     
   # instructions 하위 문서들
   801:
-    path: "/.claude/instructions/editing-documents.md"
+    path: "/.claude/guides/documentation/editing.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "4b2ca7b"
+    commit: "252e3f6"
     depends_on: []
-    referenced_by: [500]  # instructions.md
+    referenced_by: [500, 853]  # instructions.md, documentation/README.md
     
   802:
-    path: "/.claude/instructions/creating-documents.md"
+    path: "/.claude/guides/documentation/creating.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "4b2ca7b"
+    commit: "252e3f6"
     depends_on: [721]  # VERSION-TREE-GUIDE.md
-    referenced_by: [500]
+    referenced_by: [500, 853]
     
   803:
-    path: "/.claude/instructions/git-operations.md"
+    path: "/.claude/guides/git/operations.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "4b2ca7b"
+    commit: "252e3f6"
     depends_on: [6]  # 06-WORK-UNIT-COMMITS.md
-    referenced_by: [500]
+    referenced_by: [500, 854]
     
   804:
-    path: "/.claude/instructions/hooks-behavior.md"
+    path: "/.claude/guides/system/hooks.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "4b2ca7b"
+    commit: "252e3f6"
     depends_on: []
-    referenced_by: [500]
+    referenced_by: [500, 855]
     
   805:
-    path: "/.claude/instructions/automation-patterns.md"
+    path: "/.claude/workflow/automation/patterns.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "4b2ca7b"
+    commit: "252e3f6"
     depends_on: []
-    referenced_by: [500]
+    referenced_by: [500, 759, 855]
     
   806:
-    path: "/.claude/instructions/checklists.md"
+    path: "/.claude/workflow/automation/checklists.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "4b2ca7b"
+    commit: "252e3f6"
     depends_on: []
-    referenced_by: [500]
+    referenced_by: [500, 759, 756]
     
   807:
-    path: "/.claude/instructions/token-optimization.md"
+    path: "/.claude/guides/documentation/optimization.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "4b2ca7b"
+    commit: "252e3f6"
     depends_on: []
-    referenced_by: [500]
+    referenced_by: [500, 853]
     
   # README 섹션 문서들
   810:
@@ -1159,6 +1159,30 @@ documents:
     commit: "6ac24fe"
     depends_on: []
     referenced_by: [849]
+    
+  853:
+    path: "/.claude/guides/documentation/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "252e3f6"
+    depends_on: [801, 802, 807]  # editing.md, creating.md, optimization.md
+    referenced_by: [756]  # instructions/README.md
+    
+  854:
+    path: "/.claude/guides/git/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "252e3f6"
+    depends_on: [803]  # operations.md
+    referenced_by: [756]  # instructions/README.md
+    
+  855:
+    path: "/.claude/guides/system/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "252e3f6"
+    depends_on: [804, 805]  # hooks.md, patterns.md
+    referenced_by: [756]  # instructions/README.md
 
 # 빠른 검색을 위한 인덱스
 path_to_id:
@@ -1334,18 +1358,18 @@ path_to_id:
   "/.claude/project/architecture.md": 761
   "/.clauder-dev/analysis/TOKEN_OPTIMIZATION_PRIORITY.md": 762
   "/.claude/templates/CLAUDE-LAZY.template.md": 763
-  # 새로 추가된 instructions 하위 문서들
-  "/.claude/instructions/editing-documents.md": 801
-  "/.claude/instructions/creating-documents.md": 802
-  "/.claude/instructions/git-operations.md": 803
-  "/.claude/instructions/hooks-behavior.md": 804
-  "/.claude/instructions/automation-patterns.md": 805
-  "/.claude/instructions/checklists.md": 806
-  "/.claude/instructions/token-optimization.md": 807
+  # 재구성된 문서들
+  "/.claude/guides/documentation/editing.md": 801
+  "/.claude/guides/documentation/creating.md": 802
+  "/.claude/guides/git/operations.md": 803
+  "/.claude/guides/system/hooks.md": 804
+  "/.claude/workflow/automation/patterns.md": 805
+  "/.claude/workflow/automation/checklists.md": 806
+  "/.claude/guides/documentation/optimization.md": 807
   # 워크플로우 자동화 관련 추가
   "/.clauder-dev/learnings/workflow-automation.md": 757
   "/.claude/workflow/checklist-template.md": 758
-  "/.claude/instructions/workflow-automation.md": 759
+  "/.claude/workflow/automation/README.md": 759
   # README 섹션 문서들
   "/docs/readme/new-project.md": 810
   "/docs/readme/existing-project.md": 811
@@ -1391,3 +1415,6 @@ path_to_id:
   "/.clauder-dev/tools/archived/README.md": 850
   "/.clauder-dev/tools/helpers/README.md": 851
   "/.clauder-dev/tools/scripts/README.md": 852
+  "/.claude/guides/documentation/README.md": 853
+  "/.claude/guides/git/README.md": 854
+  "/.claude/guides/system/README.md": 855

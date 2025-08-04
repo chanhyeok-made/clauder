@@ -57,4 +57,4 @@ rm .git/hooks/pre-commit
 ## 자세한 내용
 
 - 훅 설계: @.claude/docs/design/HOOKS.md
-- 자동화 패턴: @.claude/instructions/automation-patterns.md
+- 자동화 패턴: @.claude/workflow/automation/patterns.md
