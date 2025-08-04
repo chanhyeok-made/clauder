@@ -25,4 +25,4 @@ Claude Code가 문서 작업을 할 때 따라야 할 모든 규칙과 절차를
 ## 🔗 관련 문서
 
 - 버전 트리 가이드: @.clauder-dev/tools/helpers/VERSION-TREE-GUIDE.md
-- 문서 표준: @.clauder-dev/principles/08-DOCUMENTATION-STANDARDS.md
+- 문서 표준: @.claude/principles/08-DOCUMENTATION-STANDARDS.md

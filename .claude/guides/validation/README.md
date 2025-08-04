@@ -97,5 +97,5 @@ doc_id: 856
 - @.clauder-dev/tools/scripts/check-documentation.sh - Level 2 문서 검증
 
 ### 관련 원칙
-- @.clauder-dev/principles/09-SYSTEMATIC-WORKFLOW.md - 체계적 워크플로우
-- @.clauder-dev/principles/10-DIRECTORY-STRUCTURE.md - 디렉토리 구조
+- @.claude/principles/09-SYSTEMATIC-WORKFLOW.md - 체계적 워크플로우
+- @.claude/principles/10-DIRECTORY-STRUCTURE.md - 디렉토리 구조

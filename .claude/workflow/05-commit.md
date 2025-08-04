@@ -61,4 +61,4 @@ git push origin main
 ```
 
 ## 원칙
-상세 내용: @.clauder-dev/principles/06-WORK-UNIT-COMMITS.md
+상세 내용: @.claude/principles/06-WORK-UNIT-COMMITS.md

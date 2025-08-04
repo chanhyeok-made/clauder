@@ -27,7 +27,7 @@ AFTER git commit:
 WHEN 작업 완료:
 - ALERT: "🚨 작업 단위 커밋 필요!"
 - SUGGEST: "git add . && git commit -m '[message]' && git push"
-- REMIND: @.clauder-dev/principles/06-WORK-UNIT-COMMITS.md
+- REMIND: @.claude/principles/06-WORK-UNIT-COMMITS.md
 ```
 
 ## TodoWrite 완료 시

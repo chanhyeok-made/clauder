@@ -11,7 +11,7 @@ doc_id: 758
 - **한 번에 하나씩**: 멀티태스킹 금지
 - **중간 검증**: 단계별 동작 확인
 - **진행 보고**: TODO 업데이트
-- **코드 정확성**: 버그 발견 즉시 수정 (@.clauder-dev/principles/11-CODE-CORRECTNESS.md)
+- **코드 정확성**: 버그 발견 즉시 수정 (@.claude/principles/11-CODE-CORRECTNESS.md)
 
 ## 작업 유형별 가이드
 
@@ -24,7 +24,7 @@ doc_id: 758
 - 테스트 먼저: @.claude/guides/testing.md
 
 ### 문서 작업
-- 문서 표준: @.clauder-dev/principles/08-DOCUMENTATION-STANDARDS.md
+- 문서 표준: @.claude/principles/08-DOCUMENTATION-STANDARDS.md
 - 참조 관리: @.claude/guides/references.md
 
 ## 체크포인트

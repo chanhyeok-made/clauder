@@ -12,7 +12,7 @@ git add .
 git commit -m "type: 설명"
 git push
 ```
-**원칙**: @.clauder-dev/principles/06-WORK-UNIT-COMMITS.md
+**원칙**: @.claude/principles/06-WORK-UNIT-COMMITS.md
 
 ### 2. 새 문서 생성 시
 - doc_id 추가 필수
