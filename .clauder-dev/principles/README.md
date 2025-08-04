@@ -55,3 +55,13 @@ Claude Code 실행 시 모든 원칙을 즉시 인지할 수 있도록 구성합
 
 모든 작업은 분석-작업-회고-문서화-커밋의 체계적 단계를 따릅니다.
 
+## 🔟 디렉토리 구조
+@.clauder-dev/principles/10-DIRECTORY-STRUCTURE.md
+
+모든 디렉토리는 README.md를 포함하며 일관된 참조 규칙을 따릅니다.
+
+## 1️⃣1️⃣ 코드 정확성
+@.clauder-dev/principles/11-CODE-CORRECTNESS.md
+
+코드의 정확성은 타협할 수 없으며, 발견한 버그는 즉시 수정하거나 보고합니다.
+
