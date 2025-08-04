@@ -3,9 +3,9 @@
 # 문서에는 이 트리의 ID만 참조하여 토큰 절약
 
 metadata:
-  last_update: "2025-08-03"
-  last_commit: "b0f6b8a"
-  total_documents: 81
+  last_update: "2025-08-04"
+  last_commit: "4b2ca7b"
+  total_documents: 88
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -95,9 +95,9 @@ documents:
   500:
     path: "/.claude/instructions.md"
     created: "2025-08-02"
-    updated: "2025-08-03"
-    commit: "cf49f2e"
-    depends_on: [0, 1, 5, 6, 308, 407]  # 원칙들, VERSION-TREE-GUIDE.md, version-tree-entry.template.md
+    updated: "2025-08-04"
+    commit: "4b2ca7b"
+    depends_on: [9, 6, 721, 801, 802, 803, 804, 805, 806, 807]  # SYSTEMATIC-WORKFLOW, WORK-UNIT-COMMITS, VERSION-TREE-GUIDE, 하위 문서들
     referenced_by: [1, 2, 3, 4, 5, 6]
     
   # 501, 502는 config.yaml로 통합되어 삭제됨
@@ -728,6 +728,63 @@ documents:
     commit: "65403e7"
     depends_on: []
     referenced_by: []
+    
+  # instructions 하위 문서들
+  801:
+    path: "/.claude/instructions/editing-documents.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "4b2ca7b"
+    depends_on: []
+    referenced_by: [500]  # instructions.md
+    
+  802:
+    path: "/.claude/instructions/creating-documents.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "4b2ca7b"
+    depends_on: [721]  # VERSION-TREE-GUIDE.md
+    referenced_by: [500]
+    
+  803:
+    path: "/.claude/instructions/git-operations.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "4b2ca7b"
+    depends_on: [6]  # 06-WORK-UNIT-COMMITS.md
+    referenced_by: [500]
+    
+  804:
+    path: "/.claude/instructions/hooks-behavior.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "4b2ca7b"
+    depends_on: []
+    referenced_by: [500]
+    
+  805:
+    path: "/.claude/instructions/automation-patterns.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "4b2ca7b"
+    depends_on: []
+    referenced_by: [500]
+    
+  806:
+    path: "/.claude/instructions/checklists.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "4b2ca7b"
+    depends_on: []
+    referenced_by: [500]
+    
+  807:
+    path: "/.claude/instructions/token-optimization.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "4b2ca7b"
+    depends_on: []
+    referenced_by: [500]
 
 # 빠른 검색을 위한 인덱스
 path_to_id:
@@ -887,3 +944,27 @@ path_to_id:
   "/.base-principles/03-explicit-automation.md": 745
   "/.base-principles/04-modular-extensibility.md": 746
   "/.base-principles/05-version-transparency.md": 747
+  "/.base-principles/06-lazy-loading.md": 748
+  "/.claude/workflow/README.md": 749
+  "/docs/guides/personal-settings.md": 750
+  "/docs/guides/adding-contexts.md": 751
+  "/docs/guides/capabilities.md": 752
+  "/docs/guides/workflows.md": 753
+  "/docs/guides/troubleshooting.md": 754
+  "/interactive-setup.md": 755
+  "/quick-start.md": 756
+  "/.clauder-dev/analysis/LAZY_LOADING_ARCHITECTURE.md": 757
+  "/.claude/alerts/urgent.md": 758
+  "/.claude/project/overview.md": 759
+  "/.claude/project/tech-stack.md": 760
+  "/.claude/project/architecture.md": 761
+  "/.clauder-dev/analysis/TOKEN_OPTIMIZATION_PRIORITY.md": 762
+  "/.claude/templates/CLAUDE-LAZY.template.md": 763
+  # 새로 추가된 instructions 하위 문서들
+  "/.claude/instructions/editing-documents.md": 801
+  "/.claude/instructions/creating-documents.md": 802
+  "/.claude/instructions/git-operations.md": 803
+  "/.claude/instructions/hooks-behavior.md": 804
+  "/.claude/instructions/automation-patterns.md": 805
+  "/.claude/instructions/checklists.md": 806
+  "/.claude/instructions/token-optimization.md": 807

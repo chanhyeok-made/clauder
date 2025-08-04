@@ -1,5 +1,5 @@
 ---
-doc_id: 400
+doc_id: 763
 ---
 
 # {{PROJECT_NAME}}
@@ -32,7 +32,7 @@ doc_id: 400
 ## 🛠️ 작업별 가이드
 
 ### 개발
-- **코딩 가이드**: @.claude/guides/coding.md
+- **{{PRIMARY_LANGUAGE}} 가이드**: @.claude/guides/{{PRIMARY_LANGUAGE_LOWER}}.md
 - **API 작업**: @.claude/guides/api.md
 - **테스트**: @.claude/guides/testing.md
 
@@ -53,9 +53,10 @@ doc_id: 400
 ## 📚 추가 정보
 
 ### 프로젝트별 가이드
-<!-- for:file in custom/contexts/*.md -->
-- **{{file.name}}**: @.claude/custom/contexts/{{file}}
-<!-- endfor -->
+{{#each CUSTOM_CONTEXTS}}
+- **{{name}}**: @.claude/custom/contexts/{{file}}
+{{/each}}
 
-생성일: {{GENERATED_DATE}}
-버전: {{TEMPLATE_VERSION}}
+---
+
+⚡ **빠른 시작**: 작업 유형을 확인하고 해당 가이드만 참조하세요.

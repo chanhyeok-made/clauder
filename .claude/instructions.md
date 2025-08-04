@@ -2,216 +2,48 @@
 doc_id: 500
 ---
 
-이 문서는 Claude가 Clauder 프로젝트에서 작업할 때 **반드시** 따라야 하는 지시사항입니다.
+# Claude 필수 지시사항
 
-## 🔄 필수 워크플로우 (최우선!)
+> 💡 이 문서는 Lazy Loading 방식으로 최적화되었습니다.
+> 필요한 규칙만 필요할 때 참조하세요.
 
-### 모든 작업은 다음 단계를 따릅니다:
-1. **상태 표시**: 모든 응답 시작 시 `🔍 현재 단계: [분석/작업/회고/문서화/커밋]` 표시
-2. **분석 단계**: 요구사항의 명확성 확인, 불명확하면 TODO 작성 및 명확화
-3. **작업 진행**: 체계적으로 구현
-4. **회고 단계**: 실수나 개선점 발견 시 learnings/에 기록
-5. **문서화**: 새로운 맥락이나 패턴 발견 시 문서 업데이트
-6. **커밋/푸시**: 작업 완료 후 즉시 GitHub에 저장
+## 🔴 즉시 필요 (항상 확인)
 
-자세한 내용: @.clauder-dev/principles/09-SYSTEMATIC-WORKFLOW.md
+### 워크플로우 
+- **5단계 체계**: @.clauder-dev/principles/09-SYSTEMATIC-WORKFLOW.md
+- **상태 표시**: `🔍 현재 단계: [분석/작업/회고/문서화/커밋]`
 
-## 🚨 핵심 원칙
+### 핵심 규칙
+- **작업 단위 커밋**: 완료 즉시 GitHub에 저장 (@.clauder-dev/principles/06-WORK-UNIT-COMMITS.md)
+- **doc_id 필수**: 모든 .md 파일에 doc_id 포함
+- **실제 commit hash**: `git log -1 --format="%h"` 사용
 
-1. **완벽한 참조 구조**: @.clauder-dev/principles/01-REFERENCE-STRUCTURE.md
-2. **프로젝트 독립성**: @.clauder-dev/principles/02-PROJECT-INDEPENDENCE.md
-3. **문서 모듈화**: @.clauder-dev/principles/03-DOCUMENT-MODULARITY.md
-4. **즉시 인지 가능**: @.clauder-dev/principles/04-IMMEDIATE-RECOGNITION.md
-5. **필수 역참조**: @.clauder-dev/principles/05-BIDIRECTIONAL-REFERENCES.md
-6. **작업 단위 커밋**: @.clauder-dev/principles/06-WORK-UNIT-COMMITS.md
+## 📋 작업별 지시사항
 
-전체 원칙: @.clauder-dev/principles/README.md
+### 문서 작업
+- **편집 시**: @.claude/instructions/editing-documents.md
+- **생성 시**: @.claude/instructions/creating-documents.md
+- **버전 트리**: @/.clauder-dev/tools/helpers/VERSION-TREE-GUIDE.md
 
-### 필수 규칙
-- **실제 commit hash 사용**: "current" 금지, `git log -1 --format="%h"` 사용
-- **모든 문서**에 YAML front matter 포함
-- **모든 참조**는 @ 형식 사용
-- **개념별 분리**: 한 문서 = 한 개념
-- **역참조 필수**: 모든 문서에 references 섹션 포함 (비어있어도 `references: []` 명시)
-- **양방향 참조**: A가 B를 참조하면, B의 references에 A 추가
-- **개인 설정 우선**: `.claude/custom/personal/` > `.claude/custom/` > `.claude/templates/`
+### Git 작업
+- **커밋 전후**: @.claude/instructions/git-operations.md
+- **필수 명령**: `git add . && git commit -m '[message]' && git push`
 
-## 🆘 작업 단위 커밋 (긴급!)
+### 자동화
+- **훅 동작**: @.claude/instructions/hooks-behavior.md
+- **패턴 실행**: @.claude/instructions/automation-patterns.md
 
-### 현재 작업 완료 시 즉시 수행
-```
-WHEN 작업 완료:
-- ALERT: "🚨 작업 단위 커밋 필요!"
-- SUGGEST: "git add . && git commit -m '[message]' && git push"
-- REMIND: @.clauder-dev/principles/06-WORK-UNIT-COMMITS.md
-```
+## 🚫 금지사항
 
-### TodoWrite 완료 시
-```
-IF all todos completed:
-- MUST: Git commit 제안
-- SHOW: 커밋 메시지 예시
-- WARN: 커밋 없이 종료 금지
-```
+1. doc_id 없이 .md 파일 생성/수정
+2. 작업 완료 후 커밋 없이 종료
+3. 버전 트리 업데이트 누락
+4. 템플릿과 실제 파일 혼동
 
-## 🚨 핵심 규칙
+## ⚡ 빠른 참조
 
-### 1. 문서 편집 시
-```
-BEFORE Edit 도구 사용:
-- IF 파일이 .md 확장자 THEN
-  - 버전 메타데이터 확인
-  - 없으면 추가 제안
-
-AFTER Edit 도구 사용:
-- IF 편집한 파일이 .md THEN
-  - updated 날짜 변경
-  - commit 해시 업데이트 (git log -1 --format="%h")
-  - 참조 확인
-```
-
-### 2. 새 파일 생성 시
-```
-WHEN Write 도구로 .md 파일 생성:
-1. FIRST: @/.clauder-dev/tools/helpers/VERSION-TREE-GUIDE.md 참조
-2. THEN: @.claude/templates/version-tree-entry.template.md 사용
-3. MUST: 파일에 doc_id 추가 (3줄만)
-4. MUST: 버전 트리에 완전한 엔트리 추가
-5. MUST: path_to_id 인덱스 업데이트
-6. CHECK: 참조 관계 양방향 설정
-```
-
-### 2.1 버전 트리 업데이트 (필수!)
-```
-AFTER 새 .md 파일 생성:
-1. 파일에 doc_id 추가:
-   ---
-   doc_id: [다음 사용 가능한 ID]
-   ---
-2. .claude/version-tree.yaml 업데이트:
-   - documents 섹션에 새 엔트리 추가
-   - path_to_id 인덱스에 추가
-   - total_documents 증가
-   - metadata의 last_update와 commit 업데이트
-
-AFTER 기존 파일 수정:
-1. 참조 추가/제거 시:
-   - 참조하는 파일의 depends_on 업데이트
-   - 참조받는 파일의 referenced_by 업데이트
-2. 버전 트리에서 해당 문서의 updated와 commit 업데이트
-
-AFTER 파일 삭제:
-- 버전 트리에서 해당 엔트리 제거
-- 다른 문서들의 depends_on/referenced_by에서 제거
-- total_documents 감소
-```
-
-### 3. Git 작업 시
-```
-BEFORE git commit:
-- RUN: git status
-- CHECK: 변경된 .md 파일 목록
-- UPDATE: 각 파일의 버전 메타데이터
-
-AFTER git commit:
-- LOG: 새로운 commit 해시
-- SUGGEST: 관련 문서 업데이트 필요 여부
-```
-
-### 4. 프로젝트 시작 시
-```
-WHEN 사용자가 처음 질문:
-- CHECK: .claude/ 디렉토리 존재
-- IF Git 저장소 THEN
-  - 현재 commit 해시 확인
-  - 문서 버전 상태 간단히 확인
-```
-
-## 📋 체크리스트
-
-### 문서 작업 체크리스트
-- [ ] 편집 전: 파일 타입 확인
-- [ ] 편집 전: 버전 메타데이터 존재 확인
-- [ ] 편집 후: 메타데이터 업데이트
-- [ ] 편집 후: 참조 일관성 확인
-- [ ] 새 파일 생성 시: 버전 트리에 추가
-- [ ] 파일 삭제 시: 버전 트리에서 제거
-
-### Git 작업 체크리스트
-- [ ] commit 전: 문서 버전 동기화
-- [ ] commit 후: 새 해시 기록
-- [ ] push 후: 성공 확인
-
-## 🔄 자동 실행 패턴
-
-### 패턴 1: 문서 편집
-```python
-if tool == "Edit" and file.ends_with(".md"):
-    before_edit_hook(file)
-    # 실제 편집
-    after_edit_hook(file)
-```
-
-### 패턴 2: 참조 추가
-```python
-if "@" in content and ".md" in content:
-    validate_reference(referenced_file)
-    add_bidirectional_reference()
-```
-
-### 패턴 3: 버전 확인
-```python
-if "version:" not in file_content:
-    suggest_add_version_metadata()
-```
-
-## ⚡ 빠른 명령어
-
-자주 사용하는 훅 관련 명령:
-- `git log -1 --format="%h"` - 현재 커밋 해시
-- `date -u +"%Y-%m-%d"` - 현재 날짜 (ISO 형식)
-- `/clauder track check` - 버전 상태 확인
-
-## 📊 토큰 최적화 규칙
-
-### 문서 로딩 전략
-```
-BEFORE 세션 시작:
-- LOAD: .claude/config.yaml 참조
-- LOAD: 필수 문서만 (설정 파일 참조)
-- DEFER: 나머지는 필요 시 로드
-```
-
-### 컨텍스트 압축
-```
-IF 파일 크기 > 2000 토큰:
-- USE: context-compressor.py
-- APPLY: 메타데이터 압축
-- APPLY: 별칭 변환
-- TRUNCATE: 긴 코드 블록
-```
-
-### 프로젝트 패턴 학습
-```
-AFTER 각 세션:
-- RECORD: 사용된 문서
-- UPDATE: .claude/custom/patterns.yaml
-- OPTIMIZE: 다음 세션 위해 학습
-```
-
-## 🚫 하지 말아야 할 것
-
-1. 버전 메타데이터 없이 .md 파일 수정
-2. 참조 확인 없이 문서 링크 추가
-3. Git 커밋 전 버전 동기화 생략
-4. 오래된 commit 해시 그대로 두기
-5. **템플릿 파일(.base)과 실제 파일 혼동**
-6. **다른 프로젝트에 영향 주는 설정 변경**
-7. **작업 완료 후 커밋 없이 종료**
-8. **새 파일 생성 후 버전 트리 업데이트 누락**
-
-## 💡 기억할 것
+- 원칙 전체: @.clauder-dev/principles/README.md
+- 체크리스트: @.claude/instructions/checklists.md
+- 토큰 최적화: @.claude/instructions/token-optimization.md
 
 > "모든 문서는 버전이 있고, 모든 버전은 추적된다"
-
-이 지시사항은 Claude의 모든 작업 세션에 적용됩니다.
