@@ -4,6 +4,12 @@ doc_id: 0
 
 모든 Clauder 문서와 시스템은 다음 핵심 원칙을 따릅니다:
 
+## 🎯 기반 원칙 (Universal Base Principles)
+@.base-principles/README.md
+
+Clauder 자체 개발과 사용자 템플릿 모두의 기반이 되는 핵심 원칙입니다.
+이 원칙들이 Clauder의 본질적 가치를 정의합니다.
+
 ## 0️⃣ 지속적 학습과 개선
 @.clauder-dev/principles/00-CONTINUOUS-LEARNING.md
 

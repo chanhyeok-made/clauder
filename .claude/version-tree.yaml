@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-03"
-  last_commit: "ec814c8"
-  total_documents: 75
+  last_commit: "b0f6b8a"
+  total_documents: 81
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -418,6 +418,32 @@ documents:
     commit: "e7b2ee3"
     depends_on: []
     referenced_by: []
+    
+  # 738은 이제 삭제됨 (기반 원칙 구조 개편)
+  
+  740:
+    path: "/.clauder-dev/learnings/architecture/base-principles-value.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "b0f6b8a"
+    depends_on: []
+    referenced_by: [702]
+    
+  741:
+    path: "/.clauder-dev/analysis/BASE_PRINCIPLES_RESTRUCTURE.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "b0f6b8a"
+    depends_on: []
+    referenced_by: []
+    
+  739:
+    path: "/docs/guides/claude-enhancement-guide.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "b0f6b8a"
+    depends_on: []
+    referenced_by: []
 
   518:
     path: "/CLAUDE.base.md"
@@ -794,5 +820,70 @@ path_to_id:
   "/.clauder-dev/FILE-MANAGEMENT-POLICY.md": 722
   "/.clauder-dev/learnings/project-management/file-organization.md": 721
   "/.clauder-dev/tools/helpers/VERSION-TREE-AUTOMATION.md": 724
-  "/INTERACTIVE_SETUP.md": 725
+  "/interactive-setup.md": 725
   "/docs/guides/visual-tutorial.md": 726
+  
+  # 기반 원칙 문서들
+  742:
+    path: "/.base-principles/README.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "b0f6b8a"
+    depends_on: []
+    referenced_by: [0, 1000]
+    
+  743:
+    path: "/.base-principles/01-structured-knowledge.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "b0f6b8a"
+    depends_on: []
+    referenced_by: [742]
+    
+  744:
+    path: "/.base-principles/02-progressive-learning.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "b0f6b8a"
+    depends_on: []
+    referenced_by: [742]
+    
+  745:
+    path: "/.base-principles/03-explicit-automation.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "b0f6b8a"
+    depends_on: []
+    referenced_by: [742]
+    
+  746:
+    path: "/.base-principles/04-modular-extensibility.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "b0f6b8a"
+    depends_on: []
+    referenced_by: [742]
+    
+  747:
+    path: "/.base-principles/05-version-transparency.md"
+    created: "2025-08-03"
+    updated: "2025-08-03"
+    commit: "b0f6b8a"
+    depends_on: []
+    referenced_by: [742]
+  "/.clauder-dev/analysis/PROJECT_STATUS_20250803.md": 723
+  "/.clauder-dev/analysis/CONVENTION_REVIEW_20250803.md": 731
+  "/.clauder-dev/temp/temp-cleanup-summary-20250803.md": 732
+  "/.clauder-dev/analysis/FILENAME_CONVENTION_ANALYSIS.md": 735
+  "/.clauder-dev/analysis/DISTRIBUTED_VERSION_TREE_PROPOSAL.md": 736
+  "/.clauder-dev/analysis/PROJECT_STRUCTURE_SEPARATION.md": 737
+  # "/.clauder-dev/principles/CORE-BASE-PRINCIPLES.md": 738 (삭제됨)
+  "/docs/guides/claude-enhancement-guide.md": 739
+  "/.clauder-dev/learnings/architecture/base-principles-value.md": 740
+  "/.clauder-dev/analysis/BASE_PRINCIPLES_RESTRUCTURE.md": 741
+  "/.base-principles/README.md": 742
+  "/.base-principles/01-structured-knowledge.md": 743
+  "/.base-principles/02-progressive-learning.md": 744
+  "/.base-principles/03-explicit-automation.md": 745
+  "/.base-principles/04-modular-extensibility.md": 746
+  "/.base-principles/05-version-transparency.md": 747

@@ -21,6 +21,10 @@ git push origin main
 
 ## 🚨 핵심 원칙 (필수 준수)
 
+### 🎯 기반 원칙
+모든 것의 토대가 되는 원칙: @.base-principles/README.md
+
+### 📋 Clauder 개발 원칙
 모든 작업은 다음 원칙을 따라야 합니다:
 
 0. **지속적 학습과 개선**: @.clauder-dev/principles/00-CONTINUOUS-LEARNING.md
