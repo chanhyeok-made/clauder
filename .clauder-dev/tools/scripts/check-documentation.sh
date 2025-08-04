@@ -57,5 +57,16 @@ else
     fi
 fi
 
+# 4. 버전 트리 commit 필드 검증
+echo -e "\n4. 버전 트리 commit 필드 검증:"
+if grep -E 'commit:\s*"(current|latest|HEAD)"' .claude/version-tree.yaml > /dev/null; then
+    echo "   ❌ 위험! 상대 참조 발견!"
+    echo "      다음 라인에서 'current', 'latest', 'HEAD' 사용:"
+    grep -n -E 'commit:\s*"(current|latest|HEAD)"' .claude/version-tree.yaml
+    echo "      즉시 실제 커밋 해시로 교체 필요!"
+else
+    echo "   ✅ 모든 commit 필드가 실제 해시 사용"
+fi
+
 echo -e "\n=========================="
 echo "체크 완료. 위 사항을 확인하세요!"
