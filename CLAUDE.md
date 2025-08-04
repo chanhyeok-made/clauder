@@ -35,6 +35,7 @@ git push origin main
 5. **필수 역참조**: @.clauder-dev/principles/05-BIDIRECTIONAL-REFERENCES.md
 6. **작업 단위 커밋 및 푸시**: @.clauder-dev/principles/06-WORK-UNIT-COMMITS.md
 8. **문서 작성 기준**: @.clauder-dev/principles/08-DOCUMENTATION-STANDARDS.md
+9. **체계적 작업 워크플로우**: @.clauder-dev/principles/09-SYSTEMATIC-WORKFLOW.md
 
 전체 원칙 목록: @.clauder-dev/principles/README.md
 
