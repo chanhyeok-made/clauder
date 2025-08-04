@@ -51,5 +51,17 @@ git push origin main
 - 다음 작업 준비
 - 필요시 배포 진행
 
+## 🎯 Sub-TODO 템플릿
+
+이 단계 시작 시 TodoWrite로 생성:
+```
+5.1. git status로 변경사항 확인
+5.2. 테스트 통과 확인
+5.3. 문서 업데이트 완료 확인
+5.4. 모든 TODO 완료 확인
+5.5. 적절한 커밋 메시지 작성
+5.6. git push 실행
+```
+
 ## 원칙
 상세 내용: @.clauder-dev/principles/06-WORK-UNIT-COMMITS.md

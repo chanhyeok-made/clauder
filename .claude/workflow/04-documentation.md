@@ -54,5 +54,17 @@ doc_id: 760
 .clauder-dev/tools/scripts/check-documentation.sh
 ```
 
+## 🎯 Sub-TODO 템플릿
+
+이 단계 시작 시 TodoWrite로 생성:
+```
+4.1. 변경사항 문서 반영 확인
+4.2. 참조 관계 정확성 검증
+4.3. 긴 내용 별도 문서 분리
+4.4. 버전 정보 업데이트
+4.5. 관련 가이드 업데이트 확인
+4.6. 버전 트리 업데이트 (새 문서 시)
+```
+
 ## 다음 단계
 문서화 완료 → @.claude/workflow/05-commit.md
