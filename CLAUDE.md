@@ -9,11 +9,11 @@ doc_id: 1000
 
 ### 즉시 필요
 - **작업 방식**: @.claude/workflow/README.md
-- **작업 지시**: @.claude/instructions.md
+- **작업 지시**: @.claude/instructions/
 - **긴급 사항**: @.claude/alerts/urgent.md
 
 ### 🚨 작업 시작 시 필수
-**자동 행동**: @.claude/instructions.md 엄격히 준수
+**자동 행동**: @.claude/instructions/ 엄격히 준수
 
 ### 원칙
 - **기반 원칙**: @.base-principles/README.md

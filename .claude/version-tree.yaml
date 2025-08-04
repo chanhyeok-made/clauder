@@ -97,11 +97,11 @@ documents:
     
   # 기타 시스템 파일들
   500:
-    path: "/.claude/instructions.md"
+    path: "/.claude/instructions/README.md"
     created: "2025-08-02"
     updated: "2025-08-04"
-    commit: "7ed8210"
-    depends_on: [9, 6, 721, 749, 758, 742, 801, 802, 803, 804, 805, 806, 807]  # SYSTEMATIC-WORKFLOW, WORK-UNIT-COMMITS, VERSION-TREE-GUIDE, 워크플로우, 긴급사항, 기반원칙, 하위 문서들
+    commit: "63d3256"
+    depends_on: [749, 758, 742, 759, 801, 802, 803, 804, 805, 806, 807]  # 워크플로우, 긴급사항, 기반원칙, 하위 문서들
     referenced_by: [1000]  # CLAUDE.md에서 참조
     
   # 501, 502는 config.yaml로 통합되어 삭제됨
@@ -1007,7 +1007,7 @@ path_to_id:
   "/.clauder-dev/design/VERSION-TREE.md": 203
   "/.clauder-dev/roadmap/VERSION-TREE-MIGRATION.md": 301
   "/.clauder-dev/roadmap/VERSION-INFO-REMOVAL-PLAN.md": 303
-  "/.claude/instructions.md": 500
+  "/.claude/instructions/README.md": 500
   "/.claude/config.yaml": 501
   "/.claude/version-tree.yaml": 503
   "/.clauder-dev/tools/scripts/version-tree-manager.py": 504
