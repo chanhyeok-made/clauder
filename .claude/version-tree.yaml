@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-04"
-  last_commit: "4b2ca7b"
-  total_documents: 88
+  last_commit: "b66a513"
+  total_documents: 98
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -29,9 +29,9 @@ documents:
   1001:
     path: "/README.md"
     created: "2025-08-02"
-    updated: "2025-08-02"
-    commit: "5093ed7"
-    depends_on: []
+    updated: "2025-08-04"
+    commit: "b66a513"
+    depends_on: [810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 522, 754, 753, 523, 524, 201]  # readme 섹션들, EXAMPLES.md, troubleshooting.md, workflows.md, ARCHITECTURE.md, FEATURE_MAP.md, HOOKS.md
     referenced_by: []
     
   # 원칙 문서들
@@ -785,6 +785,87 @@ documents:
     commit: "4b2ca7b"
     depends_on: []
     referenced_by: [500]
+    
+  # README 섹션 문서들
+  810:
+    path: "/docs/readme/new-project.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "b66a513"
+    depends_on: [814]  # customization.md
+    referenced_by: [1001]  # README.md
+    
+  811:
+    path: "/docs/readme/existing-project.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "b66a513"
+    depends_on: []
+    referenced_by: [1001]
+    
+  812:
+    path: "/docs/readme/requirements.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "b66a513"
+    depends_on: []
+    referenced_by: [1001]
+    
+  813:
+    path: "/docs/readme/commands.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "b66a513"
+    depends_on: [510, 753]  # COMMAND_INDEX.md, workflows.md
+    referenced_by: [1001]
+    
+  814:
+    path: "/docs/readme/customization.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "b66a513"
+    depends_on: [750, 310]  # personal-settings.md, TEMPLATE_GUIDE.md
+    referenced_by: [1001, 810]
+    
+  815:
+    path: "/docs/readme/hooks.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "b66a513"
+    depends_on: [201, 805]  # HOOKS.md, automation-patterns.md
+    referenced_by: [1001, 810]
+    
+  816:
+    path: "/docs/readme/structure.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "b66a513"
+    depends_on: []
+    referenced_by: [1001]
+    
+  817:
+    path: "/docs/readme/team-collaboration.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "b66a513"
+    depends_on: []
+    referenced_by: [1001]
+    
+  818:
+    path: "/docs/readme/git-management.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "b66a513"
+    depends_on: []
+    referenced_by: [1001]
+    
+  819:
+    path: "/docs/readme/updates.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "b66a513"
+    depends_on: []
+    referenced_by: [1001]
 
 # 빠른 검색을 위한 인덱스
 path_to_id:
@@ -968,3 +1049,14 @@ path_to_id:
   "/.claude/instructions/automation-patterns.md": 805
   "/.claude/instructions/checklists.md": 806
   "/.claude/instructions/token-optimization.md": 807
+  # README 섹션 문서들
+  "/docs/readme/new-project.md": 810
+  "/docs/readme/existing-project.md": 811
+  "/docs/readme/requirements.md": 812
+  "/docs/readme/commands.md": 813
+  "/docs/readme/customization.md": 814
+  "/docs/readme/hooks.md": 815
+  "/docs/readme/structure.md": 816
+  "/docs/readme/team-collaboration.md": 817
+  "/docs/readme/git-management.md": 818
+  "/docs/readme/updates.md": 819
