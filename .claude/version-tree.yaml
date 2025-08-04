@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-04"
-  last_commit: "b66a513"
-  total_documents: 98
+  last_commit: "544934d"
+  total_documents: 110
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -658,11 +658,11 @@ documents:
     referenced_by: [524]
     
   715:
-    path: "/docs/guides/TROUBLESHOOTING.md"
+    path: "/docs/guides/troubleshooting.md"
     created: "2025-08-02"
-    updated: "2025-08-02"
-    commit: "a6f02df"
-    depends_on: []
+    updated: "2025-08-04"
+    commit: "544934d"
+    depends_on: [820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831]  # 모든 하위 문서들
     referenced_by: [510]
     
   716:
@@ -866,6 +866,103 @@ documents:
     commit: "b66a513"
     depends_on: []
     referenced_by: [1001]
+    
+  # troubleshooting 하위 문서들
+  820:
+    path: "/docs/guides/troubleshooting/git-issues.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "544934d"
+    depends_on: []
+    referenced_by: [715]
+    
+  821:
+    path: "/docs/guides/troubleshooting/command-issues.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "544934d"
+    depends_on: []
+    referenced_by: [715]
+    
+  822:
+    path: "/docs/guides/troubleshooting/version-tracking.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "544934d"
+    depends_on: []
+    referenced_by: [715]
+    
+  823:
+    path: "/docs/guides/troubleshooting/hook-issues.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "544934d"
+    depends_on: []
+    referenced_by: [715]
+    
+  824:
+    path: "/docs/guides/troubleshooting/file-editing.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "544934d"
+    depends_on: []
+    referenced_by: [715]
+    
+  825:
+    path: "/docs/guides/troubleshooting/template-issues.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "544934d"
+    depends_on: []
+    referenced_by: [715]
+    
+  826:
+    path: "/docs/guides/troubleshooting/debugging.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "544934d"
+    depends_on: []
+    referenced_by: [715]
+    
+  827:
+    path: "/docs/guides/troubleshooting/manual-recovery.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "544934d"
+    depends_on: []
+    referenced_by: [715]
+    
+  828:
+    path: "/docs/guides/troubleshooting/initialization.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "544934d"
+    depends_on: []
+    referenced_by: [715]
+    
+  829:
+    path: "/docs/guides/troubleshooting/backup.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "544934d"
+    depends_on: []
+    referenced_by: [715]
+    
+  830:
+    path: "/docs/guides/troubleshooting/recovery.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "544934d"
+    depends_on: []
+    referenced_by: [715]
+    
+  831:
+    path: "/docs/guides/troubleshooting/reporting.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "544934d"
+    depends_on: []
+    referenced_by: [715]
 
 # 빠른 검색을 위한 인덱스
 path_to_id:
@@ -1060,3 +1157,16 @@ path_to_id:
   "/docs/readme/team-collaboration.md": 817
   "/docs/readme/git-management.md": 818
   "/docs/readme/updates.md": 819
+  # troubleshooting 하위 문서들
+  "/docs/guides/troubleshooting/git-issues.md": 820
+  "/docs/guides/troubleshooting/command-issues.md": 821
+  "/docs/guides/troubleshooting/version-tracking.md": 822
+  "/docs/guides/troubleshooting/hook-issues.md": 823
+  "/docs/guides/troubleshooting/file-editing.md": 824
+  "/docs/guides/troubleshooting/template-issues.md": 825
+  "/docs/guides/troubleshooting/debugging.md": 826
+  "/docs/guides/troubleshooting/manual-recovery.md": 827
+  "/docs/guides/troubleshooting/initialization.md": 828
+  "/docs/guides/troubleshooting/backup.md": 829
+  "/docs/guides/troubleshooting/recovery.md": 830
+  "/docs/guides/troubleshooting/reporting.md": 831
