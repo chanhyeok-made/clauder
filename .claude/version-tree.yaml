@@ -8,8 +8,8 @@
 
 metadata:
   last_update: "2025-08-04"
-  last_commit: "2aa05c6"
-  total_documents: 114
+  last_commit: "6ac24fe"
+  total_documents: 147
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -897,100 +897,268 @@ documents:
     
   # troubleshooting 하위 문서들
   820:
-    path: "/docs/guides/troubleshooting/git-issues.md"
+    path: "/.claude/alerts/README.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "544934d"
-    depends_on: []
-    referenced_by: [715]
+    commit: "6ac24fe"
+    depends_on: [755]  # urgent.md
+    referenced_by: []
     
   821:
-    path: "/docs/guides/troubleshooting/command-issues.md"
+    path: "/.claude/commands/README.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "544934d"
-    depends_on: []
-    referenced_by: [715]
+    commit: "6ac24fe"
+    depends_on: [822]  # optimized/
+    referenced_by: []
     
   822:
-    path: "/docs/guides/troubleshooting/version-tracking.md"
+    path: "/.claude/commands/optimized/README.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "544934d"
+    commit: "6ac24fe"
     depends_on: []
-    referenced_by: [715]
+    referenced_by: [821]
     
   823:
-    path: "/docs/guides/troubleshooting/hook-issues.md"
+    path: "/.claude/custom/overrides/README.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "544934d"
+    commit: "6ac24fe"
     depends_on: []
-    referenced_by: [715]
+    referenced_by: []
     
   824:
-    path: "/docs/guides/troubleshooting/file-editing.md"
+    path: "/.claude/guides/README.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "544934d"
+    commit: "6ac24fe"
     depends_on: []
-    referenced_by: [715]
+    referenced_by: []
     
   825:
-    path: "/docs/guides/troubleshooting/template-issues.md"
+    path: "/.claude/hooks/README.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "544934d"
-    depends_on: []
-    referenced_by: [715]
+    commit: "6ac24fe"
+    depends_on: [826]  # git/
+    referenced_by: []
     
   826:
-    path: "/docs/guides/troubleshooting/debugging.md"
+    path: "/.claude/hooks/git/README.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "544934d"
+    commit: "6ac24fe"
     depends_on: []
-    referenced_by: [715]
+    referenced_by: [825]
     
   827:
-    path: "/docs/guides/troubleshooting/manual-recovery.md"
+    path: "/.claude/project/README.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "544934d"
+    commit: "6ac24fe"
     depends_on: []
-    referenced_by: [715]
+    referenced_by: []
     
   828:
-    path: "/docs/guides/troubleshooting/initialization.md"
+    path: "/.claude/templates/README.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "544934d"
-    depends_on: []
-    referenced_by: [715]
+    commit: "6ac24fe"
+    depends_on: [829, 830, 831]  # contexts/, core/, personal/
+    referenced_by: []
     
   829:
-    path: "/docs/guides/troubleshooting/backup.md"
+    path: "/.claude/templates/contexts/README.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "544934d"
+    commit: "6ac24fe"
     depends_on: []
-    referenced_by: [715]
+    referenced_by: [828]
     
   830:
-    path: "/docs/guides/troubleshooting/recovery.md"
+    path: "/.claude/templates/core/README.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "544934d"
+    commit: "6ac24fe"
     depends_on: []
-    referenced_by: [715]
+    referenced_by: [828]
     
   831:
-    path: "/docs/guides/troubleshooting/reporting.md"
+    path: "/.claude/templates/personal/README.md"
     created: "2025-08-04"
     updated: "2025-08-04"
-    commit: "544934d"
+    commit: "6ac24fe"
+    depends_on: [832]  # contexts/
+    referenced_by: [828]
+    
+  832:
+    path: "/.claude/templates/personal/contexts/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
     depends_on: []
-    referenced_by: [715]
+    referenced_by: [831]
+    
+  833:
+    path: "/.claude/tools/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: []
+    
+  834:
+    path: "/.clauder-dev/analysis/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: []
+    
+  835:
+    path: "/.clauder-dev/design/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: []
+    
+  836:
+    path: "/.clauder-dev/learnings/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: [837, 838, 839, 840, 841, 842]  # 하위 디렉토리들
+    referenced_by: []
+    
+  837:
+    path: "/.clauder-dev/learnings/architecture/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: [836]
+    
+  838:
+    path: "/.clauder-dev/learnings/design-decisions/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: [836]
+    
+  839:
+    path: "/.clauder-dev/learnings/error-patterns/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: [836]
+    
+  840:
+    path: "/.clauder-dev/learnings/optimization/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: [836]
+    
+  841:
+    path: "/.clauder-dev/learnings/project-management/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: [836]
+    
+  842:
+    path: "/.clauder-dev/learnings/user-feedback/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: [836]
+    
+  843:
+    path: "/.clauder-dev/logs/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: [844, 845, 846]  # archive/, daily/, migrations/
+    referenced_by: []
+    
+  844:
+    path: "/.clauder-dev/logs/archive/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: [843]
+    
+  845:
+    path: "/.clauder-dev/logs/daily/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: [843]
+    
+  846:
+    path: "/.clauder-dev/logs/migrations/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: [843]
+    
+  847:
+    path: "/.clauder-dev/roadmap/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: []
+    
+  848:
+    path: "/.clauder-dev/temp/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: []
+    
+  849:
+    path: "/.clauder-dev/tools/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: [850, 851, 852]  # archived/, helpers/, scripts/
+    referenced_by: []
+    
+  850:
+    path: "/.clauder-dev/tools/archived/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: [849]
+    
+  851:
+    path: "/.clauder-dev/tools/helpers/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: [849]
+    
+  852:
+    path: "/.clauder-dev/tools/scripts/README.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "6ac24fe"
+    depends_on: []
+    referenced_by: [849]
 
 # 빠른 검색을 위한 인덱스
 path_to_id:
@@ -1189,16 +1357,37 @@ path_to_id:
   "/docs/readme/team-collaboration.md": 817
   "/docs/readme/git-management.md": 818
   "/docs/readme/updates.md": 819
-  # troubleshooting 하위 문서들
-  "/docs/guides/troubleshooting/git-issues.md": 820
-  "/docs/guides/troubleshooting/command-issues.md": 821
-  "/docs/guides/troubleshooting/version-tracking.md": 822
-  "/docs/guides/troubleshooting/hook-issues.md": 823
-  "/docs/guides/troubleshooting/file-editing.md": 824
-  "/docs/guides/troubleshooting/template-issues.md": 825
-  "/docs/guides/troubleshooting/debugging.md": 826
-  "/docs/guides/troubleshooting/manual-recovery.md": 827
-  "/docs/guides/troubleshooting/initialization.md": 828
-  "/docs/guides/troubleshooting/backup.md": 829
-  "/docs/guides/troubleshooting/recovery.md": 830
-  "/docs/guides/troubleshooting/reporting.md": 831
+  # 디렉토리 README 문서들
+  "/.claude/alerts/README.md": 820
+  "/.claude/commands/README.md": 821
+  "/.claude/commands/optimized/README.md": 822
+  "/.claude/custom/overrides/README.md": 823
+  "/.claude/guides/README.md": 824
+  "/.claude/hooks/README.md": 825
+  "/.claude/hooks/git/README.md": 826
+  "/.claude/project/README.md": 827
+  "/.claude/templates/README.md": 828
+  "/.claude/templates/contexts/README.md": 829
+  "/.claude/templates/core/README.md": 830
+  "/.claude/templates/personal/README.md": 831
+  "/.claude/templates/personal/contexts/README.md": 832
+  "/.claude/tools/README.md": 833
+  "/.clauder-dev/analysis/README.md": 834
+  "/.clauder-dev/design/README.md": 835
+  "/.clauder-dev/learnings/README.md": 836
+  "/.clauder-dev/learnings/architecture/README.md": 837
+  "/.clauder-dev/learnings/design-decisions/README.md": 838
+  "/.clauder-dev/learnings/error-patterns/README.md": 839
+  "/.clauder-dev/learnings/optimization/README.md": 840
+  "/.clauder-dev/learnings/project-management/README.md": 841
+  "/.clauder-dev/learnings/user-feedback/README.md": 842
+  "/.clauder-dev/logs/README.md": 843
+  "/.clauder-dev/logs/archive/README.md": 844
+  "/.clauder-dev/logs/daily/README.md": 845
+  "/.clauder-dev/logs/migrations/README.md": 846
+  "/.clauder-dev/roadmap/README.md": 847
+  "/.clauder-dev/temp/README.md": 848
+  "/.clauder-dev/tools/README.md": 849
+  "/.clauder-dev/tools/archived/README.md": 850
+  "/.clauder-dev/tools/helpers/README.md": 851
+  "/.clauder-dev/tools/scripts/README.md": 852
