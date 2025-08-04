@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-04"
-  last_commit: "7ed8210"
-  total_documents: 112
+  last_commit: "current"
+  total_documents: 114
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -616,6 +616,22 @@ documents:
     depends_on: [749, 500, 4]  # workflow/README.md, instructions.md, IMMEDIATE-RECOGNITION.md
     referenced_by: [702]  # learnings/INDEX.md
     
+  758:
+    path: "/.claude/workflow/checklist-template.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "e821c4e"
+    depends_on: [749]  # workflow/README.md
+    referenced_by: [500]  # instructions.md
+    
+  759:
+    path: "/.claude/instructions/workflow-automation.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "current"
+    depends_on: [749]  # workflow/README.md
+    referenced_by: [500]  # instructions.md
+    
   # 누락된 문서들 추가
   709:
     path: "/.claude/templates/personal/contexts/style-example.md"
@@ -1156,6 +1172,8 @@ path_to_id:
   "/.claude/instructions/token-optimization.md": 807
   # 워크플로우 자동화 관련 추가
   "/.clauder-dev/learnings/workflow-automation.md": 757
+  "/.claude/workflow/checklist-template.md": 758
+  "/.claude/instructions/workflow-automation.md": 759
   # README 섹션 문서들
   "/docs/readme/new-project.md": 810
   "/docs/readme/existing-project.md": 811
