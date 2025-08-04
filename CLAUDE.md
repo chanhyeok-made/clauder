@@ -9,7 +9,14 @@ doc_id: 1000
 
 ### 즉시 필요
 - **작업 방식**: @.claude/workflow/README.md
+- **작업 지시**: @.claude/instructions.md
 - **긴급 사항**: @.claude/alerts/urgent.md
+
+### 🚨 작업 시작 시 필수
+모든 작업 요청을 받으면 즉시:
+1. TodoWrite로 워크플로우 5단계 등록 (분석→구현→회고→문서화→커밋)
+2. 상태 표시: 🔍 현재 단계: [분석]
+3. 각 단계별 가이드 참조하여 진행
 
 ### 원칙
 - **기반 원칙**: @.base-principles/README.md

@@ -4,8 +4,8 @@
 
 metadata:
   last_update: "2025-08-04"
-  last_commit: "544934d"
-  total_documents: 110
+  last_commit: "7ed8210"
+  total_documents: 112
   
 # ID 할당 규칙:
 # 1-99: 핵심 원칙 문서
@@ -21,9 +21,9 @@ documents:
   1000:
     path: "/CLAUDE.md"
     created: "2025-08-02"
-    updated: "2025-08-02" 
-    commit: "5093ed7"
-    depends_on: [0, 1, 2, 3, 4, 5, 6, 508, 517, 518, 519, 520]  # 원칙들, README, ARCHITECTURE, EXAMPLES 등
+    updated: "2025-08-04" 
+    commit: "7ed8210"
+    depends_on: [0, 1, 2, 3, 4, 5, 6, 749, 500, 758, 742, 508, 517, 518, 519, 520]  # 원칙들, 워크플로우, instructions, 긴급사항, 기반원칙, README, ARCHITECTURE, EXAMPLES 등
     referenced_by: [4, 510]  # IMMEDIATE-RECOGNITION.md, COMMAND_INDEX.md
     
   1001:
@@ -96,9 +96,9 @@ documents:
     path: "/.claude/instructions.md"
     created: "2025-08-02"
     updated: "2025-08-04"
-    commit: "4b2ca7b"
-    depends_on: [9, 6, 721, 801, 802, 803, 804, 805, 806, 807]  # SYSTEMATIC-WORKFLOW, WORK-UNIT-COMMITS, VERSION-TREE-GUIDE, 하위 문서들
-    referenced_by: [1, 2, 3, 4, 5, 6]
+    commit: "7ed8210"
+    depends_on: [9, 6, 721, 749, 758, 742, 801, 802, 803, 804, 805, 806, 807]  # SYSTEMATIC-WORKFLOW, WORK-UNIT-COMMITS, VERSION-TREE-GUIDE, 워크플로우, 긴급사항, 기반원칙, 하위 문서들
+    referenced_by: [1000]  # CLAUDE.md에서 참조
     
   # 501, 502는 config.yaml로 통합되어 삭제됨
   
@@ -607,6 +607,14 @@ documents:
     commit: "750441b"
     depends_on: []
     referenced_by: [706]
+    
+  757:
+    path: "/.clauder-dev/learnings/workflow-automation.md"
+    created: "2025-08-04"
+    updated: "2025-08-04"
+    commit: "7ed8210"
+    depends_on: [749, 500, 4]  # workflow/README.md, instructions.md, IMMEDIATE-RECOGNITION.md
+    referenced_by: [702]  # learnings/INDEX.md
     
   # 누락된 문서들 추가
   709:
@@ -1146,6 +1154,8 @@ path_to_id:
   "/.claude/instructions/automation-patterns.md": 805
   "/.claude/instructions/checklists.md": 806
   "/.claude/instructions/token-optimization.md": 807
+  # 워크플로우 자동화 관련 추가
+  "/.clauder-dev/learnings/workflow-automation.md": 757
   # README 섹션 문서들
   "/docs/readme/new-project.md": 810
   "/docs/readme/existing-project.md": 811

@@ -1,49 +1,75 @@
 ---
-doc_id: 500
+doc_id: 756
 ---
 
-# Claude 필수 지시사항
+# Claude Code 작업 지시사항
 
-> 💡 이 문서는 Lazy Loading 방식으로 최적화되었습니다.
-> 필요한 규칙만 필요할 때 참조하세요.
+> 이 문서는 Claude Code가 Clauder 프로젝트에서 작업할 때 자동으로 수행해야 하는 행동을 정의합니다.
 
-## 🔴 즉시 필요 (항상 확인)
+## 🚨 작업 요청 시 자동 수행
 
-### 워크플로우 
-- **5단계 체계**: @.clauder-dev/principles/09-SYSTEMATIC-WORKFLOW.md
-- **상태 표시**: `🔍 현재 단계: [분석/작업/회고/문서화/커밋]`
+### 1. 워크플로우 TODO 생성
+모든 작업 요청을 받으면 **즉시** TodoWrite 도구로 다음 5단계를 등록:
 
-### 핵심 규칙
-- **작업 단위 커밋**: 완료 즉시 GitHub에 저장 (@.clauder-dev/principles/06-WORK-UNIT-COMMITS.md)
-- **doc_id 필수**: 모든 .md 파일에 doc_id 포함
-- **실제 commit hash**: `git log -1 --format="%h"` 사용
+```
+1. 📊 분석: [작업 내용] 분석 및 계획 수립
+2. 🛠️ 구현: [작업 내용] 구현
+3. 🤔 회고: 작업 중 발견사항 및 개선점 정리
+4. 📝 문서화: 변경사항 및 학습내용 문서화
+5. 💾 커밋: 검증 후 변경사항 커밋
+```
 
-## 📋 작업별 지시사항
+### 2. 상태 표시
+각 단계 진입 시 명확하게 표시:
+```
+🔍 현재 단계: [분석]
+```
 
-### 문서 작업
-- **편집 시**: @.claude/instructions/editing-documents.md
-- **생성 시**: @.claude/instructions/creating-documents.md
-- **버전 트리**: @/.clauder-dev/tools/helpers/VERSION-TREE-GUIDE.md
+### 3. 단계별 가이드 참조
+- **분석**: @.claude/workflow/01-analysis.md
+- **구현**: @.claude/workflow/02-implementation.md  
+- **회고**: @.claude/workflow/03-retrospective.md
+- **문서화**: @.claude/workflow/04-documentation.md
+- **커밋**: @.claude/workflow/05-commit.md
 
-### Git 작업
-- **커밋 전후**: @.claude/instructions/git-operations.md
-- **필수 명령**: `git add . && git commit -m '[message]' && git push`
+## 📋 작업 크기별 접근
 
-### 자동화
-- **훅 동작**: @.claude/instructions/hooks-behavior.md
-- **패턴 실행**: @.claude/instructions/automation-patterns.md
+### 소형 작업 (30분 이내)
+- 5단계 간소화 가능
+- 하지만 TODO 등록은 필수
 
-## 🚫 금지사항
+### 중형 작업 (2시간 이내)
+- 세부 TODO 추가: @.claude/workflow/planning-medium.md
 
-1. doc_id 없이 .md 파일 생성/수정
-2. 작업 완료 후 커밋 없이 종료
-3. 버전 트리 업데이트 누락
-4. 템플릿과 실제 파일 혼동
+### 대형 작업 (2시간 이상)
+- 상세 계획 수립: @.claude/workflow/planning-large.md
 
-## ⚡ 빠른 참조
+## ⚠️ 절대 금지사항
 
-- 원칙 전체: @.clauder-dev/principles/README.md
-- 체크리스트: @.claude/instructions/checklists.md
-- 토큰 최적화: @.claude/instructions/token-optimization.md
+1. **워크플로우 단계 건너뛰기 금지**
+   - 특히 회고와 문서화 단계
 
-> "모든 문서는 버전이 있고, 모든 버전은 추적된다"
+2. **TODO 없이 작업 진행 금지**
+   - 모든 작업은 추적 가능해야 함
+
+3. **상태 표시 없이 단계 전환 금지**
+   - 사용자가 현재 진행 상황을 알 수 있어야 함
+
+## 💡 모범 사례
+
+### TODO 계층화
+```
+1. 분석 단계
+   1-1. 현황 파악
+   1-2. 문제점 식별
+   1-3. 해결 방안 도출
+```
+
+### 진행 상황 업데이트
+- 각 세부 작업 완료 시 즉시 상태 업데이트
+- 메인 단계는 모든 세부 작업 완료 후 완료 처리
+
+## 🔄 참조 문서
+- **워크플로우 개요**: @.claude/workflow/README.md
+- **긴급 사항**: @.claude/alerts/urgent.md
+- **기반 원칙**: @.base-principles/README.md
