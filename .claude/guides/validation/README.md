@@ -93,8 +93,8 @@ doc_id: 856
 - @using-levels.md - 검증 레벨 사용 가이드
 
 ### 검증 스크립트
-- @.clauder-dev/tools/scripts/check-level1.sh - Level 1 자동화 스크립트
-- @.clauder-dev/tools/scripts/check-documentation.sh - Level 2 문서 검증
+- 템플릿: @.base-principles/tools/validation/
+- 프로젝트별로 복사하여 커스터마이징
 
 ### 관련 원칙
 - @.base-principles/workflow/systematic-approach.md - 체계적 접근

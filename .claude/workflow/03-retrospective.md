@@ -21,9 +21,8 @@ doc_id: 759
 3. 예방 조치 수립
 
 ### 3. 문서화 위치
-- **일반적 학습**: @.clauder-dev/learnings/
-- **오류 패턴**: @.clauder-dev/learnings/error-patterns/
-- **최적화**: @.clauder-dev/learnings/optimization/
+- **템플릿**: @.base-principles/learning/
+- **프로젝트 기록**: 프로젝트별 learnings 디렉토리에 저장
 
 ## 회고 템플릿
 ```markdown
