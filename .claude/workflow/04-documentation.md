@@ -35,5 +35,11 @@ doc_id: 760
 - 새 참조 추가: @.claude/guides/references.md
 - 버전 트리 업데이트: @.claude/guides/version-tree.md
 
+## 🛠️ 자동 체크 도구
+```bash
+# 문서화 체크리스트 자동 확인
+.clauder-dev/tools/scripts/check-documentation.sh
+```
+
 ## 다음 단계
 문서화 완료 → @.claude/workflow/05-commit.md
