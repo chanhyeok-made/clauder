@@ -2,43 +2,36 @@
 doc_id: 511
 ---
 
+# Clauder 템플릿 가이드
+
+> 💡 이 문서는 Lazy Loading 방식으로 최적화되었습니다.
+> 필요한 템플릿 정보만 참조하세요.
+
 Clauder의 템플릿 시스템과 사용 방법을 설명합니다.
 
 ## 🏗️ 템플릿 구조
 
 ### 메인 템플릿
-@.claude/templates/CLAUDE.template.md
-
-전체 CLAUDE.md의 기본 구조를 정의합니다.
+**전체 구조**: @.claude/templates/CLAUDE.template.md
 
 ### 핵심 템플릿
 
 #### 1. 필수 정보
-@.claude/templates/core/01-essentials.template.md
-
-프로젝트 기본 정보, 기술 스택, 주요 기능을 포함합니다.
+**프로젝트 기본**: @.claude/templates/core/01-essentials.template.md
 
 #### 2. 작업 원칙
-@.claude/templates/core/02-work-principles.template.md
-
-개발 워크플로우, 브랜치 전략, 커밋 규칙을 정의합니다.
+**개발 워크플로우**: @.claude/templates/core/02-work-principles.template.md
 
 #### 3. 개발 원칙
-@.claude/templates/core/03-dev-principles.template.md
-
-코딩 컨벤션, 테스트 전략, 보안 고려사항을 포함합니다.
+**코딩 컨벤션**: @.claude/templates/core/03-dev-principles.template.md
 
 ### 컨텍스트 템플릿
 
 #### README 템플릿
-@.claude/templates/contexts/README.template.md
-
-컨텍스트별 가이드의 기본 구조입니다.
+**컨텍스트 가이드**: @.claude/templates/contexts/README.template.md
 
 #### 빠른 수정 가이드
-@/.claude/templates/contexts/context-template.md
-
-긴급 수정이나 핫픽스를 위한 가이드 템플릿입니다.
+**긴급 핫픽스**: @/.claude/templates/contexts/context-template.md
 
 ## 🔧 템플릿 사용법
 
@@ -99,6 +92,6 @@ Clauder의 템플릿 시스템과 사용 방법을 설명합니다.
 /clauder test template <name>
 ```
 
-## 관련 문서
-- 시스템 개요: @.claude/README.md
-- 프로젝트 독립성: @/.clauder-dev/principles/02-PROJECT-INDEPENDENCE.md
+## 📚 관련 문서
+- **시스템 개요**: @.claude/README.md
+- **프로젝트 독립성**: @/.clauder-dev/principles/02-PROJECT-INDEPENDENCE.md

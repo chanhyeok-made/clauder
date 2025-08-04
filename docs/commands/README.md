@@ -2,82 +2,65 @@
 doc_id: 510
 ---
 
+# Clauder 명령어 레퍼런스
+
+> 💡 이 문서는 Lazy Loading 방식으로 최적화되었습니다.
+> 필요한 명령어 섹션만 참조하세요.
+
 모든 Clauder 명령어의 전체 목록과 설명입니다.
 
 ## 🚀 통합 명령어
 
 ### `/clauder start`
-@docs/commands/clauder-start.md
-
-프로젝트 자동 설정의 시작점. Git 확인부터 모든 설정까지 자동화합니다.
+**프로젝트 자동 설정**: @docs/commands/clauder-start.md
 
 ### `/clauder daily`
-@docs/commands/clauder-daily.md
-
-매일 상태 체크 및 동기화. 문서 버전 확인과 업데이트를 수행합니다.
+**일일 상태 체크**: @docs/commands/clauder-daily.md
 
 ## 🛠️ 기본 명령어
 
 ### `/clauder initialize`
-@docs/commands/clauder-initialize.md
-
-프로젝트 초기화. 새 프로젝트나 기존 프로젝트에 Clauder를 설정합니다.
+**프로젝트 초기화**: @docs/commands/clauder-initialize.md
 
 ### `/clauder generate`
-@docs/commands/clauder-generate.md
-
-CLAUDE.md 재생성. 템플릿과 커스텀 설정을 병합하여 문서를 생성합니다.
+**CLAUDE.md 재생성**: @docs/commands/clauder-generate.md
 
 ### `/clauder check`
-@docs/commands/clauder-check.md
-
-문서 상태 확인. 참조 무결성, 버전 동기화, 전체 검증을 수행합니다.
+**문서 상태 확인**: @docs/commands/clauder-check.md
 
 ## 📊 버전 관리
 
 ### `/clauder track`
-@docs/commands/clauder-track.md
-
-버전 추적 관리. 문서 버전 상태 확인 및 동기화를 수행합니다.
+**버전 추적 관리**: @docs/commands/clauder-track.md
 
 ### `/clauder ref`
-@docs/commands/clauder-ref.md
-
-참조 관리. 문서 간 참조 관계를 관리하고 검증합니다.
+**참조 관리**: @docs/commands/clauder-ref.md
 
 ## ➕ 추가/수정
 
 ### `/clauder add`
-@docs/commands/clauder-add.md
-
-요소 추가. 새로운 컨텍스트, 가이드, 템플릿을 추가합니다.
+**요소 추가**: @docs/commands/clauder-add.md
 
 ### `/clauder update`
-@docs/commands/clauder-update.md
-
-설정 업데이트. 프로젝트 정보, 기술 스택 등을 수정합니다.
+**설정 업데이트**: @docs/commands/clauder-update.md
 
 ### `/clauder personal`
-@docs/commands/clauder-personal.md
-
-개인 설정 관리. 사용자별 개인화된 설정과 맥락을 관리합니다.
+**개인 설정 관리**: @docs/commands/clauder-personal.md
 
 ## 🪝 자동화
 
 ### `/clauder hooks`
-@docs/commands/clauder-hooks.md
-
-훅 관리. Git hooks 설치 및 자동화 설정을 관리합니다.
+**훅 관리**: @docs/commands/clauder-hooks.md
 
 ## 💡 추가 명령어
 
-### 버전 트리 관리
-- `/clauder tree` - 버전 트리 관리 @docs/commands/clauder-tree.md
+### `/clauder tree`
+**버전 트리 관리**: @docs/commands/clauder-tree.md
 
-### 빠른 참조
+## 💡 빠른 참조
 - 명령어 도움말: `/clauder [command] --help`
 - 전체 명령어 목록: `/clauder --list`
 
-## 관련 문서
-- 워크플로우: @docs/guides/workflows.md
-- 문제 해결: @docs/guides/troubleshooting.md
+## 📚 관련 문서
+- **워크플로우**: @docs/guides/workflows.md
+- **문제 해결**: @docs/guides/troubleshooting.md
