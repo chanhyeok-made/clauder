@@ -44,3 +44,5 @@ draft-*
 # Emoji removal backups
 .emoji-backup-*/
 clauder-backup-phase3-*.tar.gz
+runtime/
+clauder.config
