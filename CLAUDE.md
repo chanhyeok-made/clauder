@@ -1,38 +1,49 @@
 ---
-priority: HIGHEST
+priority: CRITICAL
+auto_execute: true
 ---
 
-# Clauder - 최종 최적화 버전
+# Clauder 실행 시스템
 
-## 시작 시 확인
-```bash
-cat .claude/STATE.md  # 이전 작업 확인
+## AUTO_LOAD: 시작 시 즉시 실행
+```
+1. Read .claude/state/current.md
+2. Check workflow stage
+3. Load learning patterns
+4. Create TODOs if needed
 ```
 
-## 핵심 원칙 (488개 문서에서 추출)
-1. **토큰 효율성**: 최소 토큰으로 최대 정보
-2. **작업 완전성**: 시작한 작업은 반드시 완료
-3. **상태 추적**: STATE.md로 컨텍스트 유지
-4. **3-3-3 원칙**: 3개 파일, 3단계 프로세스, 3가지 기능
+## WORKFLOW: 5단계 강제 실행
+현재 단계: @.claude/workflow/current.md
 
-## 워크플로우 (5단계)
-1. 분석 → 2. 구현 → 3. 회고 → 4. 문서화 → 5. 커밋
+### 실행 명령
+```
+1. 분석: @.claude/workflow/execute.md#analyze
+2. 구현: @.claude/workflow/execute.md#implement  
+3. 검토: @.claude/workflow/execute.md#review
+4. 문서화: @.claude/workflow/execute.md#document
+5. 커밋: @.claude/workflow/execute.md#commit
+```
 
-## 축적된 지혜
-- **문서 과다는 독**: 10개면 충분, 나머지는 노이즈
-- **참조보다 통합**: 여러 파일 참조보다 하나에 통합
-- **실행이 전부**: 문서 있어도 실행 안 되면 무의미
+## LEARNING: 패턴 자동 적용
+```
+에러 발생 시: @.claude/learning/errors.md#search
+패턴 검색: @.claude/learning/patterns.md#find
+해결책 적용: @.claude/learning/apply.md#execute
+```
 
-## 발견한 패턴
-- **즉시 커밋**: 작업 단위로 바로 GitHub 푸시
-- **TODO 추적**: TodoWrite로 빠짐없이 관리
-- **에러 = 학습**: 모든 에러를 STATE.md에 기록
+## VALIDATION: 검증 도구
+```
+참조 체크: @.claude/tools/validate.sh
+상태 확인: @.claude/state/current.md
+TODO 관리: @.claude/tools/todo.md
+```
 
-## 금지사항
-- 워크플로우 없이 작업 시작
-- 분석 없이 구현
-- 테스트 없이 커밋
-- 문서만 만들고 실행 안 함
+## PRINCIPLES: 핵심 원칙
+@.base-principles/README.md
 
----
-이 파일과 STATE.md만 있으면 충분합니다.
+## NEVER_FORGET
+1. 모든 작업은 워크플로우 준수
+2. 발견한 패턴 즉시 기록
+3. 작업 완료 즉시 커밋
+4. 실행 가능한 코드만 작성
