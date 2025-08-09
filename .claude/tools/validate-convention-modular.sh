@@ -1,0 +1,1 @@
+/Users/chanhyeok/Documents/DocumentsChanhyeokMacStudio/projects/clauder/.claude/tools/../../modules/tools/bin/validator

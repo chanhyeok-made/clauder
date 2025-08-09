@@ -1,0 +1,33 @@
+#!/bin/bash
+# Convention Validator Tool - Module Interface
+
+# Get the real path of the script (resolving symlinks)
+if [ -L "${BASH_SOURCE[0]}" ]; then
+    REAL_SCRIPT="$(readlink "${BASH_SOURCE[0]}")"
+    # Handle relative symlinks
+    if [[ "$REAL_SCRIPT" != /* ]]; then
+        SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+        REAL_SCRIPT="$SCRIPT_DIR/$(basename "$REAL_SCRIPT")"
+    fi
+else
+    REAL_SCRIPT="${BASH_SOURCE[0]}"
+fi
+
+SCRIPT_DIR="$(cd "$(dirname "$REAL_SCRIPT")" && pwd)"
+MODULE_DIR="$(dirname "$SCRIPT_DIR")"
+
+# Load the tool
+source "$MODULE_DIR/src/convention-validator/core.sh"
+
+# Execute validation with all arguments
+if [ $# -eq 0 ]; then
+    # No arguments, validate all .md files in current directory
+    find . -name "*.md" -type f | while read file; do
+        validate_file "$file"
+    done
+else
+    # Validate specified files
+    for file in "$@"; do
+        validate_file "$file"
+    done
+fi
