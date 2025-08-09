@@ -22,5 +22,5 @@ Claude Code가 자동으로 수행해야 하는 시스템 레벨 동작들을 �
 
 ## 🔗 관련 문서
 
-- 자동화 패턴: @.claude/workflow/automation/patterns.md
-- 즉시 인지 원칙: @.base-principles/workflow/immediate-recognition.md
+- 자동화 패턴: @.workflow/core/automation/patterns.md
+- 즉시 인지 원칙: @.principles/base/workflow/immediate-recognition.md

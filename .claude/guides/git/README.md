@@ -22,5 +22,5 @@ Claude Code가 Git 작업을 수행할 때 따라야 할 규칙들입니다. 작
 
 ## 🔗 관련 문서
 
-- 작업 단위 커밋 원칙: @.base-principles/workflow/work-unit-commits.md
-- 커밋 워크플로우: @.claude/workflow/05-commit.md
+- 작업 단위 커밋 원칙: @.principles/base/workflow/work-unit-commits.md
+- 커밋 워크플로우: @.workflow/core/05-commit.md

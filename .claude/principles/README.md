@@ -38,4 +38,4 @@ doc_id: 865
 - 새 원칙 추가: 이 디렉토리에 새 파일 생성
 - 기존 원칙 수정: 프로젝트 요구사항에 맞게 조정
 
-참고: @.base-principles/ - Clauder의 기반이 되는 보편적 원칙들
+참고: @.principles/base/ - Clauder의 기반이 되는 보편적 원칙들

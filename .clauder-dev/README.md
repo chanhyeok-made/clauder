@@ -26,7 +26,7 @@ doc_id: 526
 5. **양방향 참조** - 역참조 필수
 6. **작업 단위 커밋** - 완료된 작업은 즉시 푸시
 
-상세 내용: @.clauder-dev/principles/
+상세 내용: @.principles/development/
 
 ## 아키텍처
 

@@ -1,0 +1,60 @@
+---
+doc_id: 711
+---
+
+# 개인 설정 디렉토리
+
+이 디렉토리는 **개인 설정 전용**이며, Git에 커밋되지 않습니다.
+
+## ALERT: 중요
+- 이 디렉토리의 모든 내용은 `.gitignore`에 포함되어 있습니다
+- 팀과 공유하고 싶은 설정은 상위 `custom/` 디렉토리에 저장하세요
+- 민감한 정보(비밀번호, API 키 등)는 절대 포함하지 마세요
+
+## 디렉토리 구조
+```
+personal/
+├── README.md          # 이 파일
+├── settings.yaml      # 개인 환경 설정
+├── aliases.yaml       # 개인 경로 별칭
+└── contexts/          # 개인 맥락 문서
+    ├── my-style.md    # 개인 코딩 스타일
+    └── local-env.md   # 로컬 환경 설정
+```
+
+## 시작하기
+
+### 1. 템플릿 복사
+```bash
+# 설정 파일 템플릿 복사
+cp .claude/templates/personal/settings.example.yaml \
+   .claude/custom/personal/settings.yaml
+
+# 스타일 가이드 템플릿 복사
+cp .claude/templates/personal/contexts/style-example.md \
+   .claude/custom/personal/contexts/my-style.md
+```
+
+### 2. 개인화
+복사한 파일들을 자신의 환경과 스타일에 맞게 수정하세요.
+
+### 3. 확인
+```
+/clauder personal show
+```
+
+## 우선순위
+설정 우선순위 (높은 것이 우선):
+1. 개인 설정 (이 디렉토리)
+2. 프로젝트 설정 (`../`)
+3. 기본 템플릿 (`../../templates/`)
+
+## 팀과 공유하기
+개인 설정을 팀과 공유하고 싶다면:
+```bash
+# 개인 → 팀 설정으로 복사
+cp contexts/my-style.md ../contexts/team-style-kim.md
+```
+
+## 추가 정보
+상세한 가이드: @docs/guides/personal-settings.md

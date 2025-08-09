@@ -9,7 +9,7 @@ doc_id: 756
 ## ALERT: 필수 자동 행동
 
 ### 1. 워크플로우 TODO 생성
-작업 요청 시 → @.claude/workflow/automation/
+작업 요청 시 → @.workflow/core/automation/
 
 ### 2. 상태 표시
 ```
@@ -20,9 +20,9 @@ CURRENT: 현재 단계: [분석/구현/회고/문서화/커밋]
 - **문서 작업**: @.claude/guides/documentation/
 - **Git 작업**: @.claude/guides/git/
 - **시스템 훅**: @.claude/guides/system/
-- **체크리스트**: @.claude/workflow/automation/checklists.md
+- **체크리스트**: @.workflow/core/automation/checklists.md
 
 ## WARNING: 핵심 원칙
 - **긴급 규칙**: @.claude/alerts/urgent.md
-- **기반 원칙**: @.base-principles/README.md
+- **기반 원칙**: @.principles/base/README.md
 

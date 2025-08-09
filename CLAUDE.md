@@ -16,6 +16,15 @@ source .claude/hooks/auto-module-loader.sh 2>/dev/null || true
 source .claude/hooks/learning-hook.sh 2>/dev/null || true
 ```
 
+## NEVER_FORGET: Clauder 핵심 목표
+@.principles/base/CORE-PURPOSE.md
+- **토큰 효율성**: 최소 토큰으로 최대 정보 전달
+- **체계적 작업**: 모든 작업 워크플로우 준수
+- **지속적 학습**: 패턴 기록 및 재사용
+- **작업 완전성**: 시작한 작업 반드시 완료
+- **문서 최신성**: 모든 문서 30일 이내 갱신
+- **타 프로젝트 적용**: ./INIT.sh로 어디든 적용 가능
+
 ## IMMEDIATE: 작업 요청 시 즉시 실행
 
 ### REQUIRED: 워크플로우 단계별 실행
@@ -50,11 +59,10 @@ find_similar_pattern "TypeError"
 ```
 
 ## REFERENCE_IF_NEEDED: 필요시 참조
-- 워크플로우 상세: @.claude/workflow/README.md
-- 원칙: @.base-principles/README.md | @.clauder-dev/principles/README.md
-- 프로젝트 정보: @.claude/project/clauder-overview.md
-- 개발 가이드: @.clauder-dev/guides/
-- 학습 시스템: @.clauder-dev/learning/system.sh
+- 워크플로우 상세: @.workflow/core/README.md
+- 원칙: @.principles/base/README.md | @.principles/development/README.md
+- 개발 가이드: @.learning/development/
+- 학습 시스템: @.learning/
 
 ## FORBIDDEN: 금지사항
 - 워크플로우 없이 작업 시작

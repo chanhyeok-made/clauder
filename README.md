@@ -60,9 +60,9 @@ your-project/
 - **워크플로우**: @docs/guides/workflows.md
 
 ### 설계
-- **아키텍처**: @ARCHITECTURE.md
-- **기능 맵**: @FEATURE_MAP.md
-- **훅 시스템**: @.claude/docs/design/HOOKS.md
+- **아키텍처**: 
+- **기능 맵**: 
+- **훅 시스템**: 
 
 ## 💡 추가 정보
 
