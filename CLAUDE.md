@@ -8,28 +8,28 @@ load_when: ALWAYS
 
 PURPOSE: Claude Code와 함께하는 Clauder 개발 필수 가이드
 
-## AUTO_LOAD: 모듈 시스템
+## AUTO_LOAD: 모듈 및 학습 시스템
 ```bash
 # 사용 가능한 모듈 자동 로드
 source .claude/hooks/auto-module-loader.sh 2>/dev/null || true
+# Clauder 자체 학습 시스템 활성화
+source .claude/hooks/learning-hook.sh 2>/dev/null || true
 ```
 
 ## IMMEDIATE: 작업 요청 시 즉시 실행
 
-### REQUIRED: 워크플로우 TODO 생성
+### REQUIRED: 워크플로우 단계별 실행
 ```
-TodoWrite로 11개 항목 생성:
-1.1 분석: 요구사항이 명확한가?
-1.2 분석: 작업 크기와 접근법 결정
-2.1 구현: 코드베이스 이해 후 시작
-2.2 구현: 구현 및 테스트
-2.3 구현: 요구사항 충족 확인
-3.1 회고: 발견사항이나 이슈가 있나?
-3.2 회고: 가치있다면 문서화
-4.1 문서화: 문서화 필요성 평가
-4.2 문서화: 필요시 문서 작성 및 버전 트리 업데이트
-5.1 커밋: 변경사항 검토
-5.2 커밋: 메시지 작성 후 푸시
+현재 워크플로우 단계를 확인하고 해당 단계의 TODO 생성:
+
+1. 현재 단계 확인: workflow_status 또는 get_current_stage
+2. 단계별 TODO 생성:
+   - analysis: 요구사항 명확화, 접근법 결정, TODO 생성
+   - implementation: 코드 작성, 파일 수정, 로직 구현
+   - review: 테스트 실행, 검증, 컴플라이언스 체크
+   - documentation: 문서 업데이트, 학습 기록
+   - commit: 변경사항 검토, 커밋 메시지, 푸시
+3. 단계 완료 후: advance_stage로 다음 단계 진행
 ```
 
 ### REQUIRED: 상태 표시
@@ -37,11 +37,24 @@ TodoWrite로 11개 항목 생성:
 CURRENT_STAGE: [analysis/implementation/retrospective/documentation/commit]
 ```
 
+## LEARNING: 자동 학습 시스템
+```bash
+# 에러 해결 시 자동 학습
+track_claude_action "error_fixed" "TypeError" "null check 추가" "src/auth.js"
+
+# 작업 완료 시 패턴 저장
+track_claude_action "task_completed" "인증 구현" "JWT 사용"
+
+# 유사 패턴 검색
+find_similar_pattern "TypeError"
+```
+
 ## REFERENCE_IF_NEEDED: 필요시 참조
 - 워크플로우 상세: @.claude/workflow/README.md
 - 원칙: @.base-principles/README.md | @.clauder-dev/principles/README.md
 - 프로젝트 정보: @.claude/project/clauder-overview.md
 - 개발 가이드: @.clauder-dev/guides/
+- 학습 시스템: @.clauder-dev/learning/system.sh
 
 ## FORBIDDEN: 금지사항
 - 워크플로우 없이 작업 시작
