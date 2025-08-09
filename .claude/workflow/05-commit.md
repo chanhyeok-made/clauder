@@ -51,7 +51,7 @@ git push origin main
 - 다음 작업 준비
 - 필요시 배포 진행
 
-## 🎯 Sub-TODO 템플릿
+## TARGET: Sub-TODO 템플릿
 
 이 단계 시작 시 TodoWrite로 생성:
 ```

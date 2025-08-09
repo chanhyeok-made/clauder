@@ -20,7 +20,7 @@ doc_id: 857
 # 빠른 체크 스크립트
 git status --porcelain | grep "^A.*\.md$" | while read file; do
     echo "Checking $file for doc_id..."
-    grep -q "^doc_id:" "$file" || echo "⚠️  Missing doc_id!"
+    grep -q "^doc_id:" "$file" || echo "WARNING:  Missing doc_id!"
 done
 ```
 

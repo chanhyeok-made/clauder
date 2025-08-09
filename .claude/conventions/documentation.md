@@ -55,11 +55,11 @@ last_updated: {YYYY-MM-DD}  # 선택
 
 ## 금지 사항
 
-❌ 과도한 경고 메시지 (!, ⚠️ 남용)
-❌ 감정적 표현
-❌ 모호한 표현
-❌ 너무 긴 설명
-❌ 중복 내용
+FORBIDDEN: 과도한 경고 메시지 (!, WARNING: 남용)
+FORBIDDEN: 감정적 표현
+FORBIDDEN: 모호한 표현
+FORBIDDEN: 너무 긴 설명
+FORBIDDEN: 중복 내용
 
 ## 체크리스트
 

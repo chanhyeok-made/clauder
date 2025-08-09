@@ -40,3 +40,7 @@ draft-*
 
 # Resonation metrics
 .resonation/.claude/state/
+
+# Emoji removal backups
+.emoji-backup-*/
+clauder-backup-phase3-*.tar.gz

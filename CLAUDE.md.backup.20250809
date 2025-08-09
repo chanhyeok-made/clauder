@@ -1,0 +1,77 @@
+---
+doc_id: 1000
+---
+
+> 🛠️ **Clauder 프로젝트 가이드**
+> 이 파일은 .gitignore에 포함되어 있으며, Clauder 자체 개발을 위한 가이드입니다.
+
+## 🔴 STOP! 모든 작업 전 필수 실행
+
+### ⛔ 사용자 요청 받았다면 즉시:
+```
+1. STOP: 즉시 행동 중단
+2. THINK: 아래 워크플로우 확인
+3. FOLLOW: 5단계 순서대로 진행
+```
+
+### 🚨 필수 워크플로우 (위반 시 원칙 위반)
+1. **분석**: 요구사항 명확한가? → @.claude/workflow/01-analysis.md
+2. **구현**: 작업 시작 → @.claude/workflow/02-implementation.md  
+3. **회고**: 문제 있었나? → @.claude/workflow/03-retrospective.md
+4. **문서화**: 기록 필요한가? → @.claude/workflow/04-documentation.md
+5. **커밋**: 저장 → @.claude/workflow/05-commit.md
+
+### 📌 작업 시작 = TodoWrite로 다음 생성:
+```
+1.1 분석: 무엇을 해야 하는지 명확한가?
+1.2 분석: 작업 크기와 접근 방법 결정
+2.1 구현: 코드베이스 이해 및 작업 시작
+2.2 구현: 구현 및 테스트
+2.3 구현: 요구사항 충족 확인
+3.1 회고: 특별한 발견사항이나 문제점 있었나?
+3.2 회고: 기록할 가치가 있다면 문서화
+4.1 문서화: 작업 내용 문서화 필요성 판단
+4.2 문서화: 필요시 문서 작성 및 버전 트리 업데이트
+5.1 커밋: 변경사항 검토
+5.2 커밋: 커밋 메시지 작성 및 푸시
+```
+
+### ❌ 절대 금지
+- 워크플로우 없이 작업 시작
+- 분석 없이 구현 시작
+- 회고 없이 커밋
+
+### 원칙
+- **기반 원칙**: @.base-principles/README.md
+- **개발 원칙**: @.clauder-dev/principles/README.md
+
+## 📋 프로젝트 정보
+
+### 개요
+- **이름**: Clauder
+- **목적**: Claude Code 문서 템플릿 시스템
+- **상세**: @.claude/project/clauder-overview.md
+
+### 기술 정보
+- **구조**: @.clauder-dev/project/architecture.md
+- **기능**: @.clauder-dev/project/features.md
+- **로드맵**: @.clauder-dev/project/roadmap.md
+
+## 🛠️ 개발 가이드
+
+### 코드 작업
+- **원칙 개발**: @.clauder-dev/guides/principle-development.md
+- **템플릿 작업**: @.clauder-dev/guides/template-work.md
+- **도구 개발**: @.clauder-dev/guides/tool-development.md
+
+### 문서 작업
+- **학습 기록**: @.clauder-dev/guides/learning-docs.md
+- **분석 문서**: @.clauder-dev/guides/analysis-docs.md
+
+### 테스트/검증
+- **검증 도구**: @.clauder-dev/tools/validation.md
+- **Git 워크플로우**: @.clauder-dev/tools/git-workflow.md
+
+---
+
+💡 **Lazy Loading**: 필요한 정보만 필요할 때 참조하세요.

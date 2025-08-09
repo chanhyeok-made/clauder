@@ -43,7 +43,7 @@ custom/
    echo "# 프로젝트별 가이드" > .claude/custom/contexts/my-guide.md
    ```
 
-## 📝 템플릿 변수 설명
+## DOCUMENT: 템플릿 변수 설명
 
 project.base.yaml에 포함된 주요 변수:
 
@@ -56,7 +56,7 @@ project.base.yaml에 포함된 주요 변수:
 - `{{MAIN_PURPOSE}}`: 프로젝트 주요 목적
 - 기타 다수...
 
-## ⚠️ 주의사항
+## WARNING: 주의사항
 
 1. **Git 관리**
    - `project.base.yaml`은 Git에 포함됨 (템플릿)

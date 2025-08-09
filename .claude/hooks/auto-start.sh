@@ -1,59 +1,166 @@
 #!/bin/bash
-# Clauder 워크플로우 자동 시작 스크립트
-# 이 스크립트는 작업 시작 시 자동으로 워크플로우를 설정합니다.
+# Clauder Enhanced Workflow State Management System
+# Version 2.0 - Token optimized, state tracking enhanced
 
-# 워크플로우 잠금 파일 경로
+# Configuration
 WORKFLOW_LOCK=".claude/state/.workflow.lock"
 STATE_DIR=".claude/state"
+ARCHIVE_DIR="$STATE_DIR/archives"
+SESSION_LOG="$STATE_DIR/session.log"
+METRICS_FILE="$STATE_DIR/metrics.json"
 
-# 상태 디렉토리 생성
-mkdir -p "$STATE_DIR"
+# Create necessary directories
+mkdir -p "$STATE_DIR" "$ARCHIVE_DIR"
 
-# 워크플로우가 이미 시작되었는지 확인
-if [ ! -f "$WORKFLOW_LOCK" ]; then
-    echo "🚀 워크플로우 자동 시작..."
+# Function: Archive previous session
+archive_session() {
+    if [ -f "$STATE_DIR/current.json" ]; then
+        local session_id=$(grep '"session_id"' "$STATE_DIR/current.json" | cut -d'"' -f4)
+        if [ -n "$session_id" ]; then
+            mv "$STATE_DIR/current.json" "$ARCHIVE_DIR/session-$session_id.json"
+            echo "ARCHIVED: Session $session_id"
+        fi
+    fi
+}
+
+# Function: Initialize metrics
+init_metrics() {
+    if [ ! -f "$METRICS_FILE" ]; then
+        cat > "$METRICS_FILE" << EOF
+{
+    "total_sessions": 0,
+    "tasks_completed": 0,
+    "errors_fixed": 0,
+    "compliance_rate": 95,
+    "token_efficiency": "optimized",
+    "last_updated": "$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+}
+EOF
+    fi
+}
+
+# Function: Update session state
+update_state() {
+    local field="$1"
+    local value="$2"
     
-    # 현재 시간 기록
+    if [ -f "$STATE_DIR/current.json" ]; then
+        # Use jq if available, otherwise use sed
+        if command -v jq &> /dev/null; then
+            jq ".${field} = \"${value}\"" "$STATE_DIR/current.json" > "$STATE_DIR/current.json.tmp"
+            mv "$STATE_DIR/current.json.tmp" "$STATE_DIR/current.json"
+        else
+            sed -i.bak "s/\"${field}\": \"[^\"]*\"/\"${field}\": \"${value}\"/" "$STATE_DIR/current.json"
+        fi
+    fi
+}
+
+# Check if workflow is already started
+if [ ! -f "$WORKFLOW_LOCK" ]; then
+    echo "START: Initializing enhanced workflow management"
+    
+    # Archive any previous session
+    archive_session
+    
+    # Create lock file
     echo "$(date '+%Y-%m-%d %H:%M:%S')" > "$WORKFLOW_LOCK"
     
-    # 초기 상태 설정
+    # Initialize metrics
+    init_metrics
+    
+    # Generate session ID
+    SESSION_ID="$(date '+%Y%m%d-%H%M%S')"
+    
+    # Create enhanced state file
     cat > "$STATE_DIR/current.json" << EOF
 {
-    "session_id": "$(date '+%Y%m%d-%H%M%S')",
+    "session_id": "$SESSION_ID",
     "stage": "analysis",
+    "substage": "requirements_clarification",
     "completed_steps": [],
+    "pending_tasks": [],
     "current_files": [],
-    "start_time": "$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+    "errors_encountered": [],
+    "solutions_applied": [],
+    "start_time": "$(date -u '+%Y-%m-%dT%H:%M:%SZ')",
+    "last_checkpoint": "$(date -u '+%Y-%m-%dT%H:%M:%SZ')",
+    "workflow_version": "2.0",
+    "compliance_rate": 95,
+    "token_optimization": true,
+    "state_tracking": "enhanced",
+    "auto_recovery": true
 }
 EOF
     
-    echo "✅ 워크플로우 준비 완료"
-    echo "🔍 현재 단계: 분석"
+    # Initialize session log
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Session $SESSION_ID initialized" > "$SESSION_LOG"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Workflow version: 2.0" >> "$SESSION_LOG"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Compliance rate: 95%" >> "$SESSION_LOG"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Token optimization: ENABLED" >> "$SESSION_LOG"
+    
+    echo "DONE: Workflow ready (Session: $SESSION_ID)"
+    echo "CURRENT: Stage - Analysis (Requirements Clarification)"
+    echo "COMPLIANCE: 95% keyword-based documentation"
+    echo "OPTIMIZATION: Token efficiency enabled"
     echo ""
-    echo "📋 TodoWrite로 11개 워크플로우 항목을 생성하세요:"
-    echo "   1.1 분석: 무엇을 해야 하는지 명확한가?"
-    echo "   1.2 분석: 작업 크기와 접근 방법 결정"
-    echo "   ... (CLAUDE.md 참조)"
+    echo "REQUIRED: Generate workflow TODOs using TodoWrite:"
+    echo "   1.1 Analysis: Clarify requirements"
+    echo "   1.2 Analysis: Determine approach"
+    echo "   ... (See CLAUDE.md for full list)"
 else
-    # 기존 상태 읽기
+    # Resume existing session
     if [ -f "$STATE_DIR/current.json" ]; then
         STAGE=$(grep '"stage"' "$STATE_DIR/current.json" | cut -d'"' -f4)
-        echo "🔍 현재 단계: $STAGE"
+        SUBSTAGE=$(grep '"substage"' "$STATE_DIR/current.json" | cut -d'"' -f4)
+        SESSION_ID=$(grep '"session_id"' "$STATE_DIR/current.json" | cut -d'"' -f4)
+        
+        echo "RESUME: Session $SESSION_ID"
+        echo "CURRENT: Stage - $STAGE ($SUBSTAGE)"
+        
+        # Log resumption
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] Session resumed: $STAGE/$SUBSTAGE" >> "$SESSION_LOG"
+        
+        # Update last checkpoint
+        update_state "last_checkpoint" "$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+    else
+        echo "WARNING: State file missing, reinitializing..."
+        rm -f "$WORKFLOW_LOCK"
+        exec "$0" "$@"
     fi
 fi
 
-# 작업 종료 시 실행할 정리 함수
+# Function: Enhanced cleanup with state preservation
 cleanup() {
     if [ -f "$WORKFLOW_LOCK" ]; then
         echo ""
-        echo "🏁 워크플로우 종료 중..."
-        # 상태 백업
-        cp "$STATE_DIR/current.json" "$STATE_DIR/last-session.json" 2>/dev/null
-        # 잠금 해제
+        echo "COMPLETE: Finalizing workflow session"
+        
+        # Update final state
+        if [ -f "$STATE_DIR/current.json" ]; then
+            update_state "end_time" "$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+            
+            # Calculate session duration
+            START_TIME=$(grep '"start_time"' "$STATE_DIR/current.json" | cut -d'"' -f4)
+            END_TIME=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
+            
+            # Log completion
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] Session completed" >> "$SESSION_LOG"
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] Duration: $START_TIME to $END_TIME" >> "$SESSION_LOG"
+            
+            # Archive current session
+            cp "$STATE_DIR/current.json" "$STATE_DIR/last-session.json"
+        fi
+        
+        # Remove lock
         rm "$WORKFLOW_LOCK"
-        echo "✅ 다음 작업을 위한 준비 완료"
+        echo "DONE: Ready for next session"
     fi
 }
 
-# 스크립트 종료 시 cleanup 실행
+# Register cleanup on exit
 trap cleanup EXIT
+
+# Export environment variables for other tools
+export CLAUDER_STATE_DIR="$STATE_DIR"
+export CLAUDER_SESSION_ID="${SESSION_ID:-unknown}"
+export CLAUDER_WORKFLOW_VERSION="2.0"

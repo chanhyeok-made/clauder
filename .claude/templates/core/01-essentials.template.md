@@ -2,7 +2,7 @@
 doc_id: 404
 ---
 
-## 🎯 프로젝트 개요
+## TARGET: 프로젝트 개요
 - **이름**: {{PROJECT_NAME}}
 - **목적**: {{PROJECT_PURPOSE}}
 - **핵심 가치**: {{PROJECT_VALUE}}
@@ -42,7 +42,7 @@ doc_id: 404
 {{PROJECT_STRUCTURE}}
 ```
 
-## ⚠️ 중요 제약사항
+## WARNING: 중요 제약사항
 {{CONSTRAINTS}}
 
 ## 🔗 참고 링크

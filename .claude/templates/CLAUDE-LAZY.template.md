@@ -4,10 +4,10 @@ doc_id: 763
 
 # {{PROJECT_NAME}}
 
-> 💡 이 문서는 Lazy Loading 방식으로 구성되어 있습니다.
+> TIP: 이 문서는 Lazy Loading 방식으로 구성되어 있습니다.
 > 필요한 정보만 필요할 때 참조하세요.
 
-## 🔴 필수 확인
+## CRITICAL: 필수 확인
 
 ### 즉시 필요
 - **작업 방식**: @.claude/workflow/README.md
@@ -17,7 +17,7 @@ doc_id: 763
 - **기반 원칙**: @.base-principles/README.md
 - **프로젝트 원칙**: @.claude/custom/principles.md
 
-## 📋 프로젝트 정보
+## CHECKLIST: 프로젝트 정보
 
 ### 개요
 - **이름**: {{PROJECT_NAME}}
@@ -29,7 +29,7 @@ doc_id: 763
 - **구조**: @.claude/project/architecture.md
 - **설정**: @.claude/project/setup.md
 
-## 🛠️ 작업별 가이드
+## TOOLS: 작업별 가이드
 
 ### 개발
 - **{{PRIMARY_LANGUAGE}} 가이드**: @.claude/guides/{{PRIMARY_LANGUAGE_LOWER}}.md
@@ -44,7 +44,7 @@ doc_id: 763
 - **배포**: @.claude/guides/deployment.md
 - **모니터링**: @.claude/guides/monitoring.md
 
-## 🔧 도구
+## CONFIG: 도구
 
 - **개발 도구**: @.claude/tools/dev-tools.md
 - **Git 작업**: @.claude/tools/git.md
@@ -59,4 +59,4 @@ doc_id: 763
 
 ---
 
-⚡ **빠른 시작**: 작업 유형을 확인하고 해당 가이드만 참조하세요.
+QUICK: **빠른 시작**: 작업 유형을 확인하고 해당 가이드만 참조하세요.

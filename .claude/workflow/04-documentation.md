@@ -53,13 +53,13 @@ doc_id: 760
 - 새 참조 추가: @.claude/guides/references.md
 - 버전 트리 업데이트: @.claude/guides/version-tree.md
 
-## 🛠️ 자동 체크 도구
+## TOOLS: 자동 체크 도구
 ```bash
 # 문서화 체크리스트 자동 확인
 .clauder-dev/tools/scripts/check-documentation.sh
 ```
 
-## 🎯 Sub-TODO 템플릿
+## TARGET: Sub-TODO 템플릿
 
 이 단계 시작 시 TodoWrite로 생성:
 ```

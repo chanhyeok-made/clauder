@@ -39,7 +39,7 @@ doc_id: 759
 [재발 방지 방법]
 ```
 
-## 🎯 Sub-TODO 템플릿
+## TARGET: Sub-TODO 템플릿
 
 이 단계 시작 시 TodoWrite로 생성:
 ```

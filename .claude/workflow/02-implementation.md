@@ -33,7 +33,7 @@ doc_id: 758
 - [ ] 코드 품질 확인
 - [ ] 발견한 버그 모두 처리 (수정 또는 보고)
 
-## 🎯 Sub-TODO 템플릿
+## TARGET: Sub-TODO 템플릿
 
 이 단계 시작 시 TodoWrite로 생성:
 ```

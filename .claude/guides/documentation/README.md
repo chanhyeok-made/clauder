@@ -12,11 +12,11 @@ doc_id: 853
 - **@editing.md**: 기존 문서 수정 프로토콜
 - **@optimization.md**: 토큰 최적화 및 Lazy Loading
 
-## 🔍 주요 내용
+## CURRENT: 주요 내용
 
 Claude Code가 문서 작업을 할 때 따라야 할 모든 규칙과 절차를 담고 있습니다. 버전 트리 동기화, 참조 관리, 토큰 최적화 등의 핵심 작업을 다룹니다.
 
-## 📌 사용 시점
+## NOTE: 사용 시점
 
 - 새 파일 생성 시 → @creating.md
 - 기존 파일 수정 시 → @editing.md

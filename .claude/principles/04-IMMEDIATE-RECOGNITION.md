@@ -18,7 +18,7 @@ doc_id: 4
 
 1. **CLAUDE.md 최상단**
    ```markdown
-   ## 🚨 핵심 원칙
+   ## ALERT: 핵심 원칙
    프로젝트별 원칙은 @.claude/principles/README.md 참조
    ```
 

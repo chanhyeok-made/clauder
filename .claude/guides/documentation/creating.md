@@ -33,14 +33,14 @@ AFTER 새 .md 파일 생성:
    - metadata의 last_commit: 실제 커밋 해시 (절대 'current' 금지!)
 ```
 
-## 🚨 버전 트리 commit 필드 규칙
+## ALERT: 버전 트리 commit 필드 규칙
 
 ```
 CRITICAL: commit 필드 작성 규칙
-- ✅ 올바른 예: commit: "a1b2c3d"  # 실제 커밋 해시
-- ❌ 절대 금지: commit: "current"   # 상대 참조 금지!
-- ❌ 절대 금지: commit: "latest"    # 상대 참조 금지!
-- ❌ 절대 금지: commit: "HEAD"      # 상대 참조 금지!
+- DONE: 올바른 예: commit: "a1b2c3d"  # 실제 커밋 해시
+- FORBIDDEN: 절대 금지: commit: "current"   # 상대 참조 금지!
+- FORBIDDEN: 절대 금지: commit: "latest"    # 상대 참조 금지!
+- FORBIDDEN: 절대 금지: commit: "HEAD"      # 상대 참조 금지!
 
 올바른 순서:
 1. 파일 생성/수정

@@ -13,11 +13,11 @@ doc_id: 829
 - **refactoring-context.template.md**: 리팩토링 컨텍스트
 - **testing-context.template.md**: 테스트 컨텍스트
 
-## 🔍 주요 내용
+## CURRENT: 주요 내용
 
 특정 작업 유형에 맞춰 Claude Code에게 제공할 컨텍스트 템플릿입니다. 각 작업 유형별로 필요한 정보와 고려사항을 체계적으로 정리합니다.
 
-## 📌 활용 예시
+## NOTE: 활용 예시
 
 ```markdown
 # 버그 수정 시

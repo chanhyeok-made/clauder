@@ -25,7 +25,7 @@ AFTER git commit:
 
 ```
 WHEN 작업 완료:
-- ALERT: "🚨 작업 단위 커밋 필요!"
+- ALERT: "ALERT: 작업 단위 커밋 필요!"
 - SUGGEST: "git add . && git commit -m '[message]' && git push"
 - REMIND: @.base-principles/workflow/work-unit-commits.md
 ```
