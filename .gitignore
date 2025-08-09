@@ -39,4 +39,4 @@ draft-*
 .claude/custom/personal/
 
 # Resonation metrics
-.resonation/
+.resonation/.claude/state/
