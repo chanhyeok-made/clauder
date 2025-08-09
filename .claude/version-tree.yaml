@@ -7,8 +7,8 @@
 # ✅ 올바른 예: "a1b2c3d" (git log -1 --format="%h"로 확인)
 
 metadata:
-  last_update: "2025-08-04"
-  last_commit: "252e3f6"
+  last_update: "2025-08-10"
+  last_commit: "af54b60"
   total_documents: 150
   
 # ID 할당 규칙:

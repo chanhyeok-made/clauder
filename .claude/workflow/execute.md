@@ -59,14 +59,22 @@ executable: true
 1. TodoWrite([
    {"content": "변경사항 기록", "status": "pending", "id": "doc_1"},
    {"content": "패턴 추출", "status": "pending", "id": "doc_2"},
-   {"content": "학습 내용 저장", "status": "pending", "id": "doc_3"}
+   {"content": "학습 내용 저장", "status": "pending", "id": "doc_3"},
+   {"content": "version tree 업데이트", "status": "pending", "id": "doc_4"}
 ])
 
 2. 문서 업데이트
    - patterns.md 업데이트
    - errors.md 업데이트
+   - state/current.md 업데이트
 
-3. 상태 업데이트
+3. Version Tree 업데이트
+   - 변경사항 감지: .claude/tools/simple-tree-update.sh detect
+   - 메타데이터 업데이트: .claude/tools/simple-tree-update.sh update
+   - 보고서 생성: .claude/tools/simple-tree-update.sh report
+   - 전체 YAML 업데이트는 수동 또는 PyYAML 설치 후 tree-manager.py 사용
+
+4. 상태 업데이트
    - CURRENT_STAGE="DOCUMENTATION"
 ```
 
