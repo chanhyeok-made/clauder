@@ -1,0 +1,80 @@
+{
+  "name": "workflow",
+  "version": "2.0.0",
+  "type": "workflow",
+  "description": "Systematic workflow management for Clauder projects",
+  "author": "Clauder Team",
+  "license": "MIT",
+  "provides": [
+    "workflow-management",
+    "stage-tracking",
+    "todo-integration",
+    "state-management"
+  ],
+  "requires": [],
+  "dependencies": {
+    "validation": "^1.0.0"
+  },
+  "config": {
+    "schema": {
+      "stages": {
+        "type": "array",
+        "default": ["analysis", "implementation", "review", "documentation", "commit"],
+        "description": "Workflow stages"
+      },
+      "auto_advance": {
+        "type": "boolean",
+        "default": false,
+        "description": "Automatically advance to next stage"
+      },
+      "strict_mode": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enforce stage completion before advancing"
+      }
+    },
+    "defaults": {
+      "stages": ["analysis", "implementation", "review", "documentation", "commit"],
+      "auto_advance": false,
+      "strict_mode": true
+    }
+  },
+  "hooks": {
+    "install": "hooks/install.sh",
+    "uninstall": "hooks/uninstall.sh",
+    "pre-init": "hooks/pre-init.sh",
+    "post-init": "hooks/post-init.sh",
+    "cleanup": "hooks/cleanup.sh"
+  },
+  "exports": {
+    "commands": {
+      "stage": "bin/stage.sh",
+      "todo": "bin/todo.sh",
+      "workflow": "bin/workflow.sh"
+    },
+    "templates": "templates/",
+    "tools": [
+      "stage-manager",
+      "todo-tracker",
+      "state-handler"
+    ]
+  },
+  "files": [
+    "module.json",
+    "README.md",
+    "src/",
+    "templates/",
+    "hooks/",
+    "bin/"
+  ],
+  "compatibility": {
+    "clauder": "^2.0.0",
+    "os": ["darwin", "linux"],
+    "shell": ["bash", "zsh"]
+  },
+  "metadata": {
+    "homepage": "https://github.com/clauder/modules/workflow",
+    "repository": "https://github.com/clauder/modules",
+    "keywords": ["workflow", "stages", "todo", "management"]
+  }
+}

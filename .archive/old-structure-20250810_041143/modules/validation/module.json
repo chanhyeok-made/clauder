@@ -1,0 +1,7 @@
+{
+  "name": "validation",
+  "version": "1.0.0",
+  "type": "validation",
+  "description": "Document and code validation module",
+  "dependencies": {}
+}

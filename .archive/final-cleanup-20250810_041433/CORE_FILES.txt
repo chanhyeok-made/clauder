@@ -1,0 +1,6 @@
+1. CLAUDE_FINAL.md - 메인 진입점
+2. .claude/STATE.md - 상태 추적
+3. CORE_INSIGHTS.md - 축적된 지혜
+4. README.md - 프로젝트 설명
+5. INIT.sh - 타 프로젝트 적용
+6-10. .workflow/core/*.md - 5단계 프로세스
