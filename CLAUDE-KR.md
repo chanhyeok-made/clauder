@@ -1,24 +1,24 @@
 ---
 doc_id: 1000
-priority: HIGH
-load_when: ALWAYS
+priority: 높음
+load_when: 항상
 ---
 
 # Clauder 프로젝트 가이드
 
-PURPOSE: Claude Code와 함께하는 Clauder 개발 필수 가이드
+목적: Claude Code와 함께하는 Clauder 개발 필수 가이드
 
-## AUTO_LOAD: 모듈 시스템
+## 자동_로드: 모듈 시스템
 ```bash
-# 사용 가능한 모듈 자동 로드
+# 자동: 사용 가능한 모듈 자동 로드
 source .claude/hooks/auto-module-loader.sh 2>/dev/null || true
 ```
 
-## IMMEDIATE: 작업 요청 시 즉시 실행
+## 즉시실행: 작업 요청 시
 
-### REQUIRED: 워크플로우 TODO 생성
+### 필수: 워크플로우 TODO 생성
 ```
-TodoWrite로 11개 항목 생성:
+즉시 TodoWrite로 11개 항목 생성:
 1.1 분석: 요구사항이 명확한가?
 1.2 분석: 작업 크기와 접근법 결정
 2.1 구현: 코드베이스 이해 후 시작
@@ -32,18 +32,18 @@ TodoWrite로 11개 항목 생성:
 5.2 커밋: 메시지 작성 후 푸시
 ```
 
-### REQUIRED: 상태 표시
+### 필수: 상태 표시
 ```
-CURRENT_STAGE: [analysis/implementation/retrospective/documentation/commit]
+현재_단계: [분석/구현/회고/문서화/커밋]
 ```
 
-## REFERENCE_IF_NEEDED: 필요시 참조
+## 필요시_참조:
 - 워크플로우 상세: @.claude/workflow/README.md
 - 원칙: @.base-principles/README.md | @.clauder-dev/principles/README.md
 - 프로젝트 정보: @.claude/project/clauder-overview.md
 - 개발 가이드: @.clauder-dev/guides/
 
-## FORBIDDEN: 금지사항
+## 금지사항:
 - 워크플로우 없이 작업 시작
 - 분석 없이 구현
 - 회고 없이 커밋
