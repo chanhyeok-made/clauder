@@ -1,0 +1,3 @@
+#!/bin/bash
+source "$(dirname $(dirname ${BASH_SOURCE[0]}))/../core/bridge/command-wrapper.sh"
+safe-emoji-remover "$@"

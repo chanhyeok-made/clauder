@@ -8,6 +8,12 @@ load_when: ALWAYS
 
 PURPOSE: Essential guide for Clauder development with Claude Code
 
+## AUTO_LOAD: Module System
+```bash
+# AUTO: Modules load automatically if available
+source .claude/hooks/auto-module-loader.sh 2>/dev/null || true
+```
+
 ## IMMEDIATE: Execute on Task Request
 
 ### REQUIRED: Generate Workflow TODOs

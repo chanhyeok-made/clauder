@@ -147,5 +147,7 @@ main() {
     echo "Backups saved in: .emoji-backup-$(date +%Y%m%d)/"
 }
 
-# Run main with all arguments
-main "$@"
+# Don't run automatically when sourced - only when executed directly
+if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
+    main "$@"
+fi
